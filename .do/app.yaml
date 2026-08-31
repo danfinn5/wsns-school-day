@@ -1,0 +1,14 @@
+name: wsns-school-day
+region: nyc
+services:
+  - name: web
+    git:
+      repo_clone_url: https://github.com/danfinn5/wsns-school-day.git
+      branch: main
+    environment_slug: node-js
+    instance_size_slug: basic-xxs
+    instance_count: 1
+    http_port: 8080
+    run_command: npm start
+    health_check:
+      http_path: /health
