@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f4efe5">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="School Day">
+  <title>WSNS School Day</title>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <style>
+    :root{
+      --ink:#1f2a2a;--muted:#6c7673;--paper:#f4efe5;--card:#fffdf8;--line:#ddd6c9;
+      --school:#0f5c5b;--warm:#c5663f;--yellow:#e4b657;--closed:#8d4343;--early:#315f7d;
+      --shadow:0 12px 32px rgba(45,42,35,.10);--radius:22px;
+    }
+    *{box-sizing:border-box}
+    html{background:var(--paper);color:var(--ink);font-family:ui-rounded,-apple-system,BlinkMacSystemFont,"SF Pro Rounded","SF Pro Display",system-ui,sans-serif}
+    body{margin:0;min-height:100vh;background:
+      radial-gradient(circle at 90% -10%,rgba(228,182,87,.24),transparent 30rem),
+      linear-gradient(180deg,#f7f2e9 0,#f1ecdf 100%)}
+    a{color:inherit}
+    button{font:inherit}
+    .wrap{max-width:920px;margin:0 auto;padding:max(20px,env(safe-area-inset-top)) 18px max(40px,env(safe-area-inset-bottom))}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:6px 2px 20px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .mark{width:48px;height:48px;border-radius:16px;background:var(--school);color:white;display:grid;place-items:center;font-weight:900;letter-spacing:-.04em;box-shadow:var(--shadow)}
+    .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:11px;font-weight:800;color:var(--muted)}
+    h1{font-size:24px;margin:2px 0 0;letter-spacing:-.03em}
+    .iconbtn{border:1px solid var(--line);background:rgba(255,253,248,.7);border-radius:999px;padding:10px 13px;cursor:pointer}
+    .hero{background:var(--school);color:white;border-radius:30px;padding:24px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+    .hero:after{content:"";position:absolute;width:240px;height:240px;border:42px solid rgba(255,255,255,.07);border-radius:50%;right:-120px;top:-110px}
+    .heroTop{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;position:relative;z-index:1}
+    .date{font-size:15px;color:rgba(255,255,255,.78);font-weight:700}
+    .status{font-size:34px;line-height:1.02;letter-spacing:-.045em;font-weight:900;margin:7px 0 5px}
+    .detail{font-size:15px;color:rgba(255,255,255,.82)}
+    .weatherHero{text-align:right;min-width:96px}
+    .temp{font-size:38px;font-weight:900;letter-spacing:-.05em}
+    .wxlabel{font-size:13px;color:rgba(255,255,255,.8)}
+    .rule{height:1px;background:rgba(255,255,255,.18);margin:20px 0}
+    .lunchLabel{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:900;color:rgba(255,255,255,.7)}
+    .lunchMain{font-size:24px;line-height:1.15;letter-spacing:-.025em;font-weight:800;margin:7px 0 4px;max-width:680px}
+    .sides{font-size:13px;color:rgba(255,255,255,.72);line-height:1.5}
+    .pack{display:inline-flex;margin-top:15px;background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.13);border-radius:999px;padding:8px 11px;font-size:12px;font-weight:700}
+    .sectionTitle{display:flex;align-items:end;justify-content:space-between;margin:26px 3px 11px}
+    .sectionTitle h2{font-size:18px;letter-spacing:-.025em;margin:0}
+    .sectionTitle span{font-size:12px;color:var(--muted)}
+    .week{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+    .day{background:rgba(255,253,248,.88);border:1px solid var(--line);border-radius:18px;padding:13px;min-height:162px}
+    .day.closed{opacity:.65}
+    .dow{font-size:11px;text-transform:uppercase;letter-spacing:.11em;font-weight:900;color:var(--muted)}
+    .dom{font-size:22px;font-weight:900;margin:2px 0 12px}
+    .pill{display:inline-block;padding:5px 7px;border-radius:999px;font-size:10px;font-weight:900;margin-bottom:9px;background:#e7efeb;color:var(--school)}
+    .pill.early{background:#e3edf4;color:var(--early)}
+    .pill.closed{background:#f1dfdc;color:var(--closed)}
+    .dayWx{font-size:12px;color:var(--muted);margin-bottom:7px}
+    .dayLunch{font-size:13px;font-weight:750;line-height:1.32}
+    .upcoming{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .event{background:rgba(255,253,248,.88);border:1px solid var(--line);border-radius:18px;padding:14px;display:flex;gap:13px}
+    .eventDate{width:46px;flex:0 0 46px;text-align:center;border-right:1px solid var(--line);padding-right:12px}
+    .eventMon{font-size:10px;text-transform:uppercase;color:var(--muted);font-weight:900}
+    .eventNum{font-size:22px;font-weight:900}
+    .eventTitle{font-size:14px;font-weight:800;line-height:1.3}
+    .eventMeta{font-size:12px;color:var(--muted);margin-top:3px}
+    .tools{display:grid;grid-template-columns:1.25fr .75fr;gap:10px}
+    .tool{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:17px}
+    .tool h3{margin:0 0 6px;font-size:16px}
+    .tool p{margin:0;color:var(--muted);font-size:13px;line-height:1.45}
+    .actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:13px}
+    .btn{border:0;border-radius:999px;background:var(--ink);color:white;padding:10px 13px;font-weight:800;font-size:12px;cursor:pointer;text-decoration:none}
+    .btn.secondary{background:#ece6da;color:var(--ink)}
+    .footer{margin:28px 4px 4px;color:var(--muted);font-size:11px;line-height:1.5}
+    .error{background:#f4e3df;color:#6e3434;border:1px solid #dec2bc;border-radius:14px;padding:10px 12px;font-size:12px;margin-bottom:12px}
+    .loading{min-height:420px;display:grid;place-items:center;color:var(--muted)}
+    dialog{border:0;border-radius:24px;padding:0;max-width:520px;width:calc(100% - 28px);background:var(--card);box-shadow:0 30px 80px rgba(0,0,0,.25)}
+    dialog::backdrop{background:rgba(20,25,24,.42)}
+    .modal{padding:22px}
+    .modal h2{margin:0 0 8px}
+    .modal p,.modal li{color:var(--muted);font-size:14px;line-height:1.55}
+    code{font-size:11px;background:#eee8dc;padding:2px 5px;border-radius:5px;word-break:break-all}
+    @media(max-width:700px){
+      .week{grid-template-columns:repeat(5,160px);overflow-x:auto;padding-bottom:4px;scroll-snap-type:x mandatory}
+      .day{scroll-snap-align:start}
+      .upcoming,.tools{grid-template-columns:1fr}
+      .status{font-size:30px}
+      .lunchMain{font-size:22px}
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="mark">W</div>
+      <div><div class="eyebrow">West Somerville</div><h1>School Day</h1></div>
+    </div>
+    <button class="iconbtn" id="infoBtn" aria-label="About">About</button>
+  </header>
+
+  <main id="app"><div class="loading">Loading school day…</div></main>
+
+  <div class="footer">
+    Lunch data: LINQ Connect. Weather: Open-Meteo. School schedule: Somerville Public Schools.
+    This family dashboard is not an official school communication channel; always follow direct SPS notices for emergency changes.
+  </div>
+</div>
+
+<dialog id="info">
+  <div class="modal">
+    <h2>School Day</h2>
+    <p>A tiny family dashboard for West Somerville Neighborhood School. It combines the official 2026–27 school schedule, LINQ lunch menus, and a live school-location forecast.</p>
+    <p><strong>iPhone:</strong> open this site in Safari, tap Share, then <em>Add to Home Screen</em>.</p>
+    <p><strong>Google Calendar:</strong> on calendar.google.com, choose Other calendars → + → From URL, then paste:</p>
+    <p><code id="calUrl"></code></p>
+    <div class="actions"><button class="btn" id="copyCal">Copy calendar URL</button><button class="btn secondary" id="closeInfo">Close</button></div>
+  </div>
+</dialog>
+
+<script>
+const $ = (s) => document.querySelector(s);
+const fmtDay = new Intl.DateTimeFormat("en-US",{weekday:"long",month:"long",day:"numeric"});
+const fmtShort = new Intl.DateTimeFormat("en-US",{weekday:"short"});
+const fmtMonth = new Intl.DateTimeFormat("en-US",{month:"short"});
+const fmtNum = new Intl.DateTimeFormat("en-US",{day:"numeric"});
+
+const isoToLocalDate = (iso) => new Date(iso + "T12:00:00");
+
+function esc(s=""){
+  return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
+}
+function weatherText(w){
+  if(!w) return "Forecast unavailable";
+  return `${w.high}° / ${w.low}° · ${esc(w.label)}${w.rainChance != null ? ` · ${w.rainChance}% rain` : ""}`;
+}
+function lunchNames(meal){
+  return meal?.entrees?.map(x=>x.name).filter(Boolean) || [];
+}
+function sideNames(meal){
+  return meal?.sides?.map(x=>x.name).filter(Boolean) || [];
+}
+function statusClass(t){ return ["closed","weekend"].includes(t) ? "closed" : t === "early" ? "early" : ""; }
+function statusPill(t){
+  if(t==="early") return "Early 1:00";
+  if(t==="noon") return "Noon dismissal";
+  if(t==="closed") return "No school";
+  if(t==="weekend") return "Weekend";
+  return "School";
+}
+
+async function load(){
+  try{
+    const r = await fetch("/api/data?days=10");
+    if(!r.ok) throw new Error(`HTTP ${r.status}`);
+    render(await r.json());
+  }catch(e){
+    $("#app").innerHTML = `<div class="error">Couldn’t load the dashboard: ${esc(e.message)}</div>`;
+  }
+}
+
+function render(data){
+  const days = data.days || [];
+  const today = days[0];
+  const todayDate = isoToLocalDate(today.date);
+  const meal = today.lunch;
+  const entrees = lunchNames(meal);
+  const sides = sideNames(meal);
+  const warnings = (data.warnings||[]).map(x=>`<div class="error">${esc(x)}</div>`).join("");
+
+  const weekDays = days.filter(d=>!["weekend"].includes(d.status.type)).slice(0,5);
+  const upcoming = (data.upcoming||[]).filter(x=>x.date>=today.date).slice(0,8);
+
+  $("#app").innerHTML = `
+    ${warnings}
+    <section class="hero">
+      <div class="heroTop">
+        <div>
+          <div class="date">${esc(fmtDay.format(todayDate))}</div>
+          <div class="status">${esc(today.status.label)}</div>
+          <div class="detail">${esc(today.status.detail)}</div>
+        </div>
+        <div class="weatherHero">
+          <div class="temp">${today.weather ? esc(today.weather.high) + "°" : "—"}</div>
+          <div class="wxlabel">${today.weather ? esc(today.weather.label) : "No forecast"}</div>
+        </div>
+      </div>
+      <div class="rule"></div>
+      <div class="lunchLabel">Lunch</div>
+      <div class="lunchMain">${entrees.length ? esc(entrees.join(" · ")) : (["closed","weekend"].includes(today.status.type) ? "No school today" : "Menu not published yet")}</div>
+      ${sides.length ? `<div class="sides">${esc(sides.slice(0,5).join(" · "))}</div>` : ""}
+      ${today.pack ? `<div class="pack">Pack: ${esc(today.pack)}</div>` : ""}
+    </section>
+
+    <div class="sectionTitle"><h2>Next school days</h2><span>lunch + forecast</span></div>
+    <section class="week">
+      ${weekDays.map(dayCard).join("")}
+    </section>
+
+    <div class="sectionTitle"><h2>Coming up</h2><span>schedule changes</span></div>
+    <section class="upcoming">
+      ${upcoming.map(eventCard).join("")}
+    </section>
+
+    <div class="sectionTitle"><h2>Family tools</h2><span>one source of truth</span></div>
+    <section class="tools">
+      <div class="tool">
+        <h3>Subscribe in Google Calendar</h3>
+        <p>The feed includes closures, every early-release Wednesday, noon dismissals, plus a rolling school-day event containing lunch and the forecast.</p>
+        <div class="actions">
+          <a class="btn" href="/calendar.ics">Open calendar feed</a>
+          <button class="btn secondary" id="copyCalInline">Copy feed URL</button>
+        </div>
+      </div>
+      <div class="tool">
+        <h3>Official sources</h3>
+        <p>Jump straight to the district if something looks wrong.</p>
+        <div class="actions">
+          <a class="btn secondary" href="${esc(data.sources.menu)}" target="_blank" rel="noreferrer">LINQ menu</a>
+          <a class="btn secondary" href="${esc(data.sources.districtCalendar)}" target="_blank" rel="noreferrer">SPS calendar</a>
+        </div>
+      </div>
+    </section>
+  `;
+
+  $("#copyCalInline")?.addEventListener("click", copyCalendar);
+}
+
+function dayCard(d){
+  const dt=isoToLocalDate(d.date);
+  const names=lunchNames(d.lunch);
+  return `
+    <article class="day ${statusClass(d.status.type)}">
+      <div class="dow">${esc(fmtShort.format(dt))}</div>
+      <div class="dom">${esc(fmtNum.format(dt))}</div>
+      <div class="pill ${statusClass(d.status.type)}">${esc(statusPill(d.status.type))}</div>
+      <div class="dayWx">${d.weather?weatherText(d.weather):"—"}</div>
+      <div class="dayLunch">${names.length?esc(names.slice(0,2).join(" / ")): (["closed","weekend"].includes(d.status.type)?"No lunch":"Menu pending")}</div>
+    </article>`;
+}
+
+function eventCard(e){
+  const dt=isoToLocalDate(e.date);
+  return `
+    <article class="event">
+      <div class="eventDate"><div class="eventMon">${esc(fmtMonth.format(dt))}</div><div class="eventNum">${esc(fmtNum.format(dt))}</div></div>
+      <div><div class="eventTitle">${esc(e.title)}</div><div class="eventMeta">${esc(fmtShort.format(dt))}</div></div>
+    </article>`;
+}
+
+async function copyCalendar(){
+  const url = location.origin + "/calendar.ics";
+  await navigator.clipboard.writeText(url);
+  const btn = event?.currentTarget;
+  if(btn){ const old=btn.textContent; btn.textContent="Copied"; setTimeout(()=>btn.textContent=old,1200); }
+}
+
+const dialog=$("#info");
+$("#infoBtn").addEventListener("click",()=>dialog.showModal());
+$("#closeInfo").addEventListener("click",()=>dialog.close());
+$("#calUrl").textContent=location.origin+"/calendar.ics";
+$("#copyCal").addEventListener("click",copyCalendar);
+
+if("serviceWorker" in navigator){ navigator.serviceWorker.register("/sw.js").catch(()=>{}); }
+load();
+</script>
+</body>
+</html>

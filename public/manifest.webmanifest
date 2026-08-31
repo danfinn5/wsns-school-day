@@ -1,0 +1,17 @@
+{
+  "name": "WSNS School Day",
+  "short_name": "School Day",
+  "description": "West Somerville Neighborhood School lunch, weather, and schedule dashboard.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4efe5",
+  "theme_color": "#0f5c5b",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "school": "West Somerville Neighborhood School",
+  "linq_building_id": "dc643b2d-4be6-eb11-a2c9-d2abdd85801a",
+  "linq_district_id": "7810c14e-a7e4-eb11-a2c5-8cc0b3a2728d",
+  "school_coordinates": {
+    "lat": 42.404595,
+    "lon": -71.123583
+  },
+  "calendar_revision": "2026-07-28",
+  "notes": "K-8 configuration. School schedule dates encoded in src/worker.js."
+}
