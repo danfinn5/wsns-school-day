@@ -1,382 +1,382 @@
 {
   "closed-2026-09-04@wsns-school-day": {
-    "hash": "4ed97c85a48409f7cfb833e318ec57f675b61d99abd28313a976d67096f89bba",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "b358af5bf43e589b96bd622920f0da2c50f254a55c018e7502b28e616691e446",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2026-09-07@wsns-school-day": {
-    "hash": "ab5bc45c4337f108d3e25faa230558bdb5eb5ac9921093eb49d90e4093e7923a",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "b64b67398f1854c56f9fc286d25c462c18333370eb4556026d14d4316b1882a6",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2026-10-12@wsns-school-day": {
-    "hash": "a4b9228f5d862dffb1c90ddc0f20aed55ce8dacdf4bd15aba4242f95d2651ce8",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "c6cd72612c7ae6e2acdd94dcdcef00503b75523a0d2f962aa9a682df38775228",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2026-11-03@wsns-school-day": {
-    "hash": "fd1ad8ead597ef8c90183b06700229f66a2d88e17ae67dba46ac7c288d93e639",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "a66278398bb9dfde7e7c2d8de9ba69f12bd5ea7a7ece1e811def8121e5e86e47",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2026-11-11@wsns-school-day": {
-    "hash": "5680f090b6e8d3e0ab80865e22371e3cf333cd47990d56b9a9af8c54676d0976",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "f364273b16b616bc6502dbba96dc0d1eb43996510fd8e32c68ec83ebbfb3b280",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2026-11-26@wsns-school-day": {
-    "hash": "9cc2ff7d8e1ab0375ffaced28b454946e257fc2860a71a6ee796e76e8cbbb7ee",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "1c8485d197e947119b09925b93d177de9e779e9106f2bfdf53de25ed0d7ae000",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2026-11-27@wsns-school-day": {
-    "hash": "5f1c6f282a7bbb09fc78bb30d06b9c5707237ac9ce936ac000746d009b2882ac",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "3362ae110b3c6f395623091389c7df8c18ecb85b2bf174e70e0d9bfd1d1feec9",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2026-12-24@wsns-school-day": {
-    "hash": "03d1d653b11e277e0e14de9a0b3caf3c39bba57062d10103ea8161c1025faec9",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "7c8f0b0e1015bf649eb69199e0ac964594fe796951707ce1b2c532c49c6ced85",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2026-12-25@wsns-school-day": {
-    "hash": "8c4fdf3b60e1ab25c61f3fe52a7e41ffe8ef9395d7e86efab8c5093ab3d51e2d",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "276f89727a052e7208030e436d7f49fc9098427b0a354d566bd229a324ecdb38",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2026-12-28@wsns-school-day": {
-    "hash": "eb8c8e3bab5b5625ee5bc2003ad97dfcf996e5b6ca7c97bd1495d2a61527249f",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "b06c383d08de0eccc8cc0500e679b0fbd8f02ab5c55eea447e30b15d387254dc",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2026-12-29@wsns-school-day": {
-    "hash": "71f56b711e86130cd9de62d422c9a13f889b006d5527567710293cbbbe3ce8f6",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "2fe2206bac336b495b3dd2fa7ed258329bd4fbea1916d1dad23ac6257272f59c",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2026-12-30@wsns-school-day": {
-    "hash": "79ffd598f54c5838a4b1e7e3ed3ac474f2a81a8ff593d56cc7c23592792393b1",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "b643b9ad7fd0e6a33e9cdb6f70b896aa9ac97a10a6c154d9b03e74e6eab6d9e9",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2026-12-31@wsns-school-day": {
-    "hash": "d01f7d54600cc46fbec2ae168ba89345004a4c83d9ba954e72ac905b4bfc12a9",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "27741de678224c0d9136c9670682714e01d91f18f82a611467ba76b32d28e05d",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2027-01-01@wsns-school-day": {
-    "hash": "043b02ed9c037cef0e15ba36afbaef176bc09cd6785861e4689a2e3287246d5f",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "542d801d698498d993f6fd73a733f387d387b710665f96690cfea75a7addeba2",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2027-01-04@wsns-school-day": {
-    "hash": "d24fddaf7b0021edd502bcbe134240b473732c6ca2bca73fd8711d605851bcb0",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "497dfb7f1f8a305168465eb4e86414113616e8a6d2ed01d65120223abca5c9d3",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2027-01-18@wsns-school-day": {
-    "hash": "240584be06ed51ff89cf7b975b95938a1ae107ae5426e87ccd7d56fe2faa74ce",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "197dc22751562dec58616dcf6a2248677223f593b73eb9d03b45cf4229b87dd6",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2027-02-15@wsns-school-day": {
-    "hash": "1276eca2018885cb49439c22eafacb54693b2ca2d85caa1581d2a4e13db07d99",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "3cc664c684800bbae4b5c1ea13e86ae68be8f6ada490fe0564bc8698ed3fd798",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2027-02-16@wsns-school-day": {
-    "hash": "267ad895235aa0998c6d1dbf9da6117a437b9f20c3220b504f2a46101a47d22e",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "e6e6cf4f41db58ed588e0bfce51a79f1327c251d35fddc3800517f510849ad0b",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2027-02-17@wsns-school-day": {
-    "hash": "008a2b4fe178a290e6950d9cdb08d31acc97a585d34155c139caec5a91e63c4d",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "4429117d2885e935b31f8c6850cc59fe2ab86c864667086e3a548667f924b80c",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2027-02-18@wsns-school-day": {
-    "hash": "8cc7cdecdc35076e7eb683ffa40a53b5bc1db46588e4fd132d9d81a102e3649a",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "6f9b430cd5cbc877fd5c7c0e65078db01a18005d013a8a280d2a3f15ab4ad2b8",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2027-02-19@wsns-school-day": {
-    "hash": "7cbd344668f059fc12c4234c4ef8bcced84f20f2ff55d8f42b58c74b7fb1f283",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "e4a5bbc637f0b2275d4bd7bc9c63422fddeeb4cf7337103713d275872d4152aa",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2027-03-26@wsns-school-day": {
-    "hash": "61ca659c15210aaa0a21b775a06aae63000d41ed3c0f48e2204d1957cd023e01",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "611f1ba896970cd40a306975f174618d8f8782857779f3dac40c21a939b488c0",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2027-04-19@wsns-school-day": {
-    "hash": "f674dfe0157f8aec43215fc98e021545e058cfd96e8481f58db20a12daf4aadf",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "6cc1916b77fd3f4d1009d96809e8c6b0d131eaaa268b5560e0e0b256df1eb3c0",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2027-04-20@wsns-school-day": {
-    "hash": "87caa1e6ac1fc2c712ca7ab0f7258051dddb6273d0f8661edd169d04dc5a0b44",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "f925e78b84cfa2d6f63f925f278f864635017e704ea2fbca9a92cd117d1861b9",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2027-04-21@wsns-school-day": {
-    "hash": "002f871df0f24ec982e6bb56cb7b239496fa16e04cf27e1b269d434fc2f20312",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "5268e6370b5dbc34ec72c2de81daa4eafb51ef38ec18ea3fad1006e784b01949",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2027-04-22@wsns-school-day": {
-    "hash": "9f71c73dc04efc872a77fb64404dfc1ecc8c9c9368b905e7e86ea67c0c8f1261",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "4971642da904696d4672e3630c1ebaf27ea82d9cd8678387b060362bacfb11c9",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2027-04-23@wsns-school-day": {
-    "hash": "3a5b25f717b72ebca7ac13e3c20873077a887b67060dca4edb257fa1bbd89f23",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "3ba84223177a20a5f1b4bf9e7c6503b1deeccf604c5ec1d4f8ae4f151d496ef3",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "closed-2027-05-31@wsns-school-day": {
-    "hash": "38ae202fe83107af04fc5fe466806f4e191028f619b7df04b01d3ab7587110fc",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "e238c1f89d9cb2858292b18601e9b0287dfec19295b148211f3eed601f0d2469",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "noon-2026-08-31@wsns-school-day": {
-    "hash": "f706e1c3eacd688a5ddbb4c56076ac6a100602b8d078cba0281e43b48cd949cf",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "a564eabbfb5edadd5f0e92909a5dbd16b37ef97294daa1dfcceb7e216db0f4bc",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "noon-2026-11-25@wsns-school-day": {
-    "hash": "dd3df6193bd154d70469dd18faa5655da29232eadd026224c3d443dac19f0e2b",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "1ea4ff7091d5ccbd420015c6d99058050932436412e3f60ec587450a4ea96b7a",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "noon-2026-12-23@wsns-school-day": {
-    "hash": "3b0bb951bdffa758738b93b23292fa63703879b0072360642608a6de74619ee0",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "e2ea376ff6f88f7c3573b9ed76e850902226607ebcf0a799c63155b30ad25a69",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "noon-2027-06-16@wsns-school-day": {
-    "hash": "608e9bc6ae003a2d07a30ed56d3be7c93bb7268e1bce2e3c0daf636e59bab92b",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "bef58e06d99b9ecf05d46c7c7e5f29d46ade4c036d0ae9aa0e09f6ec7de65cca",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2026-09-02@wsns-school-day": {
-    "hash": "76a8cb16dff9b1e28391324c0ce25df3c8c2cfc8f8d2c335aa3df481d07cea78",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "49ab447ace406d804009a64c9a7767803ed88272cbe93b6fa230ca5f12f8b1fb",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2026-09-09@wsns-school-day": {
-    "hash": "712af6a0f71df9f2ae63323002eb8062f5d140360cda7c64047d504667340958",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "f311df3d73ef7193c84055413263142dc2ccd7619e601aa88666097543d32fb6",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2026-09-16@wsns-school-day": {
-    "hash": "55dd267d2b46fd2c1642dfb36a399991673edfad65556409c5aafa390383cc19",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "eeec27478c61202758ae0693c009707edf0a78a7902551c3608744d34766d593",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2026-09-23@wsns-school-day": {
-    "hash": "fa5dc091620cc0c5955bb028ab44bf814625d07d4382f836769e0f325ecaf911",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "8006bd7ee45336602284b21d458e08c311ff0b32944d0bb9d40436ddac7686f3",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2026-09-30@wsns-school-day": {
-    "hash": "8c412ef915bcb887a40a8c3ee7c744d7242493c9d6c6b127a4b381fdcc2fdf05",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "501bdda191f958369c8929daaea83d4d6a5fa233829f81548fc119cc95ae52c6",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2026-10-07@wsns-school-day": {
-    "hash": "5041da50ffd3555128ed8871ead3c5162445ae0e9a60f92ce992df6da537340e",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "29428c02e2c5d6a321584483ec74c9c94d0d715333d208b0b894552dda6990d7",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2026-10-14@wsns-school-day": {
-    "hash": "12dece62e830ba7919df272ebe4f7b162a65bbe553d9d78043343b842128451b",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "8c4659804aa679f80f6c972ab17c5cc0d8915fdd5d43f40932fad2c38ed6f0b1",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2026-10-21@wsns-school-day": {
-    "hash": "0aa3ee02d53fc7124bc4318303fd39360f34b0a2024ff23b9b6232c3797c7b5c",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "ed22f6092a014f75122664fad85084277d1a864446a8ee0c3b0040251bd9d53f",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2026-10-28@wsns-school-day": {
-    "hash": "298f34c91071dd16f5f389a9ea43f06309a6cdfa219903dca1f35bf5a167c5bf",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "3efa0d1ec9953cbaa7ba6a6fe5be761eb5d23bb4b7ed1875f65e2af40406b334",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2026-11-04@wsns-school-day": {
-    "hash": "47475d3a20c5fdca6aeb34dcbd3c79eb1a5f96cab10aff0f62957a9f173cc3eb",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "d0ac85d4cd0dd786d841be636cc63889957f4b210c5df9bb411235b4cca6045a",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2026-11-18@wsns-school-day": {
-    "hash": "66241b0f22d58506b1aa019b1d167f58288ca6a4883616607de6f787b33a6270",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "0c1daa94e0c9fc529278d608b4ed826487d2cef207ea67facb5a288072ba082b",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2026-12-02@wsns-school-day": {
-    "hash": "5891ba6bbc28663f6b11a4ea326822e278c36c5d3168991047ea85ba15fb845b",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "a007435fbb46bce70c5ccf0a3e9537346e371696b957b815b5bcb18d7621524f",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2026-12-09@wsns-school-day": {
-    "hash": "812e59049e913c6413998dec08716c7964618bdafc81660a23704072b7263003",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "effd83dc8d4a912d4bfa20a2938d6f3e5c52fd92804544933c5946f69e470485",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2026-12-16@wsns-school-day": {
-    "hash": "0818e7fb6f97f273c804b1ffb67d2b8975d23f6b3a08e0aefca0c25df1164559",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "fb0e6decfa9a465f3ca409a133315a344ad72b3ee1f632c13a7d6f2f0f239b03",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2027-01-06@wsns-school-day": {
-    "hash": "243b66400e493d7ab02ed7f28e094de1f700cdf6a59fcfade7297dbfd351ec48",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "c58a15dad64f258edddd242e393ee14da7b1823e7ff99e1899c8c4c49fb4302f",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2027-01-13@wsns-school-day": {
-    "hash": "96696e0aed9f24a36c4ab30a1668b1b995d3b5baecab4de9c26926e044fae40b",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "24eabfe8c25496fe4c6a7c08094a558a93c837193abff92524b065a5b57a8a19",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2027-01-20@wsns-school-day": {
-    "hash": "0c28c290cdd8cab7540f54f380b3d6e656d9aa6cffae5e073bad47c9b6cc80ad",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "5b7c06dd7547a12becdfdd805eb31d12618eefb831959e579c466ea1bd271646",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2027-01-27@wsns-school-day": {
-    "hash": "d782d3810c32cbce61d715ebdbf48762986bc74707bf4b7878e8d44384ea7a37",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "3ffff26f8e131aa8bc6bca959baf6e54ef5c77d75b1fc93b53720645657458bd",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2027-02-03@wsns-school-day": {
-    "hash": "8b1106a00f1354fbdbfba9f5ed77632f10f6b2866cf5f7b486b495a9c36a4b0d",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "22c5b86307d3ed18f05c5f1170938e3a566c6024a9da61810ba2a14ed63f7795",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2027-02-10@wsns-school-day": {
-    "hash": "f191ff96eaea0ac912e79203e8dddc2550f8009c7947cca4ea2b4f033bf01df8",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "d03d1b8a1f7ed90fc5073905fde276c20306301b5e3aec62ee5eeea542fb9a20",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2027-02-24@wsns-school-day": {
-    "hash": "c669479a86765e3715798e1a8a858ee89d0b98b7ba66a27b745cbb65d7ab4d4f",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "e8f8c037ceaa6fc795e7fbb8e95a065a8b3268df400fe850e90fe55271168a78",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2027-03-03@wsns-school-day": {
-    "hash": "a7a1f80ac2862dfe3851d26f5ea1876a0711571238f7dfd445b5da6c1b8a12d1",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "9e78b9130b01894f81872d2e02a6dea26f69f8000e1163283ae329139be0fff4",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2027-03-10@wsns-school-day": {
-    "hash": "7cf77868a416a7522275d3ef2b05912c4e55472ff649199b4489881df8abc3c0",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "22f3041a8f3f646433468e37c0c1eeb296934ee478533d1ef6fc6e1bbf64155d",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2027-03-17@wsns-school-day": {
-    "hash": "0b44a5f87681f09b64882ea78fe5a89c9f54eb50568327d3859b621dffdb5920",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "ab5cb26b45f2289730af10f8ab0c610537c9f62abfadd482aa7077c8142522d8",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2027-03-24@wsns-school-day": {
-    "hash": "5bfd390f6fb2f2d182d1a28527d21c11dd805285a5d73223bc4d8248318e2728",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "6f6a60823d68370e84721234a089c05ac134f6bb26086825397bfbdd5e17c5ee",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2027-03-31@wsns-school-day": {
-    "hash": "10451927f73134b38f3c44c4850e8b2299b473d88ca634bef8b27a6d4eeac71c",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "ea84b0347f0f8e9cb3d56780b4843e5a9a26835cf45488a6d4a51a7d864e0005",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2027-04-07@wsns-school-day": {
-    "hash": "78e7bf8b691335bfa9530b60526ee0760a55fdb094a3e827fd320e23a4ee5f4d",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "c5d6faa8e5e1e15e23a5414f5640c40921a91b0d082178e0d4ecad9acbe0d41c",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2027-04-14@wsns-school-day": {
-    "hash": "e9e67bfce4c91c6e7d7d17d80c0d55727b482e4a079808b84b3fab054288e211",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "33160b19e7ec555036d01af28a585cd2a8d7da9e5e0eaca92585b14c3c11f69c",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2027-04-28@wsns-school-day": {
-    "hash": "41247ac6c92195c48e97cf8fb98baebe139d583aaaf47aeb2032c415bf8b4fee",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "0bfd146eceb0fd4927336f1859915c28bd92c0c31ea19309704c2643b8c83ade",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2027-05-05@wsns-school-day": {
-    "hash": "77a2fa7735b2bb3dff5c20dd3da09f4bfd9b904bd791256986f836ef813a2f85",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "1316372ba41e12ce9bee6ebbf61fb4312a5f9396efc032371424a27b1a49391b",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2027-05-12@wsns-school-day": {
-    "hash": "6fb075484768dd8cf1b2eebc31c0227ef8af7eac9852fc604273ed23f72f85a9",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "867adc96bcd97a5c200a156e93e5aa574ede1e60f3383bdb292132a033cd8fcf",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2027-05-19@wsns-school-day": {
-    "hash": "1fd203cb1a61fc8270bd58410628979d999ea57bc318c9c0656952b11c30785b",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "f4c3f79dbe5daaeddc1f9128a8b23d9bc901ea5a972479785821780d1ab08073",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2027-05-26@wsns-school-day": {
-    "hash": "5939ac64eb82fe4ae4440c22521ba530b4eb20fc88a2e34850864e4a086b2b7f",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "45695aee16785ae2816c96065a68e40960976da2c1de69a6c323f830b8a38fd8",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2027-06-02@wsns-school-day": {
-    "hash": "cbf43931767b535b80ff59b0c163337228f5e3fd5ec088ac73864c20bf912c52",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "12d11c17c9a355caf59bd25323fb0228d467daaa690b68ac237ef982e2429688",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "early-2027-06-09@wsns-school-day": {
-    "hash": "e8b862684ac300c2448fed4cdafe14c4fa3c1ceeb7077d101546b1c1a825fdea",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "a42294c0035ab126b0c185d4a6d5e0848adcd5b6f09a19f17f3eaf3160d9c546",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "schoolday-2026-11-06@wsns-school-day": {
-    "hash": "00fda2c0d271b6f24e88f4646ad1bd0f915d463bfdddf448d67908ace2dca249",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "280cd0d93f75e403b95697367b80b02b8093bf9b42e38d84f1b9f5cb7a90a52f",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "schoolday-2026-11-09@wsns-school-day": {
-    "hash": "a696aeedbd82e6a77b9d5b8fa2a159a927c7f36468c040db26471ff45febaf7d",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "29efae9b21e7f98ec5a1976fce777b1ff8fcb17fc9738390d34ed0c83db3f376",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "schoolday-2026-11-10@wsns-school-day": {
-    "hash": "4b1bdc952b2c7d9341c0c247e0fb4823d981b9f92d0170880038206d82c23ba4",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "712a5bf82f8921c1cd2bfa2384d54a5f5f02c9bc18e3112096def26c7233b9e5",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "schoolday-2026-11-12@wsns-school-day": {
-    "hash": "c093c646f6232a2840f61149698a3056644f60d03278236b4978842d219d02f6",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "42b6744ab561b73b1fb67902e105ebd1c6f94890487e53c106d40f98001693ef",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "schoolday-2026-11-13@wsns-school-day": {
-    "hash": "30aca6533da1f5f2ac019ac0045a12439c5960b825e155ea35b868d767a5ce5a",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "8f7edeff60520ed2064118a96aa701e940ea8ad1df85c7bfeb88bc929bb97e18",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "schoolday-2026-11-16@wsns-school-day": {
-    "hash": "a1508adc190822fef7d224914c83b514f59a45c0539e3f5ca87a4e208567a243",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "daad46ac36d0ce89ac55261207c7d3e8303d7657a77c11610463037d34de5c9e",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "schoolday-2026-11-17@wsns-school-day": {
-    "hash": "b9d4f74933e9569c6a71ac6f8fe0dfb1ba6863a77876daa487d561c6e7e7c384",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "eaade96d9bb23d688a753de759d0907e6c5a4e2749a283a300729232bc8e0a8e",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "schoolday-2026-11-18@wsns-school-day": {
-    "hash": "3c7e2cd8b9e0f0de6f6b0f0ace28194b8f602df4b06a5bdc1b51181b7d6de6e9",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "552914669ad1e3913878df846fa858889be3c94e7685b3c3872c9b608f5c3b78",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   },
   "schoolday-2026-11-19@wsns-school-day": {
-    "hash": "6476ffedb86074db8004a7ad3ef997d3f91d6a19658383c7843f593f3bc269e9",
-    "sequence": 1,
-    "lastModified": "20261106T222619Z"
+    "hash": "92fc802a71a4c7ab671efa3bbfd591953bc0ca20084cd264014286e2891d26c9",
+    "sequence": 2,
+    "lastModified": "20261106T224505Z"
   }
 }

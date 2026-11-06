@@ -6,8 +6,8 @@
   "menuSources": [
     "School Menu Connector"
   ],
-  "lastCheckedAt": "2026-11-06T22:26:19.911Z",
-  "lastSuccessfulAt": "2026-11-06T22:26:19.911Z",
+  "lastCheckedAt": "2026-11-06T22:45:05.053Z",
+  "lastSuccessfulAt": "2026-11-06T22:45:05.053Z",
   "fetchStatus": "ok",
   "error": null,
   "menu": {
@@ -17,6 +17,7 @@
           {
             "name": "Homemade Macaroni and Cheese",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           }
         ],
@@ -24,41 +25,7 @@
           {
             "name": "Steamed Broccoli",
             "category": "Vegetable",
-            "allergens": []
-          },
-          {
-            "name": "Italian Sub with All the Fixings",
-            "category": "Deli",
-            "allergens": []
-          },
-          {
-            "name": "Power Pack: Hummus, Pretzel, Veggie, Fruit",
-            "category": "Deli",
-            "allergens": []
-          },
-          {
-            "name": "Grab and Go Salad",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Assorted Bean and Hummus Proteins",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Assorted Egg and Cheese Proteins",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Buffalo Chicken for Salad",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Pita Bread",
-            "category": "Side",
+            "group": "Hot Entree",
             "allergens": []
           }
         ],
@@ -66,71 +33,85 @@
           {
             "name": "Homemade Macaroni and Cheese",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Steamed Broccoli",
             "category": "Vegetable",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Italian Sub with All the Fixings",
             "category": "Deli",
+            "group": "Deli",
             "allergens": []
           },
           {
             "name": "Power Pack: Hummus, Pretzel, Veggie, Fruit",
             "category": "Deli",
+            "group": "Deli",
             "allergens": []
           },
           {
             "name": "Grab and Go Salad",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Bean and Hummus Proteins",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Egg and Cheese Proteins",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Buffalo Chicken for Salad",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Pita Bread",
             "category": "Side",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Fruit",
             "category": "Fruit",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Assorted Fresh Cut Vegetables",
             "category": "Vegetable",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "1% White Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Skim Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Chocolate Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           }
         ],
@@ -143,11 +124,13 @@
           {
             "name": "Sweet and Sour Chicken",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Sweet and Sour Tofu",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           }
         ],
@@ -155,41 +138,13 @@
           {
             "name": "White Rice",
             "category": "Side",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Steamed Vegetable Blend",
             "category": "Vegetable",
-            "allergens": []
-          },
-          {
-            "name": "Sunbutter and Jelly Sandwich with Yogurt",
-            "category": "Deli",
-            "allergens": []
-          },
-          {
-            "name": "Power Pack: Pepperoni & Cheese, Cracker, Veggie",
-            "category": "Deli",
-            "allergens": []
-          },
-          {
-            "name": "Grab and Go Salad",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Assorted Bean and Hummus Proteins",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Assorted Egg and Cheese Proteins",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Cajun Chicken for Salad",
-            "category": "Grab and Go Salad",
+            "group": "Hot Entree",
             "allergens": []
           }
         ],
@@ -197,81 +152,97 @@
           {
             "name": "Sweet and Sour Chicken",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Sweet and Sour Tofu",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "White Rice",
             "category": "Side",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Steamed Vegetable Blend",
             "category": "Vegetable",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Sunbutter and Jelly Sandwich with Yogurt",
             "category": "Deli",
+            "group": "Deli",
             "allergens": []
           },
           {
             "name": "Power Pack: Pepperoni & Cheese, Cracker, Veggie",
             "category": "Deli",
+            "group": "Deli",
             "allergens": []
           },
           {
             "name": "Grab and Go Salad",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Bean and Hummus Proteins",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Egg and Cheese Proteins",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Cajun Chicken for Salad",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Pita Bread",
             "category": "Side",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Fruit",
             "category": "Fruit",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "1% White Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Skim Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Chocolate Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Assorted Fresh Cut Vegetables",
             "category": "Vegetable",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           }
         ],
@@ -284,16 +255,19 @@
           {
             "name": "Cheeseburger on a Bun",
             "category": "Hot Sandwich",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Hamburger on a Bun",
             "category": "Hot Sandwich",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Black Bean Burger on a Bun",
             "category": "Hot Sandwich",
+            "group": "Hot Entree",
             "allergens": []
           }
         ],
@@ -301,41 +275,13 @@
           {
             "name": "Onion Rings",
             "category": "Side",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Crispy Caesar Salad",
             "category": "Vegetable",
-            "allergens": []
-          },
-          {
-            "name": "Sunbutter and Jelly Sandwich with Yogurt",
-            "category": "Deli",
-            "allergens": []
-          },
-          {
-            "name": "Power Pack: Pepperoni & Cheese, Cracker, Veggie",
-            "category": "Deli",
-            "allergens": []
-          },
-          {
-            "name": "Grab and Go Salad",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Assorted Bean and Hummus Proteins",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Assorted Egg and Cheese Proteins",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Cajun Chicken for Salad",
-            "category": "Grab and Go Salad",
+            "group": "Hot Entree",
             "allergens": []
           }
         ],
@@ -343,86 +289,103 @@
           {
             "name": "Onion Rings",
             "category": "Side",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Cheeseburger on a Bun",
             "category": "Hot Sandwich",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Hamburger on a Bun",
             "category": "Hot Sandwich",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Black Bean Burger on a Bun",
             "category": "Hot Sandwich",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Crispy Caesar Salad",
             "category": "Vegetable",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Sunbutter and Jelly Sandwich with Yogurt",
             "category": "Deli",
+            "group": "Deli",
             "allergens": []
           },
           {
             "name": "Power Pack: Pepperoni & Cheese, Cracker, Veggie",
             "category": "Deli",
+            "group": "Deli",
             "allergens": []
           },
           {
             "name": "Grab and Go Salad",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Bean and Hummus Proteins",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Egg and Cheese Proteins",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Cajun Chicken for Salad",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Pita Bread",
             "category": "Side",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Fruit",
             "category": "Fruit",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "1% White Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Skim Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Chocolate Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Assorted Fresh Cut Vegetables",
             "category": "Vegetable",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           }
         ],
@@ -435,6 +398,7 @@
           {
             "name": "Vegetarian Chili",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           }
         ],
@@ -442,41 +406,13 @@
           {
             "name": "Tortilla Chips",
             "category": "Side",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Shredded White Cheddar Cheese",
             "category": "Side",
-            "allergens": []
-          },
-          {
-            "name": "Sunbutter and Jelly Sandwich with Yogurt",
-            "category": "Deli",
-            "allergens": []
-          },
-          {
-            "name": "Power Pack: Pepperoni & Cheese, Cracker, Veggie",
-            "category": "Deli",
-            "allergens": []
-          },
-          {
-            "name": "Grab and Go Salad",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Assorted Bean and Hummus Proteins",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Assorted Egg and Cheese Proteins",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Cajun Chicken for Salad",
-            "category": "Grab and Go Salad",
+            "group": "Hot Entree",
             "allergens": []
           }
         ],
@@ -484,76 +420,91 @@
           {
             "name": "Vegetarian Chili",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Tortilla Chips",
             "category": "Side",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Shredded White Cheddar Cheese",
             "category": "Side",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Sunbutter and Jelly Sandwich with Yogurt",
             "category": "Deli",
+            "group": "Deli",
             "allergens": []
           },
           {
             "name": "Power Pack: Pepperoni & Cheese, Cracker, Veggie",
             "category": "Deli",
+            "group": "Deli",
             "allergens": []
           },
           {
             "name": "Grab and Go Salad",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Bean and Hummus Proteins",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Egg and Cheese Proteins",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Cajun Chicken for Salad",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Pita Bread",
             "category": "Side",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Fruit",
             "category": "Fruit",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "1% White Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Skim Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Chocolate Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Assorted Fresh Cut Vegetables",
             "category": "Vegetable",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           }
         ],
@@ -566,11 +517,13 @@
           {
             "name": "American Beef Chop Suey",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Vegetarian American Chop Suey",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           }
         ],
@@ -578,41 +531,7 @@
           {
             "name": "Fresh Baked Garlic Bread",
             "category": "Side",
-            "allergens": []
-          },
-          {
-            "name": "Sunbutter and Jelly Sandwich with Yogurt",
-            "category": "Deli",
-            "allergens": []
-          },
-          {
-            "name": "Power Pack: Pepperoni & Cheese, Cracker, Veggie",
-            "category": "Deli",
-            "allergens": []
-          },
-          {
-            "name": "Grab and Go Salad",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Assorted Bean and Hummus Proteins",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Assorted Egg and Cheese Proteins",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Cajun Chicken for Salad",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Pita Bread",
-            "category": "Side",
+            "group": "Hot Entree",
             "allergens": []
           }
         ],
@@ -620,76 +539,91 @@
           {
             "name": "American Beef Chop Suey",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Vegetarian American Chop Suey",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Fresh Baked Garlic Bread",
             "category": "Side",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Sunbutter and Jelly Sandwich with Yogurt",
             "category": "Deli",
+            "group": "Deli",
             "allergens": []
           },
           {
             "name": "Power Pack: Pepperoni & Cheese, Cracker, Veggie",
             "category": "Deli",
+            "group": "Deli",
             "allergens": []
           },
           {
             "name": "Grab and Go Salad",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Bean and Hummus Proteins",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Egg and Cheese Proteins",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Cajun Chicken for Salad",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Pita Bread",
             "category": "Side",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Fruit",
             "category": "Fruit",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "1% White Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Skim Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Chocolate Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Assorted Fresh Cut Vegetables",
             "category": "Vegetable",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           }
         ],
@@ -702,11 +636,13 @@
           {
             "name": "Beef & Pork Hot Dog on a Bun",
             "category": "Hot Sandwich",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Veggie Hot Dog on a Bun",
             "category": "Hot Sandwich",
+            "group": "Hot Entree",
             "allergens": []
           }
         ],
@@ -714,41 +650,7 @@
           {
             "name": "Boston Baked Beans",
             "category": "Vegetable",
-            "allergens": []
-          },
-          {
-            "name": "Turkey Sandwich with Cheese",
-            "category": "Deli",
-            "allergens": []
-          },
-          {
-            "name": "Power Pack: Nachos with Cheese, Fruit & Veggie",
-            "category": "Deli",
-            "allergens": []
-          },
-          {
-            "name": "Grab and Go Salad",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Assorted Bean and Hummus Proteins",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Assorted Egg and Cheese Proteins",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Grilled Chicken Breast",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Pita Bread",
-            "category": "Side",
+            "group": "Hot Entree",
             "allergens": []
           }
         ],
@@ -756,76 +658,91 @@
           {
             "name": "Beef & Pork Hot Dog on a Bun",
             "category": "Hot Sandwich",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Veggie Hot Dog on a Bun",
             "category": "Hot Sandwich",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Boston Baked Beans",
             "category": "Vegetable",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Turkey Sandwich with Cheese",
             "category": "Deli",
+            "group": "Deli",
             "allergens": []
           },
           {
             "name": "Power Pack: Nachos with Cheese, Fruit & Veggie",
             "category": "Deli",
+            "group": "Deli",
             "allergens": []
           },
           {
             "name": "Grab and Go Salad",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Bean and Hummus Proteins",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Egg and Cheese Proteins",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Grilled Chicken Breast",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Pita Bread",
             "category": "Side",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Fruit",
             "category": "Fruit",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Assorted Fresh Cut Vegetables",
             "category": "Vegetable",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "1% White Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Skim Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Chocolate Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           }
         ],
@@ -838,150 +755,130 @@
           {
             "name": "Chicken Tenders",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Vegan Nuggets",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Whole Wheat Waffle",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           }
         ],
-        "sides": [
-          {
-            "name": "Strawberries",
-            "category": "Fruit",
-            "allergens": []
-          },
-          {
-            "name": "Blueberries",
-            "category": "Fruit",
-            "allergens": []
-          },
-          {
-            "name": "Pancake Syrup  Cup",
-            "category": "Condiments",
-            "allergens": []
-          },
-          {
-            "name": "Turkey Sandwich with Cheese",
-            "category": "Deli",
-            "allergens": []
-          },
-          {
-            "name": "Power Pack: Nachos with Cheese, Fruit & Veggie",
-            "category": "Deli",
-            "allergens": []
-          },
-          {
-            "name": "Grab and Go Salad",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Assorted Bean and Hummus Proteins",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Assorted Egg and Cheese Proteins",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          }
-        ],
+        "sides": [],
         "all": [
           {
             "name": "Chicken Tenders",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Vegan Nuggets",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Whole Wheat Waffle",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Strawberries",
             "category": "Fruit",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Blueberries",
             "category": "Fruit",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Pancake Syrup  Cup",
             "category": "Condiments",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Turkey Sandwich with Cheese",
             "category": "Deli",
+            "group": "Deli",
             "allergens": []
           },
           {
             "name": "Power Pack: Nachos with Cheese, Fruit & Veggie",
             "category": "Deli",
+            "group": "Deli",
             "allergens": []
           },
           {
             "name": "Grab and Go Salad",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Bean and Hummus Proteins",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Egg and Cheese Proteins",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Grilled Chicken Breast",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Pita Bread",
             "category": "Side",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Fruit",
             "category": "Fruit",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "1% White Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Skim Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Chocolate Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Assorted Fresh Cut Vegetables",
             "category": "Vegetable",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           }
         ],
@@ -994,6 +891,7 @@
           {
             "name": "Cheese Pizza",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           }
         ],
@@ -1001,41 +899,7 @@
           {
             "name": "Fresh Garden Salad with Garbanzo Beans in Italian Dressing",
             "category": "Vegetable",
-            "allergens": []
-          },
-          {
-            "name": "Turkey Sandwich with Cheese",
-            "category": "Deli",
-            "allergens": []
-          },
-          {
-            "name": "Power Pack: Nachos with Cheese, Fruit & Veggie",
-            "category": "Deli",
-            "allergens": []
-          },
-          {
-            "name": "Grab and Go Salad",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Assorted Bean and Hummus Proteins",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Assorted Egg and Cheese Proteins",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Grilled Chicken Breast",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Pita Bread",
-            "category": "Side",
+            "group": "Hot Entree",
             "allergens": []
           }
         ],
@@ -1043,71 +907,85 @@
           {
             "name": "Cheese Pizza",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Fresh Garden Salad with Garbanzo Beans in Italian Dressing",
             "category": "Vegetable",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Turkey Sandwich with Cheese",
             "category": "Deli",
+            "group": "Deli",
             "allergens": []
           },
           {
             "name": "Power Pack: Nachos with Cheese, Fruit & Veggie",
             "category": "Deli",
+            "group": "Deli",
             "allergens": []
           },
           {
             "name": "Grab and Go Salad",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Bean and Hummus Proteins",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Egg and Cheese Proteins",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Grilled Chicken Breast",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Pita Bread",
             "category": "Side",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Fruit",
             "category": "Fruit",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "1% White Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Skim Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Chocolate Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Assorted Fresh Cut Vegetables",
             "category": "Vegetable",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           }
         ],
@@ -1120,11 +998,13 @@
           {
             "name": "Hard Shell Beef Taco",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Hard Shell Bean Taco",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           }
         ],
@@ -1132,41 +1012,7 @@
           {
             "name": "Shredded White Cheddar Cheese",
             "category": "Side",
-            "allergens": []
-          },
-          {
-            "name": "Salsa Cup",
-            "category": "Condiments",
-            "allergens": []
-          },
-          {
-            "name": "Guacamole",
-            "category": "Condiments",
-            "allergens": []
-          },
-          {
-            "name": "Sour Cream Cup",
-            "category": "Condiments",
-            "allergens": []
-          },
-          {
-            "name": "Turkey Sandwich with Cheese",
-            "category": "Deli",
-            "allergens": []
-          },
-          {
-            "name": "Power Pack: Nachos with Cheese, Fruit & Veggie",
-            "category": "Deli",
-            "allergens": []
-          },
-          {
-            "name": "Grab and Go Salad",
-            "category": "Grab and Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Assorted Bean and Hummus Proteins",
-            "category": "Grab and Go Salad",
+            "group": "Hot Entree",
             "allergens": []
           }
         ],
@@ -1174,91 +1020,109 @@
           {
             "name": "Hard Shell Beef Taco",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Hard Shell Bean Taco",
             "category": "Hot Entree",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Shredded White Cheddar Cheese",
             "category": "Side",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Salsa Cup",
             "category": "Condiments",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Guacamole",
             "category": "Condiments",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Sour Cream Cup",
             "category": "Condiments",
+            "group": "Hot Entree",
             "allergens": []
           },
           {
             "name": "Turkey Sandwich with Cheese",
             "category": "Deli",
+            "group": "Deli",
             "allergens": []
           },
           {
             "name": "Power Pack: Nachos with Cheese, Fruit & Veggie",
             "category": "Deli",
+            "group": "Deli",
             "allergens": []
           },
           {
             "name": "Grab and Go Salad",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Bean and Hummus Proteins",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Egg and Cheese Proteins",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Grilled Chicken Breast",
             "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Pita Bread",
             "category": "Side",
+            "group": "Grab & Go Salad",
             "allergens": []
           },
           {
             "name": "Assorted Fruit",
             "category": "Fruit",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "1% White Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Skim Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Chocolate Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           },
           {
             "name": "Assorted Fresh Cut Vegetables",
             "category": "Vegetable",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           }
         ],
