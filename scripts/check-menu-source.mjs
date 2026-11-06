@@ -32,3 +32,18 @@ try {
   console.log(JSON.stringify({runner:process.platform,pageStatus:response.status,scripts,preview:response.ok?undefined:html.slice(0,200)}));
 } catch(error) { console.log(JSON.stringify({pageError:error.message})); }
 await writeFile("menu-source-status-"+process.platform+".json",JSON.stringify(results,null,2));
+
+if (process.platform === "linux") {
+  const url = new URL("https://api.linqconnect.com/api/FamilyMenu");
+  url.search = new URLSearchParams({buildingId,districtId,startDate:date,endDate:date});
+  for (const [name,target] of [
+    ["reader-api", "https://r.jina.ai/" + url.toString()],
+    ["reader-selected-page", "https://r.jina.ai/https://linqconnect.com/public/menu/FE53U3?buildingId="+buildingId],
+  ]) {
+    try {
+      const response=await fetch(target,{headers:{"x-respond-with":"text"},signal:AbortSignal.timeout(45000)});
+      const text=await response.text();
+      console.log(JSON.stringify({name,status:response.status,body:text.slice(0,18000)}));
+    } catch(error) { console.log(JSON.stringify({name,error:error.message})); }
+  }
+}
