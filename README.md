@@ -3,6 +3,14 @@
 Subscribe in Google Calendar to see West Somerville's lunch menu, school closures,
 Wednesday early releases, and noon dismissals. A separate website host is not needed.
 
+## Menu availability
+
+As checked on November 6, 2026, LINQ is returning HTTP 403 to GitHub's runner,
+including requests made in Chrome. The lunch integration is configured but has not
+yet retrieved a live menu. School closures and dismissal events are published;
+missing lunches are marked unavailable. Refresh retries run every six hours.
+[Live refresh status](calendar/menu.json) records the latest result.
+
 ## Subscribe
 
 On a computer, open Google Calendar → Other calendars → **+** → **From URL**.
@@ -49,11 +57,6 @@ To refresh or check locally with Node 20 or newer:
 node --test test/calendar.test.js
 node scripts/generate-calendar.mjs
 ~~~
-
-When LINQ rejects the standard HTTP client, the generator retries in Chromium.
-For that fallback, install Playwright 1.65.0 and Google Chrome. The scheduled workflow uses the
-Chrome browser already installed on the runner. Browser-client setup failures do
-not prevent school schedule updates.
 
 ## Sources and limits
 
