@@ -1,8 +1,8 @@
 {
   "school": "West Somerville Neighborhood School",
-  "lastCheckedAt": "2026-11-06T21:17:15.762Z",
+  "lastCheckedAt": "2026-11-06T21:45:24.861Z",
   "lastSuccessfulAt": null,
   "fetchStatus": "unavailable",
-  "error": "LINQ returned 403",
+  "error": "Command failed: .venv/bin/python /home/runner/work/wsns-school-day/wsns-school-day/scripts/fetch-linq.py dc643b2d-4be6-eb11-a2c9-d2abdd85801a 7810c14e-a7e4-eb11-a2c5-8cc0b3a2728d 2026-10-30 2026-12-17\nPublic LINQ menu unavailable; chrome: HTTPError: HTTP Error 403: ; safari: HTTPError: HTTP Error 403: ; firefox: HTTPError: HTTP Error 403: \n",
   "menu": {}
 }
