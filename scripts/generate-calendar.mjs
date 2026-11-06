@@ -1,5 +1,8 @@
+import { execFile } from "node:child_process";
+import { promisify } from "node:util";
+import { fileURLToPath } from "node:url";
 import { readFile, writeFile, mkdir } from "node:fs/promises";
-import { CONFIG, buildCalendarFeed, fetchLinqMenu, addDaysISO, localISODate } from "../src/worker.js";
+import { CONFIG, buildCalendarFeed, fetchLinqMenu, normalizeLinq, addDaysISO, localISODate } from "../src/worker.js";
 
 // The generator does not need the host's HTTP cache.
 globalThis.caches = { default: { async match() { return undefined; } } };
@@ -22,7 +25,20 @@ let lastSuccessfulAt = previous.lastSuccessfulAt || null;
 let errorMessage = null;
 
 try {
-  const fresh = await fetchLinqMenu(start, end);
+  let fresh;
+  try {
+    fresh = await fetchLinqMenu(start, end);
+  } catch (firstError) {
+    // Some public LINQ endpoints reject Node's HTTP/TLS client.
+    const run = promisify(execFile);
+    const { stdout } = await run(process.env.LINQ_BROWSER_PYTHON || "python3", [
+      fileURLToPath(new URL("scripts/fetch-linq.py", root)),
+      CONFIG.linq.buildingId, CONFIG.linq.districtId, start, end
+    ], { timeout: 90000, maxBuffer: 8 * 1024 * 1024 });
+    const data = JSON.parse(stdout);
+    if (!Array.isArray(data?.FamilyMenuSessions)) throw new Error("Unrecognized LINQ menu response");
+    fresh = normalizeLinq(data);
+  }
   for (const [date, meals] of Object.entries(fresh)) {
     menu[date] = { ...menu[date], ...meals };
   }

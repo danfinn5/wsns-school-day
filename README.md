@@ -50,6 +50,10 @@ node --test test/calendar.test.js
 node scripts/generate-calendar.mjs
 ~~~
 
+If LINQ blocks the standard Node client, the generator uses a browser-compatible
+Python client. Install curl_cffi==0.17.0 for that fallback; the workflow prepares
+an isolated Python environment automatically.
+
 ## Sources and limits
 
 - [Official school-year calendar](https://www.somerville.k12.ma.us/wp-content/uploads/2026/09/2627-Calendar-English.pdf), revised July 28, 2026.
