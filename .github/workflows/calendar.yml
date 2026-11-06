@@ -32,13 +32,11 @@ jobs:
           node-version: "22"
       - name: Check calendar behavior
         run: node --test test/calendar.test.js
-      - name: Prepare browser-compatible menu client
+      - name: Prepare browser menu client
         run: |
-          python3 -m venv .venv
-          .venv/bin/python -m pip install --quiet curl_cffi==0.17.0
+          npm install --no-save --package-lock=false --ignore-scripts playwright@1.65.0
+          npx playwright install --with-deps chromium
       - name: Refresh public school calendar
-        env:
-          LINQ_BROWSER_PYTHON: .venv/bin/python
         run: node scripts/generate-calendar.mjs
       - name: Publish calendar
         run: |

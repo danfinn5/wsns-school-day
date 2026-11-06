@@ -50,9 +50,9 @@ node --test test/calendar.test.js
 node scripts/generate-calendar.mjs
 ~~~
 
-If LINQ blocks the standard Node client, the generator uses a browser-compatible
-Python client. Install curl_cffi==0.17.0 for that fallback; the workflow prepares
-an isolated Python environment automatically.
+When LINQ rejects the standard HTTP client, the generator retries in Chromium.
+For that fallback, install Playwright 1.65.0 and its Chromium browser. The scheduled
+workflow prepares both automatically.
 
 ## Sources and limits
 

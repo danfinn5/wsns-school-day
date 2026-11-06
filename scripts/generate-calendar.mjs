@@ -29,12 +29,11 @@ try {
   try {
     fresh = await fetchLinqMenu(start, end);
   } catch (firstError) {
-    // Some public LINQ endpoints reject Node's HTTP/TLS client.
-    const run = promisify(execFile);
-    const { stdout } = await run(process.env.LINQ_BROWSER_PYTHON || "python3", [
-      fileURLToPath(new URL("scripts/fetch-linq.py", root)),
-      CONFIG.linq.buildingId, CONFIG.linq.districtId, start, end
-    ], { timeout: 90000, maxBuffer: 8 * 1024 * 1024 });
+    // Fetch the public menu in a browser when LINQ rejects the plain HTTP client.
+    const { stdout } = await promisify(execFile)(process.execPath, [
+      fileURLToPath(new URL("scripts/fetch-linq-browser.mjs", root)),
+      CONFIG.links.menu, CONFIG.linq.buildingId, CONFIG.linq.districtId, start, end
+    ], { timeout: 100000, maxBuffer: 8 * 1024 * 1024 });
     const data = JSON.parse(stdout);
     if (!Array.isArray(data?.FamilyMenuSessions)) throw new Error("Unrecognized LINQ menu response");
     fresh = normalizeLinq(data);
