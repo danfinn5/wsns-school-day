@@ -1,100 +1,73 @@
-# WSNS School Day
+# WSNS Lunch & School Days
 
-A small installable web app for **West Somerville Neighborhood School** that combines:
+Subscribe in Google Calendar to see West Somerville's lunch menu, school closures,
+Wednesday early releases, and noon dismissals. A separate website host is not needed.
 
-- the official Somerville 2026–27 school-year schedule
-- West Somerville's LINQ Connect lunch menu
-- a live forecast at the school
-- early-release/no-school/noon-dismissal warnings
-- an automatically generated `.ics` feed for Google Calendar
+## Subscribe
 
-The app is a **PWA**: on iPhone, open it in Safari and use **Share → Add to Home Screen**. No App Store account is needed.
+On a computer, open Google Calendar → Other calendars → **+** → **From URL**.
+Paste this address and choose **Add calendar**:
 
-## Why Cloudflare Worker?
+https://raw.githubusercontent.com/danfinn5/wsns-school-day/main/calendar/wsns.ics
 
-LINQ Connect's API has bot protection that can reject ordinary server/datacenter requests. This project uses a Cloudflare Worker as the app host and menu proxy, with browser-like headers and caching.
+Subscribe to the URL rather than importing a downloaded file, so future updates appear.
+Each family member can subscribe to the same address. Google controls when it refreshes;
+last-minute changes may not appear immediately.
 
-No database is required. No API keys are required.
+The feed is named **WSNS Lunch & School Days**. It contains public school information
+and targets **grades K–8**.
 
-## Deploy
+## What appears
 
-### Option A: DigitalOcean App Platform (or any Node host)
+- Lunch choices and menu details when published by LINQ Connect.
+- No-school dates from the official 2026–27 Somerville calendar.
+- Wednesday dismissal at 1:00 PM, except on closures and noon-dismissal dates.
+- Noon dismissals, including the days before Thanksgiving and winter recess.
+- No weather or generic daily attendance events.
 
-`server.js` wraps the worker in a plain Node HTTP server (no extra dependencies).
+Lunch dates already retrieved stay in the saved calendar, including past dates.
+When a refresh fails, the last saved menu stays available and is marked as saved.
+Missing lunches within the next two weeks are explicitly marked unavailable or not
+yet published; meals are never inferred from a repeating rotation.
 
-```bash
-npm start
-```
+## Automatic refresh
 
-On DigitalOcean App Platform: create an app from this GitHub repo; the Node
-buildpack auto-detects `npm start` and sets `PORT` automatically.
+[Refresh school calendar](https://github.com/danfinn5/wsns-school-day/actions/workflows/calendar.yml)
+runs every six hours, on relevant code pushes, and through **Run workflow**.
+It checks calendar behavior, fetches the next six weeks of menus, and commits:
 
-### Option B: Cloudflare Workers
+- calendar/wsns.ics — the subscription feed
+- calendar/menu.json — saved public menus and refresh status
 
-Requirements: a free Cloudflare account and Node.js.
+No API keys or paid host are needed. A menu-service failure produces a warning
+while still publishing the schedule and saved meals. Check fetchStatus,
+lastCheckedAt, and lastSuccessfulAt in the menu snapshot for source health.
 
-```bash
-npm install
-npx wrangler login
-npm run deploy
-```
+To refresh or check locally with Node 20 or newer:
 
-Wrangler will print a URL similar to:
+~~~bash
+node --test test/calendar.test.js
+node scripts/generate-calendar.mjs
+~~~
 
-```text
-https://wsns-school-day.YOUR-SUBDOMAIN.workers.dev
-```
+## Sources and limits
 
-Open it on your phone.
+- [Official school-year calendar](https://www.somerville.k12.ma.us/wp-content/uploads/2026/09/2627-Calendar-English.pdf), revised July 28, 2026.
+- [WSNS school hours](https://www.somerville.k12.ma.us/schools/west-somerville-pk-8/).
+- [LINQ Connect menu](https://linqconnect.com/public/menu/FE53U3?buildingId=dc643b2d-4be6-eb11-a2c9-d2abdd85801a).
 
-## Add it to Google Calendar
+The school-year dates are structured constants in src/worker.js; review them for
+each new school year and calendar revision. Snow days, emergency closures, school
+relocations, classroom announcements, and school-specific events are not automatically
+collected. Menus are subject to change. LINQ may block automated requests; failures
+are shown in refresh status and calendar descriptions.
 
-After deployment, your calendar feed is:
+## Existing web app
 
-```text
-https://YOUR-WORKER-URL/calendar.ics
-```
+The original installable dashboard still runs with npm start on a Node host or
+with Wrangler on Cloudflare Workers. It combines lunch, school hours, and weather.
+Its /calendar.ics endpoint uses the same lunch-and-schedule calendar renderer,
+while /api/data, /api/config, and /health remain available.
 
-In Google Calendar on the web:
-
-1. Open **Other calendars**
-2. Click **+**
-3. Choose **From URL**
-4. Paste the `/calendar.ics` URL
-
-Google Calendar will periodically refresh the subscription.
-
-The feed contains the full-year schedule changes plus a rolling near-term school-day event with lunch and weather. The web app should be considered the live view because subscribed calendar refresh intervals are controlled by Google.
-
-## Data sources
-
-- Lunch: LINQ Connect `FamilyMenu` API
-- Weather: Open-Meteo
-- Schedule: Somerville Public Schools 2026–27 calendar, revised July 28, 2026
-- School hours: WSNS K–8 8:10 AM–2:35 PM; Wednesdays 1:00 PM dismissal
-
-## Configuration
-
-Everything school-specific is at the top of `src/worker.js` in `CONFIG`.
-
-The project currently targets K–8 school hours. The 2026–27 calendar dates are encoded as structured constants so they are easy to audit and update each summer.
-
-## Useful endpoints
-
-- `/` — app
-- `/api/data?days=10` — normalized dashboard JSON
-- `/calendar.ics` — Google Calendar subscription feed
-- `/health` — simple health check
-
-## Next upgrades
-
-Good candidates:
-
-- pull WSNS-specific live events from the SPS event calendar, not only the annual district schedule
-- push/email a Sunday-night "week ahead" summary
-- pollen / air-quality alert
-- snow-day / emergency closure banner
-- kid mode with huge lunch cards
-- multiple children/schools
-- configurable allergies
-- daily "what to wear / pack" notification
+Deployment configuration is in .do/app.yaml (DigitalOcean) and wrangler.jsonc
+(Cloudflare). The standalone subscription above does not depend on either host.

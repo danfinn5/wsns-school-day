@@ -16,7 +16,7 @@ const CONFIG = {
   links: {
     menu: "https://linqconnect.com/public/menu/FE53U3?buildingId=dc643b2d-4be6-eb11-a2c9-d2abdd85801a",
     districtCalendar: "https://somerville.k12.ma.us/events/calendar",
-    annualCalendar: "https://somerville.k12.ma.us/2026-2027-school-year-calendar-1",
+    annualCalendar: "https://www.somerville.k12.ma.us/wp-content/uploads/2026/09/2627-Calendar-English.pdf",
     school: "https://somerville.k12.ma.us/schools/west-somerville-neighborhood-school-pk%E2%80%938"
   },
   schoolYear: {
@@ -176,6 +176,7 @@ async function fetchLinqMenu(startISO, endISO, ctx) {
   url.searchParams.set("endDate", toMDY(endISO));
 
   const response = await cachedFetch(url.toString(), {
+    signal: AbortSignal.timeout(25000),
     headers: {
       "accept": "application/json, text/plain, */*",
       "accept-language": "en-US,en;q=0.9",
@@ -190,6 +191,7 @@ async function fetchLinqMenu(startISO, endISO, ctx) {
   }
 
   const data = await response.json();
+  if (!Array.isArray(data?.FamilyMenuSessions)) throw new Error("Unrecognized LINQ menu response");
   return normalizeLinq(data);
 }
 
@@ -381,90 +383,111 @@ function packSuggestion(weather, status) {
   return bits.length ? bits.join(" · ") : "normal school-day gear";
 }
 
-async function buildCalendarFeed(ctx) {
-  const today = localISODate(new Date());
-  const forecastEnd = addDaysISO(today, 15);
+async function buildCalendarFeed(ctx, options = {}) {
+  const now = options.now || new Date();
+  const today = options.today || localISODate(now);
+  const end = addDaysISO(today, 41);
+  let menu = options.menu;
+  let menuUnavailable = Boolean(options.menuUnavailable);
 
-  const [menuResult, weatherResult] = await Promise.allSettled([
-    fetchLinqMenu(today, forecastEnd, ctx),
-    fetchWeather(16, ctx)
-  ]);
-
-  const menu = menuResult.status === "fulfilled" ? menuResult.value : {};
-  const weather = weatherResult.status === "fulfilled" ? weatherResult.value : {};
+  // A menu failure must not remove school schedule events.
+  if (menu === undefined) {
+    try {
+      menu = await fetchLinqMenu(today, end, ctx);
+    } catch {
+      menu = {};
+      menuUnavailable = true;
+    }
+  }
 
   const events = [];
+  const scheduleDescription = [
+    "West Somerville Neighborhood School, grades K–8.",
+    "Schedule source: " + CONFIG.links.annualCalendar,
+    "Emergency closures and school-specific announcements are not automatically included."
+  ].join("\n");
 
-  // Annual schedule events.
   for (const [date, title] of Object.entries(NO_SCHOOL)) {
     if (date >= CONFIG.schoolYear.start && date <= CONFIG.schoolYear.end) {
-      events.push(icalEvent(`closed-${date}`, date, title, "Somerville Public Schools 2026–27 calendar."));
+      events.push(icalEvent("closed-" + date, date, title, scheduleDescription));
     }
   }
   for (const [date, title] of Object.entries(NOON_DISMISSAL)) {
-    events.push(icalEvent(`noon-${date}`, date, title, "Grades K–8: noon dismissal."));
+    events.push(icalEvent("noon-" + date, date, title,
+      "Grades K–8: noon dismissal.\n" + scheduleDescription));
   }
 
-  // All early-release Wednesdays, except closures/noon-dismissal dates.
-  let d = CONFIG.schoolYear.start;
-  while (d <= CONFIG.schoolYear.end) {
-    const status = schoolStatus(d);
-    if (status.type === "early") {
-      events.push(icalEvent(
-        `early-${d}`,
-        d,
-        "Early release — 1:00 PM",
-        "West Somerville Neighborhood School grades K–8 dismiss at 1:00 PM."
-      ));
+  let date = CONFIG.schoolYear.start;
+  while (date <= CONFIG.schoolYear.end) {
+    if (schoolStatus(date).type === "early") {
+      events.push(icalEvent("early-" + date, date, "Early release — 1:00 PM",
+        "Grades K–8 dismiss at 1:00 PM.\n" + scheduleDescription));
     }
-    d = addDaysISO(d, 1);
+    date = addDaysISO(date, 1);
   }
 
-  // Rolling near-term daily cards: lunch + weather.
-  for (let i = 0; i < 16; i++) {
-    const date = addDaysISO(today, i);
-    const status = schoolStatus(date);
+  // Keep saved lunch dates so past events do not disappear as the feed rolls forward.
+  // Add explicit placeholders only for the next two weeks when no menu is available.
+  const lunchDates = new Set(Object.keys(menu));
+  for (let i = 0; i < 14; i++) lunchDates.add(addDaysISO(today, i));
+  for (const day of [...lunchDates].sort()) {
+    const status = schoolStatus(day);
     if (!["regular", "early", "noon"].includes(status.type)) continue;
-
-    const lunch = menu[date]?.lunch;
-    const entrees = lunch?.entrees?.map(x => x.name) || [];
-    const wx = weather[date];
-
-    const titleParts = [];
-    if (entrees.length) titleParts.push(`Lunch: ${entrees.slice(0, 2).join(" / ")}`);
-    else titleParts.push("School day");
-
-    if (wx) titleParts.push(`${wx.high}°/${wx.low}° ${wx.label}`);
-
-    const desc = [
-      status.label,
-      status.detail,
+    const lunch = menu[day]?.lunch;
+    const entrees = lunch?.entrees?.map(item => item.name).filter(Boolean) || [];
+    const allItems = lunch?.all?.map(item => item.name).filter(Boolean) || entrees;
+    const title = entrees.length
+      ? "Lunch: " + entrees.join(" / ")
+      : menuUnavailable ? "Lunch: menu temporarily unavailable" : "Lunch: menu not yet published";
+    const description = [
+      status.label + (status.dismissal ? " — dismissal " + status.dismissal : ""),
       "",
-      entrees.length ? `Lunch: ${entrees.join(", ")}` : "Lunch menu not yet published.",
-      wx ? `Weather: ${wx.label}; high ${wx.high}°F, low ${wx.low}°F; rain ${wx.rainChance ?? 0}%.` : "Forecast not available.",
+      allItems.length ? "Menu: " + [...new Set(allItems)].join(", ") : title,
+      menuUnavailable && allItems.length
+        ? "Showing the last saved menu; the latest refresh could not reach the menu service." : "",
+      options.lastSuccessfulAt ? "Menu last retrieved: " + options.lastSuccessfulAt : "",
       "",
-      "Live dashboard: open this calendar feed's host in a browser.",
-      "Menu source: LINQ Connect.",
-      "Schedule source: Somerville Public Schools."
-    ].join("\n");
-
-    events.push(icalEvent(`schoolday-${date}`, date, titleParts.join(" · "), desc));
+      "Official menu: " + CONFIG.links.menu,
+      "Menus are subject to change."
+    ].filter(line => line !== "").join("\n");
+    events.push(icalEvent("schoolday-" + day, day, title, description));
   }
 
-  const stamp = toICSDateTime(new Date());
-  return [
+  const stamp = toICSDateTime(now);
+  const lines = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
     "PRODID:-//WSNS School Day//EN",
     "CALSCALE:GREGORIAN",
     "METHOD:PUBLISH",
-    "X-WR-CALNAME:WSNS School Day",
+    "X-WR-CALNAME:WSNS Lunch & School Days",
     "X-WR-TIMEZONE:America/New_York",
-    `X-WR-CALDESC:${icsEscape("West Somerville school schedule, lunch menu, and rolling weather.")}`,
-    ...events.map(e => e.replace("__DTSTAMP__", stamp)),
+    "X-WR-CALDESC:" + icsEscape("West Somerville lunch, school closures, and dismissal changes. Grades K–8. No weather."),
+    ...events.flatMap(event => event.replace("__DTSTAMP__", stamp).split("\r\n")),
     "END:VCALENDAR",
     ""
-  ].join("\r\n");
+  ];
+  return lines.map(foldICalendarLine).join("\r\n");
+}
+
+// RFC 5545 folding uses 75 UTF-8 octets, including the continuation space.
+function foldICalendarLine(line) {
+  const folded = [];
+  let part = "";
+  let octets = 0;
+  for (const character of line) {
+    const point = character.codePointAt(0);
+    const width = point < 0x80 ? 1 : point < 0x800 ? 2 : point < 0x10000 ? 3 : 4;
+    if (octets + width > 75) {
+      folded.push(part);
+      part = " ";
+      octets = 1;
+    }
+    part += character;
+    octets += width;
+  }
+  folded.push(part);
+  return folded.join("\r\n");
 }
 
 function icalEvent(uid, date, summary, description) {
@@ -561,3 +584,5 @@ function jsonResponse(data, status = 200) {
     }
   });
 }
+
+export { CONFIG, buildCalendarFeed, fetchLinqMenu, normalizeLinq, schoolStatus, addDaysISO, localISODate, foldICalendarLine };

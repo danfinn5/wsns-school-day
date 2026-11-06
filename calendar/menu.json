@@ -1,0 +1,8 @@
+{
+  "school": "West Somerville Neighborhood School",
+  "lastCheckedAt": null,
+  "lastSuccessfulAt": null,
+  "fetchStatus": "pending",
+  "error": "Awaiting first automated menu refresh.",
+  "menu": {}
+}

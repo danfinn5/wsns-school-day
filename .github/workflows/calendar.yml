@@ -1,0 +1,45 @@
+name: Refresh school calendar
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "scripts/**"
+      - "test/**"
+      - ".github/workflows/calendar.yml"
+  schedule:
+    - cron: "17 3,9,15,21 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: school-calendar
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check calendar behavior
+        run: node --test test/calendar.test.js
+      - name: Refresh public school calendar
+        run: node scripts/generate-calendar.mjs
+      - name: Publish calendar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add calendar/wsns.ics calendar/menu.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh school calendar"
+            git push origin HEAD:main
+          fi
