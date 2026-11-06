@@ -10,11 +10,11 @@ const CONFIG = {
     wednesday: "8:10 AM–1:00 PM"
   },
   linq: {
-    buildingId: "dc643b2d-4be6-eb11-a2c9-d2abdd85801a",
+    buildingId: "14d70caa-49e6-eb11-a2c9-fa7552227e36",
     districtId: "7810c14e-a7e4-eb11-a2c5-8cc0b3a2728d"
   },
   links: {
-    menu: "https://linqconnect.com/public/menu/FE53U3?buildingId=dc643b2d-4be6-eb11-a2c9-d2abdd85801a",
+    menu: "https://linqconnect.com/public/menu/FE53U3?buildingId=14d70caa-49e6-eb11-a2c9-fa7552227e36",
     districtCalendar: "https://somerville.k12.ma.us/events/calendar",
     annualCalendar: "https://www.somerville.k12.ma.us/wp-content/uploads/2026/09/2627-Calendar-English.pdf",
     school: "https://somerville.k12.ma.us/schools/west-somerville-neighborhood-school-pk%E2%80%938"

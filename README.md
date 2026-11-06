@@ -62,7 +62,7 @@ node scripts/generate-calendar.mjs
 
 - [Official school-year calendar](https://www.somerville.k12.ma.us/wp-content/uploads/2026/09/2627-Calendar-English.pdf), revised July 28, 2026.
 - [WSNS school hours](https://www.somerville.k12.ma.us/schools/west-somerville-pk-8/).
-- [LINQ Connect menu](https://linqconnect.com/public/menu/FE53U3?buildingId=dc643b2d-4be6-eb11-a2c9-d2abdd85801a).
+- [LINQ Connect menu](https://linqconnect.com/public/menu/FE53U3?buildingId=14d70caa-49e6-eb11-a2c9-fa7552227e36).
 
 The school-year dates are structured constants in src/worker.js; review them for
 each new school year and calendar revision. Snow days, emergency closures, school
