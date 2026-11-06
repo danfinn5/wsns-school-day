@@ -1,3 +1,4 @@
+import { updateCalendarRevisions } from "../scripts/calendar-revisions.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { buildCalendarFeed, schoolStatus, foldICalendarLine, normalizeLinq, normalizeConnectorMenu, fetchLinqMenu, CONFIG } from "../src/worker.js";
@@ -129,4 +130,33 @@ test("blocked LINQ requests fall back using the exact selected school and date r
     globalThis.fetch = savedFetch;
     globalThis.caches = savedCaches;
   }
+});
+
+test("published event revisions persist and increase when unavailable menus become real meals", async () => {
+  const oldFeed = await buildCalendarFeed(null, { ...options, menuUnavailable: true });
+  const first = updateCalendarRevisions(oldFeed, {}, options.now);
+  const uid = "schoolday-2026-11-09@wsns-school-day";
+  assert.equal(first.revisions[uid].sequence, 1);
+  const later = new Date("2026-11-06T18:00:00Z");
+  const unchangedFeed = await buildCalendarFeed(null, { ...options, now: later, menuUnavailable: true });
+  const unchanged = updateCalendarRevisions(unchangedFeed, first.revisions, later);
+  assert.equal(unchanged.revisions[uid].sequence, 1);
+  assert.equal(unchanged.revisions[uid].lastModified, first.revisions[uid].lastModified);
+  assert.equal(unchanged.changedEvents, 0);
+
+  const menu = { "2026-11-09": { lunch: {
+    entrees: [{ name: "Sweet and Sour Chicken" }, { name: "Sweet and Sour Tofu" }],
+    all: [{ name: "Sweet and Sour Chicken" }, { name: "Sweet and Sour Tofu" }]
+  } } };
+  const changedFeed = await buildCalendarFeed(null, { ...options, now: later, menu });
+  const changed = updateCalendarRevisions(changedFeed, unchanged.revisions, later);
+  assert.equal(changed.revisions[uid].sequence, 2);
+  assert.equal(changed.revisions[uid].lastModified, "20261106T180000Z");
+  const meal = eventFor(changed.calendar, "schoolday-2026-11-09");
+  assert.ok(meal.includes("SEQUENCE:2\r\n"));
+  assert.ok(meal.includes("LAST-MODIFIED:20261106T180000Z\r\n"));
+  assert.ok(meal.includes("Sweet and Sour Chicken / Sweet and Sour Tofu"));
+  assert.equal(changed.revisions["closed-2026-11-11@wsns-school-day"].sequence, 1);
+  const ids = [...unfold(changed.calendar).matchAll(/^UID:(.+)$/gm)].map(match => match[1]);
+  assert.equal(ids.length, new Set(ids).size);
 });

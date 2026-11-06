@@ -8,10 +8,16 @@ releases, and noon dismissals. No separate website host is required.
 On a computer, open Google Calendar → Other calendars → **+** → **From URL**.
 Paste this address and choose **Add calendar**:
 
-https://raw.githubusercontent.com/danfinn5/wsns-school-day/main/calendar/wsns.ics
+https://raw.githubusercontent.com/danfinn5/wsns-school-day/main/calendar/wsns-v2.ics
 
 Subscribe to the URL rather than importing a downloaded file so changes appear.
-Existing subscribers keep the same URL. Google controls its own refresh timing.
+Google controls its own refresh timing. If an earlier subscription still shows
+the original unavailable menus, unsubscribe from that old calendar and add the
+v2 URL above. It is a fresh address for Google's importer. Both feed paths continue
+to update, so existing subscribers can also wait for Google's next refresh.
+
+Each event has a stable UID, a persistent SEQUENCE revision, and LAST-MODIFIED
+metadata. The revision increases when that event's content changes.
 
 ## Menu source
 
@@ -50,7 +56,8 @@ marked unavailable or not yet published. Lunches are never inferred from a rotat
 [Refresh school calendar](https://github.com/danfinn5/wsns-school-day/actions/workflows/calendar.yml)
 runs every six hours, on relevant code pushes, and through **Run workflow**.
 It tests the renderer and fallback behavior, fetches the next two weeks of menus,
-then publishes calendar/wsns.ics and calendar/menu.json.
+then publishes calendar/wsns.ics, calendar/wsns-v2.ics, calendar/menu.json,
+and calendar/revisions.json.
 
 The collector scopes saved meals to the configured building and district IDs.
 Changing schools does not reuse another school's saved menu.

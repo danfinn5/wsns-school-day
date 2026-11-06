@@ -1,3 +1,4 @@
+import { updateCalendarRevisions } from "./calendar-revisions.mjs";
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { CONFIG, buildCalendarFeed, fetchLinqMenu, addDaysISO, localISODate } from "../src/worker.js";
 
@@ -49,12 +50,22 @@ const snapshot = {
   error: errorMessage,
   menu
 };
-const feed = await buildCalendarFeed(null, {
+const rendered = await buildCalendarFeed(null, {
   today, now, menu,
   menuUnavailable: fetchStatus !== "ok",
   lastSuccessfulAt
 });
+let previousRevisions = {};
+try {
+  previousRevisions = JSON.parse(await readFile(new URL("calendar/revisions.json", root), "utf8"));
+} catch (error) {
+  if (error.code !== "ENOENT") throw error;
+}
+const revised = updateCalendarRevisions(rendered, previousRevisions, now);
+const feed = revised.calendar;
 await mkdir(new URL("calendar/", root), { recursive: true });
 await writeFile(snapshotURL, JSON.stringify(snapshot, null, 2) + "\n");
 await writeFile(new URL("calendar/wsns.ics", root), feed);
+await writeFile(new URL("calendar/wsns-v2.ics", root), feed);
+await writeFile(new URL("calendar/revisions.json", root), JSON.stringify(revised.revisions, null, 2) + "\n");
 console.log("Calendar generated: " + (feed.match(/BEGIN:VEVENT/g) || []).length + " events; menu " + fetchStatus);
