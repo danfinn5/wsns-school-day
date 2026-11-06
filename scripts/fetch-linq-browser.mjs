@@ -1,4 +1,4 @@
-import { chromium } from "playwright";
+const { chromium } = await import(process.env.PLAYWRIGHT_MODULE || "playwright");
 
 const [menuPage, buildingId, districtId, start, end] = process.argv.slice(2);
 const mdy = value => {
@@ -10,7 +10,7 @@ for (const [key, value] of Object.entries({
   buildingId, districtId, startDate: mdy(start), endDate: mdy(end)
 })) api.searchParams.set(key, value);
 
-const browser = await chromium.launch({ headless: true });
+const browser = await chromium.launch({ headless: true, channel: "chrome" });
 let data;
 try {
   const page = await browser.newPage();

@@ -33,10 +33,12 @@ jobs:
       - name: Check calendar behavior
         run: node --test test/calendar.test.js
       - name: Prepare browser menu client
-        run: |
-          npm install --no-save --package-lock=false --ignore-scripts playwright@1.65.0
-          npx playwright install --with-deps chromium
+        continue-on-error: true
+        timeout-minutes: 1
+        run: npm install --prefix /tmp/wsns-browser --no-save --package-lock=false --ignore-scripts --fetch-retries=1 playwright-core@1.65.0
       - name: Refresh public school calendar
+        env:
+          PLAYWRIGHT_MODULE: /tmp/wsns-browser/node_modules/playwright-core/index.mjs
         run: node scripts/generate-calendar.mjs
       - name: Publish calendar
         run: |

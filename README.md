@@ -51,8 +51,9 @@ node scripts/generate-calendar.mjs
 ~~~
 
 When LINQ rejects the standard HTTP client, the generator retries in Chromium.
-For that fallback, install Playwright 1.65.0 and its Chromium browser. The scheduled
-workflow prepares both automatically.
+For that fallback, install Playwright 1.65.0 and Google Chrome. The scheduled workflow uses the
+Chrome browser already installed on the runner. Browser-client setup failures do
+not prevent school schedule updates.
 
 ## Sources and limits
 
