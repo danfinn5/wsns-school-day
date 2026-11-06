@@ -57,19 +57,3 @@ try {
   await browser.close();
   server.close();
 }
-const observations=[];
-for (const [label,url] of [
-  ["netlify","https://danfinn5.netlify.app/"],
-  ["github-pages","https://danfinn5.github.io/"],
-  ["portfolio-pages-settings","https://api.github.com/repos/danfinn5/danfinn5.github.io/pages"],
-  ["school-deployments","https://api.github.com/repos/danfinn5/wsns-school-day/deployments?per_page=3"],
-  ["portfolio-deployments","https://api.github.com/repos/danfinn5/danfinn5.github.io/deployments?per_page=3"]
-]) {
-  try {
-    const response=await fetch(url,{headers:{accept:"application/json"},signal:AbortSignal.timeout(15000)});
-    const text=await response.text();let data;try{data=JSON.parse(text);}catch{}
-    const result={label,status:response.status,url:response.url,details:data?Array.isArray(data)?data.map(d=>({id:d.id,environment:d.environment,statuses_url:d.statuses_url})):data:text.slice(0,250)};
-    observations.push(result);console.log(JSON.stringify(result));
-  } catch(error){observations.push({label,error:error.message});console.log(JSON.stringify({label,error:error.message}));}
-}
-await writeFile(resolve(root,"artifacts/hosting-status.json"),JSON.stringify(observations,null,2));
