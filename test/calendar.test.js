@@ -39,7 +39,7 @@ test("feed preserves annual schedule when menus are unavailable and excludes wea
 test("saved lunch history and stable UIDs survive later refreshes", async () => {
   const menu = {
     "2026-10-01": { lunch: { entrees: [{ name: "Pasta, tomato; sauce" }], all: [{ name: "Pasta, tomato; sauce" }] } },
-    "2026-11-09": { lunch: { entrees: [{ name: "Tacos" }], all: [{ name: "Tacos" }, { name: "Rice" }] } }
+    "2026-11-09": { lunch: { entrees: [{ name: "Tacos" }], all: [{ name: "Tacos" }, { name: "Rice", category: "Side" }], sides: [{ name: "Rice", category: "Side" }] } }
   };
   const feed = await buildCalendarFeed(null, { ...options, menu, menuUnavailable: true });
   const next = await buildCalendarFeed(null, { ...options, today: "2026-12-01", menu });
@@ -125,7 +125,7 @@ test("blocked LINQ requests fall back using the exact selected school and date r
     assert.equal(menu["2026-11-09"].lunch.entrees.length, 2);
     const calendar = await buildCalendarFeed(null, { ...options, menu });
     assert.ok(unfold(calendar).includes("Sweet and Sour Chicken / Sweet and Sour Tofu"));
-    assert.ok(unfold(calendar).includes("Menu retrieved via School Menu Connector"));
+    assert.ok(!unfold(calendar).includes("Menu retrieved via"));
   } finally {
     globalThis.fetch = savedFetch;
     globalThis.caches = savedCaches;
@@ -159,4 +159,23 @@ test("published event revisions persist and increase when unavailable menus beco
   assert.equal(changed.revisions["closed-2026-11-11@wsns-school-day"].sequence, 1);
   const ids = [...unfold(changed.calendar).matchAll(/^UID:(.+)$/gm)].map(match => match[1]);
   assert.equal(ids.length, new Set(ids).size);
+});
+
+test("calendar bodies show readable main choices and sides, with full alternatives left on the dashboard", async () => {
+  const menu = normalizeConnectorMenu({ events: [{
+    date: "2026-11-09", mealType: "Lunch",
+    description: "Lunch Menu for 11/9/2026:\n\nHot Entree:\n  Hot Entree:\n    - Sweet and Sour Chicken\n    - Sweet and Sour Tofu\n  Side:\n    - White Rice\n  Vegetable:\n    - Steamed Vegetable Blend\n\nDeli:\n  Deli:\n    - Sunbutter Sandwich\n\nGrab & Go Salad:\n  Side:\n    - Pita Bread\n  Protein:\n    - Assorted Salad Proteins\n\n"
+  }] }, "2026-11-09", "2026-11-09");
+  const lunch = menu["2026-11-09"].lunch;
+  assert.equal(lunch.all.length, 7);
+  assert.equal(lunch.sides.length, 2);
+  const feed = await buildCalendarFeed(null, { ...options, menu, lastSuccessfulAt: "2026-11-06T12:00:00Z" });
+  const meal = eventFor(feed, "schoolday-2026-11-09");
+  assert.ok(meal.includes("Lunch:\\n• Sweet and Sour Chicken\\n• Sweet and Sour Tofu"));
+  assert.ok(meal.includes("Sides:\\n• White Rice\\n• Steamed Vegetable Blend"));
+  assert.ok(!meal.includes("Sunbutter Sandwich"));
+  assert.ok(!meal.includes("Assorted Salad Proteins"));
+  assert.ok(!meal.includes("Menu last retrieved"));
+  assert.ok(!meal.includes("Menu retrieved via"));
+  assert.ok(meal.includes("Full menu: https://danfinn5.netlify.app/wsns/"));
 });

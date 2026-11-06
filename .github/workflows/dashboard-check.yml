@@ -1,0 +1,34 @@
+name: Check school dashboard
+on:
+  push:
+    paths:
+      - "public/**"
+      - "src/**"
+      - "scripts/check-dashboard.mjs"
+      - ".github/workflows/dashboard-check.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node --test test/calendar.test.js
+      - run: node scripts/generate-calendar.mjs
+      - name: Prepare browser check
+        run: npm install --prefix /tmp/wsns-browser --no-save --package-lock=false --ignore-scripts --fetch-retries=1 playwright-core@1.65.0
+      - name: Check dashboard
+        env:
+          PLAYWRIGHT_MODULE: /tmp/wsns-browser/node_modules/playwright-core/index.mjs
+        run: node scripts/check-dashboard.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: dashboard-check
+          path: artifacts/
+          retention-days: 7

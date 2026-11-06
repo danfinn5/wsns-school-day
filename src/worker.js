@@ -14,6 +14,7 @@ const CONFIG = {
     districtId: "7810c14e-a7e4-eb11-a2c5-8cc0b3a2728d"
   },
   links: {
+    dashboard: "https://danfinn5.netlify.app/wsns/",
     menu: "https://linqconnect.com/public/menu/FE53U3?buildingId=14d70caa-49e6-eb11-a2c9-fa7552227e36",
     districtCalendar: "https://somerville.k12.ma.us/events/calendar",
     annualCalendar: "https://www.somerville.k12.ma.us/wp-content/uploads/2026/09/2627-Calendar-English.pdf",
@@ -122,12 +123,13 @@ export default {
   }
 };
 
-async function getDashboardData(days, ctx) {
-  const today = localISODate(new Date());
+async function getDashboardData(days, ctx, options = {}) {
+  const now = options.now || new Date();
+  const today = localISODate(now);
   const end = addDaysISO(today, days - 1);
 
   const [menuResult, weatherResult] = await Promise.allSettled([
-    fetchLinqMenu(today, end, ctx),
+    options.menu === undefined ? fetchLinqMenu(today, end, ctx) : Promise.resolve(options.menu),
     fetchWeather(days, ctx)
   ]);
 
@@ -151,7 +153,7 @@ async function getDashboardData(days, ctx) {
   const upcoming = getUpcomingSpecialDates(today, 120);
 
   return {
-    generatedAt: new Date().toISOString(),
+    generatedAt: now.toISOString(),
     school: {
       name: CONFIG.schoolName,
       shortName: CONFIG.shortName,
@@ -162,7 +164,7 @@ async function getDashboardData(days, ctx) {
     days: rows,
     upcoming,
     warnings: [
-      ...(menuResult.status === "rejected" ? ["Lunch menu is temporarily unavailable."] : []),
+      ...(menuResult.status === "rejected" || options.menuUnavailable ? ["Showing saved lunch menus while the menu service is unavailable."] : []),
       ...(weatherResult.status === "rejected" ? ["Weather is temporarily unavailable."] : [])
     ]
   };
@@ -233,20 +235,25 @@ function normalizeConnectorMenu(data, startISO, endISO) {
     if (!/^\d{4}-\d{2}-\d{2}$/.test(date || "") || date < startISO || date > endISO) continue;
     try { if (addDaysISO(date, 0) !== date) continue; } catch { continue; }
     let category = "Other";
+    let group = "Lunch";
     const items = [];
     for (const line of event.description.split(/\r?\n/)) {
+      const section = line.match(/^(\S.*):\s*$/);
+      if (section && !/^Lunch Menu for /i.test(section[1])) group = section[1].trim();
       const heading = line.match(/^\s{2}(\S.*):\s*$/);
       if (heading) category = heading[1].trim();
       const recipe = line.match(/^\s*-\s+(.+)$/);
-      if (recipe) items.push({ name: recipe[1].trim(), category, allergens: [] });
+      if (recipe) items.push({ name: recipe[1].trim(), category, group, allergens: [] });
     }
     const all = dedupeByName(items);
     if (!all.length) continue;
-    const mains = all.filter(item => /entrée|entree|main|protein|hot sandwich/i.test(item.category));
+    const candidates = all.filter(item => /entrée|entree|main|protein|hot sandwich/i.test(item.category));
+    const hotChoices = candidates.filter(item => /hot|main/i.test(item.group));
+    const mains = hotChoices.length ? hotChoices : candidates;
     const entrees = (mains.length ? mains : all).slice(0, 6);
     out[date] = { lunch: {
       entrees,
-      sides: all.filter(item => !entrees.some(main => main.name === item.name)).slice(0, 8),
+      sides: all.filter(item => /side|vegetable|grain/i.test(item.category) && entrees.some(main => main.group === item.group)).slice(0, 8),
       all,
       source: "School Menu Connector"
     }};
@@ -277,6 +284,7 @@ function normalizeLinq(data) {
               categories.push({
                 name,
                 category: categoryName,
+                group: String(meal?.MenuMealName || "Lunch"),
                 allergens: recipe?.Allergens || []
               });
             }
@@ -284,8 +292,10 @@ function normalizeLinq(data) {
         }
 
         const unique = dedupeByName(categories);
-        const entrees = unique.filter(x => /entrée|entree|main|protein/i.test(x.category));
-        const sides = unique.filter(x => !entrees.some(e => e.name === x.name));
+        const candidates = unique.filter(x => /entrée|entree|main|protein|hot sandwich/i.test(x.category));
+        const hotChoices = candidates.filter(item => /hot|main/i.test(item.group));
+        const entrees = hotChoices.length ? hotChoices : candidates;
+        const sides = unique.filter(x => /side|vegetable|grain/i.test(x.category) && (!entrees.length || entrees.some(e => e.group === x.group)));
 
         out[date] ||= {};
         out[date][mealKey] = {
@@ -336,7 +346,7 @@ async function fetchWeather(days, ctx) {
     "wind_speed_10m_max"
   ].join(","));
 
-  const response = await cachedFetch(url.toString(), {}, 60 * 30, ctx);
+  const response = await cachedFetch(url.toString(), { signal: AbortSignal.timeout(15000) }, 60 * 30, ctx);
   if (!response.ok) throw new Error(`Weather returned ${response.status}`);
   const data = await response.json();
   const d = data?.daily || {};
@@ -460,11 +470,7 @@ async function buildCalendarFeed(ctx, options = {}) {
   }
 
   const events = [];
-  const scheduleDescription = [
-    "West Somerville Neighborhood School, grades K–8.",
-    "Schedule source: " + CONFIG.links.annualCalendar,
-    "Emergency closures and school-specific announcements are not automatically included."
-  ].join("\n");
+  const scheduleDescription = "Grades K–8.\nSchool schedule: " + CONFIG.links.dashboard;
 
   for (const [date, title] of Object.entries(NO_SCHOOL)) {
     if (date >= CONFIG.schoolYear.start && date <= CONFIG.schoolYear.end) {
@@ -494,22 +500,20 @@ async function buildCalendarFeed(ctx, options = {}) {
     if (!["regular", "early", "noon"].includes(status.type)) continue;
     const lunch = menu[day]?.lunch;
     const entrees = lunch?.entrees?.map(item => item.name).filter(Boolean) || [];
-    const allItems = lunch?.all?.map(item => item.name).filter(Boolean) || entrees;
     const title = entrees.length
       ? "Lunch: " + entrees.join(" / ")
       : menuUnavailable ? "Lunch: menu temporarily unavailable" : "Lunch: menu not yet published";
-    const description = [
-      status.label + (status.dismissal ? " — dismissal " + status.dismissal : ""),
-      "",
-      allItems.length ? "Menu: " + [...new Set(allItems)].join(", ") : title,
-      menuUnavailable && allItems.length
-        ? "Showing the last saved menu; the latest refresh could not reach the menu service." : "",
-      options.lastSuccessfulAt ? "Menu last retrieved: " + options.lastSuccessfulAt : "",
-      "",
-      "Official menu: " + CONFIG.links.menu,
-      lunch?.source ? "Menu retrieved via " + lunch.source + " (https://schoolmenuconnector.com)." : "",
-      "Menus are subject to change."
-    ].filter(line => line !== "").join("\n");
+    const sides = (lunch?.sides || [])
+      .filter(item => /side|vegetable|grain/i.test(item.category || ""))
+      .map(item => item.name).filter(Boolean).slice(0, 4);
+    const lines = entrees.length
+      ? ["Lunch:", ...entrees.map(name => "• " + name)]
+      : [menuUnavailable ? "Lunch menu temporarily unavailable." : "Lunch menu not yet published."];
+    if (sides.length) lines.push("", "Sides:", ...sides.map(name => "• " + name));
+    lines.push("", "Dismissal: " + status.dismissal);
+    if (menuUnavailable && entrees.length) lines.push("", "Showing the last saved menu.");
+    lines.push("", "Full menu: " + CONFIG.links.dashboard);
+    const description = lines.join("\n");
     events.push(icalEvent("schoolday-" + day, day, title, description));
   }
 
@@ -645,4 +649,4 @@ function jsonResponse(data, status = 200) {
   });
 }
 
-export { CONFIG, buildCalendarFeed, fetchLinqMenu, normalizeLinq, normalizeConnectorMenu, schoolStatus, addDaysISO, localISODate, foldICalendarLine };
+export { CONFIG, buildCalendarFeed, getDashboardData, fetchLinqMenu, normalizeLinq, normalizeConnectorMenu, schoolStatus, addDaysISO, localISODate, foldICalendarLine };

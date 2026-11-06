@@ -3,6 +3,13 @@
 A subscribable calendar for West Somerville's lunch menu, school closures, early
 releases, and noon dismissals. No separate website host is required.
 
+## Dashboard
+
+The dashboard is being published at https://danfinn5.netlify.app/wsns/.
+It shows current lunches, expandable full menus, school schedule changes, and
+weather. Public snapshots refresh throughout the day; the Refresh button reloads
+the latest snapshot.
+
 ## Subscribe
 
 On a computer, open Google Calendar → Other calendars → **+** → **From URL**.
@@ -41,7 +48,8 @@ IDs, retrieval time, sources, and any source error. Only public school data is s
 
 ## What appears
 
-- Published lunch choices, with sides, deli, and salad options in event details.
+- Published lunch choices and a short sides list in event details.
+- Deli, salad, and other full menu details on the dashboard.
 - No-school dates from the official 2026–27 district calendar.
 - Wednesday dismissal at 1:00 PM, except closures and noon dismissals.
 - Noon-dismissal dates, including the days before Thanksgiving and winter recess.
@@ -57,7 +65,7 @@ marked unavailable or not yet published. Lunches are never inferred from a rotat
 runs every six hours, on relevant code pushes, and through **Run workflow**.
 It tests the renderer and fallback behavior, fetches the next two weeks of menus,
 then publishes calendar/wsns.ics, calendar/wsns-v2.ics, calendar/menu.json,
-and calendar/revisions.json.
+calendar/revisions.json, and calendar/dashboard.json.
 
 The collector scopes saved meals to the configured building and district IDs.
 Changing schools does not reuse another school's saved menu.

@@ -8,8 +8,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="School Day">
   <title>WSNS School Day</title>
-  <link rel="manifest" href="/manifest.webmanifest">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
   <style>
     :root{
       --ink:#1f2a2a;--muted:#6c7673;--paper:#f4efe5;--card:#fffdf8;--line:#ddd6c9;
@@ -80,6 +80,12 @@
     .modal h2{margin:0 0 8px}
     .modal p,.modal li{color:var(--muted);font-size:14px;line-height:1.55}
     code{font-size:11px;background:#eee8dc;padding:2px 5px;border-radius:5px;word-break:break-all}
+    .menuDetails{position:relative;z-index:1;margin-top:15px;font-size:13px;line-height:1.5}
+    .menuDetails summary{cursor:pointer;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+    .menuGroups{display:grid;gap:14px;padding-top:12px}
+    .menuGroups h3{font-size:12px;margin:0 0 5px}
+    .menuGroups ul{margin:0;padding-left:19px;font-weight:400}
+    .day .menuDetails{font-size:12px}
     @media(max-width:700px){
       .week{grid-template-columns:repeat(5,160px);overflow-x:auto;padding-bottom:4px;scroll-snap-type:x mandatory}
       .day{scroll-snap-align:start}
@@ -96,12 +102,13 @@
       <div class="mark">W</div>
       <div><div class="eyebrow">West Somerville</div><h1>School Day</h1></div>
     </div>
-    <button class="iconbtn" id="infoBtn" aria-label="About">About</button>
+    <div class="actions" style="margin:0"><button class="iconbtn" id="refreshBtn">Refresh</button><button class="iconbtn" id="infoBtn" aria-label="About">About</button></div>
   </header>
 
   <main id="app"><div class="loading">Loading school day…</div></main>
 
   <div class="footer">
+    <div id="updatedAt"></div>
     Lunch data: LINQ Connect. Weather: Open-Meteo. School schedule: Somerville Public Schools.
     This family dashboard is not an official school communication channel; always follow direct SPS notices for emergency changes.
   </div>
@@ -119,6 +126,8 @@
 </dialog>
 
 <script>
+const DATA_URL = "https://raw.githubusercontent.com/danfinn5/wsns-school-day/main/calendar/dashboard.json";
+const CALENDAR_URL = "https://raw.githubusercontent.com/danfinn5/wsns-school-day/main/calendar/wsns-v2.ics";
 const $ = (s) => document.querySelector(s);
 const fmtDay = new Intl.DateTimeFormat("en-US",{weekday:"long",month:"long",day:"numeric"});
 const fmtShort = new Intl.DateTimeFormat("en-US",{weekday:"short"});
@@ -151,9 +160,16 @@ function statusPill(t){
 
 async function load(){
   try{
-    const r = await fetch("/api/data?days=10");
+    const r = await fetch(DATA_URL, { cache: "no-store" });
     if(!r.ok) throw new Error(`HTTP ${r.status}`);
-    render(await r.json());
+    const data = await r.json();
+    const today = new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date());
+    data.days = (data.days || []).filter(day => day.date >= today);
+    if (!data.days.length) throw new Error("The school dashboard needs a fresh update.");
+    render(data);
+    if (data.generatedAt) $("#updatedAt").textContent = "Updated " + new Intl.DateTimeFormat("en-US", {
+      month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZone: "America/New_York"
+    }).format(new Date(data.generatedAt)) + " · Refreshes throughout the day.";
   }catch(e){
     $("#app").innerHTML = `<div class="error">Couldn’t load the dashboard: ${esc(e.message)}</div>`;
   }
@@ -168,7 +184,7 @@ function render(data){
   const sides = sideNames(meal);
   const warnings = (data.warnings||[]).map(x=>`<div class="error">${esc(x)}</div>`).join("");
 
-  const weekDays = days.filter(d=>!["weekend"].includes(d.status.type)).slice(0,5);
+  const weekDays = days.filter(d=>d.date > today.date && d.status.type !== "weekend").slice(0,5);
   const upcoming = (data.upcoming||[]).filter(x=>x.date>=today.date).slice(0,8);
 
   $("#app").innerHTML = `
@@ -190,6 +206,7 @@ function render(data){
       <div class="lunchMain">${entrees.length ? esc(entrees.join(" · ")) : (["closed","weekend"].includes(today.status.type) ? "No school today" : "Menu not published yet")}</div>
       ${sides.length ? `<div class="sides">${esc(sides.slice(0,5).join(" · "))}</div>` : ""}
       ${today.pack ? `<div class="pack">Pack: ${esc(today.pack)}</div>` : ""}
+      ${menuDetails(meal)}
     </section>
 
     <div class="sectionTitle"><h2>Next school days</h2><span>lunch + forecast</span></div>
@@ -206,9 +223,9 @@ function render(data){
     <section class="tools">
       <div class="tool">
         <h3>Subscribe in Google Calendar</h3>
-        <p>The feed includes closures, every early-release Wednesday, noon dismissals, plus a rolling school-day event containing lunch and the forecast.</p>
+        <p>The feed shows lunch choices, school closures, early-release Wednesdays, and noon dismissals. Full menu details stay here on the dashboard.</p>
         <div class="actions">
-          <a class="btn" href="/calendar.ics">Open calendar feed</a>
+          <a class="btn" href="${CALENDAR_URL}">Open calendar feed</a>
           <button class="btn secondary" id="copyCalInline">Copy feed URL</button>
         </div>
       </div>
@@ -236,7 +253,22 @@ function dayCard(d){
       <div class="pill ${statusClass(d.status.type)}">${esc(statusPill(d.status.type))}</div>
       <div class="dayWx">${d.weather?weatherText(d.weather):"—"}</div>
       <div class="dayLunch">${names.length?esc(names.slice(0,2).join(" / ")): (["closed","weekend"].includes(d.status.type)?"No lunch":"Menu pending")}</div>
+      ${menuDetails(d.lunch)}
     </article>`;
+}
+
+function menuDetails(meal) {
+  if (!meal?.all?.length) return "";
+  const groups = new Map();
+  for (const item of meal.all) {
+    const label = item.group || item.category || "Menu";
+    if (!groups.has(label)) groups.set(label, []);
+    groups.get(label).push(item.name);
+  }
+  return '<details class="menuDetails"><summary>Full menu</summary><div class="menuGroups">'
+    + [...groups].map(([label, names]) => "<section><h3>" + esc(label) + "</h3><ul>"
+      + [...new Set(names)].map(name => "<li>" + esc(name) + "</li>").join("")
+      + "</ul></section>").join("") + "</div></details>";
 }
 
 function eventCard(e){
@@ -248,20 +280,25 @@ function eventCard(e){
     </article>`;
 }
 
-async function copyCalendar(){
-  const url = location.origin + "/calendar.ics";
-  await navigator.clipboard.writeText(url);
-  const btn = event?.currentTarget;
-  if(btn){ const old=btn.textContent; btn.textContent="Copied"; setTimeout(()=>btn.textContent=old,1200); }
+async function copyCalendar(e){
+  const btn = e?.currentTarget;
+  try {
+    await navigator.clipboard.writeText(CALENDAR_URL);
+    if(btn){ const old=btn.textContent; btn.textContent="Copied"; setTimeout(()=>btn.textContent=old,1200); }
+  } catch {
+    $("#info").showModal();
+    $("#calUrl").textContent = CALENDAR_URL;
+  }
 }
 
 const dialog=$("#info");
 $("#infoBtn").addEventListener("click",()=>dialog.showModal());
 $("#closeInfo").addEventListener("click",()=>dialog.close());
-$("#calUrl").textContent=location.origin+"/calendar.ics";
+$("#calUrl").textContent=CALENDAR_URL;
+$("#refreshBtn").addEventListener("click", load);
 $("#copyCal").addEventListener("click",copyCalendar);
 
-if("serviceWorker" in navigator){ navigator.serviceWorker.register("/sw.js").catch(()=>{}); }
+if("serviceWorker" in navigator){ navigator.serviceWorker.register("./sw.js").catch(()=>{}); }
 load();
 </script>
 </body>

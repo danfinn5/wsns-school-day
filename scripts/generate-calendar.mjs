@@ -1,6 +1,6 @@
 import { updateCalendarRevisions } from "./calendar-revisions.mjs";
 import { readFile, writeFile, mkdir } from "node:fs/promises";
-import { CONFIG, buildCalendarFeed, fetchLinqMenu, addDaysISO, localISODate } from "../src/worker.js";
+import { CONFIG, buildCalendarFeed, getDashboardData, fetchLinqMenu, addDaysISO, localISODate } from "../src/worker.js";
 
 // The generator does not need the host's HTTP cache.
 globalThis.caches = { default: { async match() { return undefined; } } };
@@ -62,9 +62,11 @@ try {
   if (error.code !== "ENOENT") throw error;
 }
 const revised = updateCalendarRevisions(rendered, previousRevisions, now);
+const dashboard = await getDashboardData(14, null, { menu, now, menuUnavailable: fetchStatus !== "ok" });
 const feed = revised.calendar;
 await mkdir(new URL("calendar/", root), { recursive: true });
 await writeFile(snapshotURL, JSON.stringify(snapshot, null, 2) + "\n");
+await writeFile(new URL("calendar/dashboard.json", root), JSON.stringify(dashboard, null, 2) + "\n");
 await writeFile(new URL("calendar/wsns.ics", root), feed);
 await writeFile(new URL("calendar/wsns-v2.ics", root), feed);
 await writeFile(new URL("calendar/revisions.json", root), JSON.stringify(revised.revisions, null, 2) + "\n");
