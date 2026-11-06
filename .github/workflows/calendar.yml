@@ -32,6 +32,29 @@ jobs:
           node-version: "22"
       - name: Check calendar behavior
         run: node --test test/calendar.test.js
+      - name: Check selected-school menu source
+        if: github.event_name == 'push'
+        run: |
+          node --input-type=module <<'JS'
+          const date = new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date());
+          const [year, month, day] = date.split("-");
+          const queryDate = Number(month) + "-" + Number(day) + "-" + year;
+          const probes = [
+            ["selected-school/plain", "14d70caa-49e6-eb11-a2c9-fa7552227e36", {}],
+            ["selected-school/simple-UA", "14d70caa-49e6-eb11-a2c9-fa7552227e36", { "user-agent": "Mozilla/5.0", accept: "application/json" }],
+            ["older-school/control", "dc643b2d-4be6-eb11-a2c9-d2abdd85801a", {}],
+          ];
+          for (const [label, buildingId, headers] of probes) {
+            const url = new URL("https://api.linqconnect.com/api/FamilyMenu");
+            url.search = new URLSearchParams({ buildingId, districtId: "7810c14e-a7e4-eb11-a2c5-8cc0b3a2728d", startDate: queryDate, endDate: queryDate });
+            try {
+              const response = await fetch(url, { headers, signal: AbortSignal.timeout(15000) });
+              const body = await response.text();
+              let data; try { data = JSON.parse(body); } catch {}
+              console.log(JSON.stringify({ label, status: response.status, contentType: response.headers.get("content-type"), keys: data ? Object.keys(data) : [], identity: data ? Object.fromEntries(Object.entries(data).filter(([key]) => /name|building|district/i.test(key))) : null, sessions: data?.FamilyMenuSessions?.map(session => ({ name: session.ServingSession, planCount: session.MenuPlans?.length })), errorPreview: response.ok ? undefined : body.slice(0, 200) }));
+            } catch (error) { console.log(JSON.stringify({label,error:error.message})); }
+          }
+          JS
       - name: Refresh public school calendar
         run: node scripts/generate-calendar.mjs
       - name: Publish calendar
