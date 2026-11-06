@@ -9,7 +9,6 @@ X-WR-CALDESC:West Somerville lunch\, school closures\, and dismissal change
  s. Grades K–8. No weather.
 BEGIN:VEVENT
 UID:closed-2026-09-04@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20260904
 DTEND;VALUE=DATE:20260905
 SUMMARY:No school — Labor Day
@@ -18,10 +17,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2026-09-07@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20260907
 DTEND;VALUE=DATE:20260908
 SUMMARY:No school — Labor Day
@@ -30,10 +31,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2026-10-12@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261012
 DTEND;VALUE=DATE:20261013
 SUMMARY:No school — Indigenous Peoples’ Day
@@ -42,10 +45,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2026-11-03@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:No school — Election Day
@@ -54,10 +59,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2026-11-11@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:No school — Veterans Day
@@ -66,10 +73,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2026-11-26@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
 SUMMARY:No school — Thanksgiving recess
@@ -78,10 +87,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2026-11-27@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:No school — Thanksgiving recess
@@ -90,10 +101,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2026-12-24@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261224
 DTEND;VALUE=DATE:20261225
 SUMMARY:No school — Winter recess
@@ -102,10 +115,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2026-12-25@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261225
 DTEND;VALUE=DATE:20261226
 SUMMARY:No school — Winter recess
@@ -114,10 +129,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2026-12-28@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261228
 DTEND;VALUE=DATE:20261229
 SUMMARY:No school — Winter recess
@@ -126,10 +143,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2026-12-29@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261229
 DTEND;VALUE=DATE:20261230
 SUMMARY:No school — Winter recess
@@ -138,10 +157,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2026-12-30@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261230
 DTEND;VALUE=DATE:20261231
 SUMMARY:No school — Winter recess
@@ -150,10 +171,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2026-12-31@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261231
 DTEND;VALUE=DATE:20270101
 SUMMARY:No school — Winter recess
@@ -162,10 +185,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2027-01-01@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:No school — New Year’s Day
@@ -174,10 +199,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2027-01-04@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270104
 DTEND;VALUE=DATE:20270105
 SUMMARY:No school — Educator professional development
@@ -186,10 +213,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2027-01-18@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270118
 DTEND;VALUE=DATE:20270119
 SUMMARY:No school — Dr. Martin Luther King Jr. Day
@@ -198,10 +227,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2027-02-15@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270215
 DTEND;VALUE=DATE:20270216
 SUMMARY:No school — February vacation
@@ -210,10 +241,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2027-02-16@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270216
 DTEND;VALUE=DATE:20270217
 SUMMARY:No school — February vacation
@@ -222,10 +255,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2027-02-17@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270217
 DTEND;VALUE=DATE:20270218
 SUMMARY:No school — February vacation
@@ -234,10 +269,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2027-02-18@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270218
 DTEND;VALUE=DATE:20270219
 SUMMARY:No school — February vacation
@@ -246,10 +283,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2027-02-19@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270219
 DTEND;VALUE=DATE:20270220
 SUMMARY:No school — February vacation
@@ -258,10 +297,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2027-03-26@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270326
 DTEND;VALUE=DATE:20270327
 SUMMARY:No school — Good Friday
@@ -270,10 +311,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2027-04-19@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270419
 DTEND;VALUE=DATE:20270420
 SUMMARY:No school — Patriots’ Day / April vacation
@@ -282,10 +325,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2027-04-20@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270420
 DTEND;VALUE=DATE:20270421
 SUMMARY:No school — April vacation
@@ -294,10 +339,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2027-04-21@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270421
 DTEND;VALUE=DATE:20270422
 SUMMARY:No school — April vacation
@@ -306,10 +353,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2027-04-22@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270422
 DTEND;VALUE=DATE:20270423
 SUMMARY:No school — April vacation
@@ -318,10 +367,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2027-04-23@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270423
 DTEND;VALUE=DATE:20270424
 SUMMARY:No school — April vacation
@@ -330,10 +381,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:closed-2027-05-31@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270531
 DTEND;VALUE=DATE:20270601
 SUMMARY:No school — Memorial Day
@@ -342,10 +395,12 @@ DESCRIPTION:West Somerville Neighborhood School\, grades K–8.\nSchedule s
  lendar-English.pdf\nEmergency closures and school-specific announcements a
  re not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:noon-2026-08-31@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20260831
 DTEND;VALUE=DATE:20260901
 SUMMARY:First day of school — noon dismissal
@@ -354,10 +409,12 @@ DESCRIPTION:Grades K–8: noon dismissal.\nWest Somerville Neighborhood Sch
  content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures and 
  school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:noon-2026-11-25@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Thanksgiving recess begins — noon dismissal
@@ -366,10 +423,12 @@ DESCRIPTION:Grades K–8: noon dismissal.\nWest Somerville Neighborhood Sch
  content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures and 
  school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:noon-2026-12-23@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Winter recess begins — noon dismissal
@@ -378,10 +437,12 @@ DESCRIPTION:Grades K–8: noon dismissal.\nWest Somerville Neighborhood Sch
  content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures and 
  school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:noon-2027-06-16@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270616
 DTEND;VALUE=DATE:20270617
 SUMMARY:Last day of school — noon dismissal
@@ -390,10 +451,12 @@ DESCRIPTION:Grades K–8: noon dismissal.\nWest Somerville Neighborhood Sch
  content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures and 
  school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2026-09-02@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20260902
 DTEND;VALUE=DATE:20260903
 SUMMARY:Early release — 1:00 PM
@@ -402,10 +465,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2026-09-09@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20260909
 DTEND;VALUE=DATE:20260910
 SUMMARY:Early release — 1:00 PM
@@ -414,10 +479,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2026-09-16@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20260916
 DTEND;VALUE=DATE:20260917
 SUMMARY:Early release — 1:00 PM
@@ -426,10 +493,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2026-09-23@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20260923
 DTEND;VALUE=DATE:20260924
 SUMMARY:Early release — 1:00 PM
@@ -438,10 +507,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2026-09-30@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20260930
 DTEND;VALUE=DATE:20261001
 SUMMARY:Early release — 1:00 PM
@@ -450,10 +521,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2026-10-07@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261008
 SUMMARY:Early release — 1:00 PM
@@ -462,10 +535,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2026-10-14@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261014
 DTEND;VALUE=DATE:20261015
 SUMMARY:Early release — 1:00 PM
@@ -474,10 +549,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2026-10-21@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Early release — 1:00 PM
@@ -486,10 +563,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2026-10-28@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:Early release — 1:00 PM
@@ -498,10 +577,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2026-11-04@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Early release — 1:00 PM
@@ -510,10 +591,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2026-11-18@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:Early release — 1:00 PM
@@ -522,10 +605,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2026-12-02@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
 SUMMARY:Early release — 1:00 PM
@@ -534,10 +619,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2026-12-09@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261209
 DTEND;VALUE=DATE:20261210
 SUMMARY:Early release — 1:00 PM
@@ -546,10 +633,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2026-12-16@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Early release — 1:00 PM
@@ -558,10 +647,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2027-01-06@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270106
 DTEND;VALUE=DATE:20270107
 SUMMARY:Early release — 1:00 PM
@@ -570,10 +661,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2027-01-13@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270113
 DTEND;VALUE=DATE:20270114
 SUMMARY:Early release — 1:00 PM
@@ -582,10 +675,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2027-01-20@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270120
 DTEND;VALUE=DATE:20270121
 SUMMARY:Early release — 1:00 PM
@@ -594,10 +689,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2027-01-27@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270127
 DTEND;VALUE=DATE:20270128
 SUMMARY:Early release — 1:00 PM
@@ -606,10 +703,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2027-02-03@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270204
 SUMMARY:Early release — 1:00 PM
@@ -618,10 +717,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2027-02-10@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270210
 DTEND;VALUE=DATE:20270211
 SUMMARY:Early release — 1:00 PM
@@ -630,10 +731,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2027-02-24@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270224
 DTEND;VALUE=DATE:20270225
 SUMMARY:Early release — 1:00 PM
@@ -642,10 +745,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2027-03-03@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270303
 DTEND;VALUE=DATE:20270304
 SUMMARY:Early release — 1:00 PM
@@ -654,10 +759,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2027-03-10@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270310
 DTEND;VALUE=DATE:20270311
 SUMMARY:Early release — 1:00 PM
@@ -666,10 +773,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2027-03-17@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270317
 DTEND;VALUE=DATE:20270318
 SUMMARY:Early release — 1:00 PM
@@ -678,10 +787,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2027-03-24@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270324
 DTEND;VALUE=DATE:20270325
 SUMMARY:Early release — 1:00 PM
@@ -690,10 +801,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2027-03-31@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270331
 DTEND;VALUE=DATE:20270401
 SUMMARY:Early release — 1:00 PM
@@ -702,10 +815,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2027-04-07@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270407
 DTEND;VALUE=DATE:20270408
 SUMMARY:Early release — 1:00 PM
@@ -714,10 +829,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2027-04-14@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270414
 DTEND;VALUE=DATE:20270415
 SUMMARY:Early release — 1:00 PM
@@ -726,10 +843,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2027-04-28@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270428
 DTEND;VALUE=DATE:20270429
 SUMMARY:Early release — 1:00 PM
@@ -738,10 +857,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2027-05-05@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270505
 DTEND;VALUE=DATE:20270506
 SUMMARY:Early release — 1:00 PM
@@ -750,10 +871,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2027-05-12@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270512
 DTEND;VALUE=DATE:20270513
 SUMMARY:Early release — 1:00 PM
@@ -762,10 +885,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2027-05-19@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270519
 DTEND;VALUE=DATE:20270520
 SUMMARY:Early release — 1:00 PM
@@ -774,10 +899,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2027-05-26@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270526
 DTEND;VALUE=DATE:20270527
 SUMMARY:Early release — 1:00 PM
@@ -786,10 +913,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2027-06-02@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270602
 DTEND;VALUE=DATE:20270603
 SUMMARY:Early release — 1:00 PM
@@ -798,10 +927,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:early-2027-06-09@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20270609
 DTEND;VALUE=DATE:20270610
 SUMMARY:Early release — 1:00 PM
@@ -810,10 +941,12 @@ DESCRIPTION:Grades K–8 dismiss at 1:00 PM.\nWest Somerville Neighborhood
  wp-content/uploads/2026/09/2627-Calendar-English.pdf\nEmergency closures a
  nd school-specific announcements are not automatically included.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:schoolday-2026-11-06@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Lunch: Homemade Macaroni and Cheese
@@ -823,15 +956,17 @@ DESCRIPTION:Regular school day — dismissal 2:35 PM\nMenu: Homemade Macaro
  ean and Hummus Proteins\, Assorted Egg and Cheese Proteins\, Buffalo Chick
  en for Salad\, Pita Bread\, Assorted Fruit\, Assorted Fresh Cut Vegetables
  \, 1% White Milk\, Skim Milk\, Chocolate Milk\nMenu last retrieved: 2026-1
- 1-06T22:16:45.385Z\nOfficial menu: https://linqconnect.com/public/menu/FE5
+ 1-06T22:26:19.911Z\nOfficial menu: https://linqconnect.com/public/menu/FE5
  3U3?buildingId=14d70caa-49e6-eb11-a2c9-fa7552227e36\nMenu retrieved via Sc
  hool Menu Connector (https://schoolmenuconnector.com).\nMenus are subject 
  to change.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:schoolday-2026-11-09@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
 SUMMARY:Lunch: Sweet and Sour Chicken / Sweet and Sour Tofu
@@ -841,15 +976,17 @@ DESCRIPTION:Regular school day — dismissal 2:35 PM\nMenu: Sweet and Sour
  racker\, Veggie\, Grab and Go Salad\, Assorted Bean and Hummus Proteins\, 
  Assorted Egg and Cheese Proteins\, Cajun Chicken for Salad\, Pita Bread\, 
  Assorted Fruit\, 1% White Milk\, Skim Milk\, Chocolate Milk\, Assorted Fre
- sh Cut Vegetables\nMenu last retrieved: 2026-11-06T22:16:45.385Z\nOfficial
+ sh Cut Vegetables\nMenu last retrieved: 2026-11-06T22:26:19.911Z\nOfficial
   menu: https://linqconnect.com/public/menu/FE53U3?buildingId=14d70caa-49e6
  -eb11-a2c9-fa7552227e36\nMenu retrieved via School Menu Connector (https:/
  /schoolmenuconnector.com).\nMenus are subject to change.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:schoolday-2026-11-10@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Lunch: Cheeseburger on a Bun / Hamburger on a Bun / Black Bean Burg
@@ -861,15 +998,17 @@ DESCRIPTION:Regular school day — dismissal 2:35 PM\nMenu: Onion Rings\, C
  n and Hummus Proteins\, Assorted Egg and Cheese Proteins\, Cajun Chicken f
  or Salad\, Pita Bread\, Assorted Fruit\, 1% White Milk\, Skim Milk\, Choco
  late Milk\, Assorted Fresh Cut Vegetables\nMenu last retrieved: 2026-11-06
- T22:16:45.385Z\nOfficial menu: https://linqconnect.com/public/menu/FE53U3?
+ T22:26:19.911Z\nOfficial menu: https://linqconnect.com/public/menu/FE53U3?
  buildingId=14d70caa-49e6-eb11-a2c9-fa7552227e36\nMenu retrieved via School
   Menu Connector (https://schoolmenuconnector.com).\nMenus are subject to c
  hange.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:schoolday-2026-11-12@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:Lunch: Vegetarian Chili
@@ -879,15 +1018,17 @@ DESCRIPTION:Regular school day — dismissal 2:35 PM\nMenu: Vegetarian Chil
  Grab and Go Salad\, Assorted Bean and Hummus Proteins\, Assorted Egg and C
  heese Proteins\, Cajun Chicken for Salad\, Pita Bread\, Assorted Fruit\, 1
  % White Milk\, Skim Milk\, Chocolate Milk\, Assorted Fresh Cut Vegetables\
- nMenu last retrieved: 2026-11-06T22:16:45.385Z\nOfficial menu: https://lin
+ nMenu last retrieved: 2026-11-06T22:26:19.911Z\nOfficial menu: https://lin
  qconnect.com/public/menu/FE53U3?buildingId=14d70caa-49e6-eb11-a2c9-fa75522
  27e36\nMenu retrieved via School Menu Connector (https://schoolmenuconnect
  or.com).\nMenus are subject to change.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:schoolday-2026-11-13@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Lunch: American Beef Chop Suey / Vegetarian American Chop Suey
@@ -897,15 +1038,17 @@ DESCRIPTION:Regular school day — dismissal 2:35 PM\nMenu: American Beef C
  acker\, Veggie\, Grab and Go Salad\, Assorted Bean and Hummus Proteins\, A
  ssorted Egg and Cheese Proteins\, Cajun Chicken for Salad\, Pita Bread\, A
  ssorted Fruit\, 1% White Milk\, Skim Milk\, Chocolate Milk\, Assorted Fres
- h Cut Vegetables\nMenu last retrieved: 2026-11-06T22:16:45.385Z\nOfficial 
+ h Cut Vegetables\nMenu last retrieved: 2026-11-06T22:26:19.911Z\nOfficial 
  menu: https://linqconnect.com/public/menu/FE53U3?buildingId=14d70caa-49e6-
  eb11-a2c9-fa7552227e36\nMenu retrieved via School Menu Connector (https://
  schoolmenuconnector.com).\nMenus are subject to change.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:schoolday-2026-11-16@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 SUMMARY:Lunch: Beef & Pork Hot Dog on a Bun / Veggie Hot Dog on a Bun
@@ -915,15 +1058,17 @@ DESCRIPTION:Regular school day — dismissal 2:35 PM\nMenu: Beef & Pork Hot
  and Go Salad\, Assorted Bean and Hummus Proteins\, Assorted Egg and Cheese
   Proteins\, Grilled Chicken Breast\, Pita Bread\, Assorted Fruit\, Assorte
  d Fresh Cut Vegetables\, 1% White Milk\, Skim Milk\, Chocolate Milk\nMenu 
- last retrieved: 2026-11-06T22:16:45.385Z\nOfficial menu: https://linqconne
+ last retrieved: 2026-11-06T22:26:19.911Z\nOfficial menu: https://linqconne
  ct.com/public/menu/FE53U3?buildingId=14d70caa-49e6-eb11-a2c9-fa7552227e36\
  nMenu retrieved via School Menu Connector (https://schoolmenuconnector.com
  ).\nMenus are subject to change.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:schoolday-2026-11-17@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
 SUMMARY:Lunch: Chicken Tenders / Vegan Nuggets / Whole Wheat Waffle
@@ -933,15 +1078,17 @@ DESCRIPTION:Regular school day — dismissal 2:35 PM\nMenu: Chicken Tenders
  se\, Fruit & Veggie\, Grab and Go Salad\, Assorted Bean and Hummus Protein
  s\, Assorted Egg and Cheese Proteins\, Grilled Chicken Breast\, Pita Bread
  \, Assorted Fruit\, 1% White Milk\, Skim Milk\, Chocolate Milk\, Assorted 
- Fresh Cut Vegetables\nMenu last retrieved: 2026-11-06T22:16:45.385Z\nOffic
+ Fresh Cut Vegetables\nMenu last retrieved: 2026-11-06T22:26:19.911Z\nOffic
  ial menu: https://linqconnect.com/public/menu/FE53U3?buildingId=14d70caa-4
  9e6-eb11-a2c9-fa7552227e36\nMenu retrieved via School Menu Connector (http
  s://schoolmenuconnector.com).\nMenus are subject to change.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:schoolday-2026-11-18@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:Lunch: Cheese Pizza
@@ -951,15 +1098,17 @@ DESCRIPTION:Early release Wednesday — dismissal 1:00 PM\nMenu: Cheese Piz
  ab and Go Salad\, Assorted Bean and Hummus Proteins\, Assorted Egg and Che
  ese Proteins\, Grilled Chicken Breast\, Pita Bread\, Assorted Fruit\, 1% W
  hite Milk\, Skim Milk\, Chocolate Milk\, Assorted Fresh Cut Vegetables\nMe
- nu last retrieved: 2026-11-06T22:16:45.385Z\nOfficial menu: https://linqco
+ nu last retrieved: 2026-11-06T22:26:19.911Z\nOfficial menu: https://linqco
  nnect.com/public/menu/FE53U3?buildingId=14d70caa-49e6-eb11-a2c9-fa7552227e
  36\nMenu retrieved via School Menu Connector (https://schoolmenuconnector.
  com).\nMenus are subject to change.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 BEGIN:VEVENT
 UID:schoolday-2026-11-19@wsns-school-day
-DTSTAMP:20261106T221645Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:Lunch: Hard Shell Beef Taco / Hard Shell Bean Taco
@@ -969,10 +1118,13 @@ DESCRIPTION:Regular school day — dismissal 2:35 PM\nMenu: Hard Shell Beef
  chos with Cheese\, Fruit & Veggie\, Grab and Go Salad\, Assorted Bean and 
  Hummus Proteins\, Assorted Egg and Cheese Proteins\, Grilled Chicken Breas
  t\, Pita Bread\, Assorted Fruit\, 1% White Milk\, Skim Milk\, Chocolate Mi
- lk\, Assorted Fresh Cut Vegetables\nMenu last retrieved: 2026-11-06T22:16:
- 45.385Z\nOfficial menu: https://linqconnect.com/public/menu/FE53U3?buildin
+ lk\, Assorted Fresh Cut Vegetables\nMenu last retrieved: 2026-11-06T22:26:
+ 19.911Z\nOfficial menu: https://linqconnect.com/public/menu/FE53U3?buildin
  gId=14d70caa-49e6-eb11-a2c9-fa7552227e36\nMenu retrieved via School Menu C
  onnector (https://schoolmenuconnector.com).\nMenus are subject to change.
 TRANSP:TRANSPARENT
+SEQUENCE:1
+LAST-MODIFIED:20261106T222619Z
+DTSTAMP:20261106T222619Z
 END:VEVENT
 END:VCALENDAR

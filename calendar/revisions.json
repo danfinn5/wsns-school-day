@@ -1,0 +1,382 @@
+{
+  "closed-2026-09-04@wsns-school-day": {
+    "hash": "4ed97c85a48409f7cfb833e318ec57f675b61d99abd28313a976d67096f89bba",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2026-09-07@wsns-school-day": {
+    "hash": "ab5bc45c4337f108d3e25faa230558bdb5eb5ac9921093eb49d90e4093e7923a",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2026-10-12@wsns-school-day": {
+    "hash": "a4b9228f5d862dffb1c90ddc0f20aed55ce8dacdf4bd15aba4242f95d2651ce8",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2026-11-03@wsns-school-day": {
+    "hash": "fd1ad8ead597ef8c90183b06700229f66a2d88e17ae67dba46ac7c288d93e639",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2026-11-11@wsns-school-day": {
+    "hash": "5680f090b6e8d3e0ab80865e22371e3cf333cd47990d56b9a9af8c54676d0976",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2026-11-26@wsns-school-day": {
+    "hash": "9cc2ff7d8e1ab0375ffaced28b454946e257fc2860a71a6ee796e76e8cbbb7ee",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2026-11-27@wsns-school-day": {
+    "hash": "5f1c6f282a7bbb09fc78bb30d06b9c5707237ac9ce936ac000746d009b2882ac",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2026-12-24@wsns-school-day": {
+    "hash": "03d1d653b11e277e0e14de9a0b3caf3c39bba57062d10103ea8161c1025faec9",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2026-12-25@wsns-school-day": {
+    "hash": "8c4fdf3b60e1ab25c61f3fe52a7e41ffe8ef9395d7e86efab8c5093ab3d51e2d",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2026-12-28@wsns-school-day": {
+    "hash": "eb8c8e3bab5b5625ee5bc2003ad97dfcf996e5b6ca7c97bd1495d2a61527249f",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2026-12-29@wsns-school-day": {
+    "hash": "71f56b711e86130cd9de62d422c9a13f889b006d5527567710293cbbbe3ce8f6",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2026-12-30@wsns-school-day": {
+    "hash": "79ffd598f54c5838a4b1e7e3ed3ac474f2a81a8ff593d56cc7c23592792393b1",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2026-12-31@wsns-school-day": {
+    "hash": "d01f7d54600cc46fbec2ae168ba89345004a4c83d9ba954e72ac905b4bfc12a9",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2027-01-01@wsns-school-day": {
+    "hash": "043b02ed9c037cef0e15ba36afbaef176bc09cd6785861e4689a2e3287246d5f",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2027-01-04@wsns-school-day": {
+    "hash": "d24fddaf7b0021edd502bcbe134240b473732c6ca2bca73fd8711d605851bcb0",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2027-01-18@wsns-school-day": {
+    "hash": "240584be06ed51ff89cf7b975b95938a1ae107ae5426e87ccd7d56fe2faa74ce",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2027-02-15@wsns-school-day": {
+    "hash": "1276eca2018885cb49439c22eafacb54693b2ca2d85caa1581d2a4e13db07d99",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2027-02-16@wsns-school-day": {
+    "hash": "267ad895235aa0998c6d1dbf9da6117a437b9f20c3220b504f2a46101a47d22e",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2027-02-17@wsns-school-day": {
+    "hash": "008a2b4fe178a290e6950d9cdb08d31acc97a585d34155c139caec5a91e63c4d",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2027-02-18@wsns-school-day": {
+    "hash": "8cc7cdecdc35076e7eb683ffa40a53b5bc1db46588e4fd132d9d81a102e3649a",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2027-02-19@wsns-school-day": {
+    "hash": "7cbd344668f059fc12c4234c4ef8bcced84f20f2ff55d8f42b58c74b7fb1f283",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2027-03-26@wsns-school-day": {
+    "hash": "61ca659c15210aaa0a21b775a06aae63000d41ed3c0f48e2204d1957cd023e01",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2027-04-19@wsns-school-day": {
+    "hash": "f674dfe0157f8aec43215fc98e021545e058cfd96e8481f58db20a12daf4aadf",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2027-04-20@wsns-school-day": {
+    "hash": "87caa1e6ac1fc2c712ca7ab0f7258051dddb6273d0f8661edd169d04dc5a0b44",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2027-04-21@wsns-school-day": {
+    "hash": "002f871df0f24ec982e6bb56cb7b239496fa16e04cf27e1b269d434fc2f20312",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2027-04-22@wsns-school-day": {
+    "hash": "9f71c73dc04efc872a77fb64404dfc1ecc8c9c9368b905e7e86ea67c0c8f1261",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2027-04-23@wsns-school-day": {
+    "hash": "3a5b25f717b72ebca7ac13e3c20873077a887b67060dca4edb257fa1bbd89f23",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "closed-2027-05-31@wsns-school-day": {
+    "hash": "38ae202fe83107af04fc5fe466806f4e191028f619b7df04b01d3ab7587110fc",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "noon-2026-08-31@wsns-school-day": {
+    "hash": "f706e1c3eacd688a5ddbb4c56076ac6a100602b8d078cba0281e43b48cd949cf",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "noon-2026-11-25@wsns-school-day": {
+    "hash": "dd3df6193bd154d70469dd18faa5655da29232eadd026224c3d443dac19f0e2b",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "noon-2026-12-23@wsns-school-day": {
+    "hash": "3b0bb951bdffa758738b93b23292fa63703879b0072360642608a6de74619ee0",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "noon-2027-06-16@wsns-school-day": {
+    "hash": "608e9bc6ae003a2d07a30ed56d3be7c93bb7268e1bce2e3c0daf636e59bab92b",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2026-09-02@wsns-school-day": {
+    "hash": "76a8cb16dff9b1e28391324c0ce25df3c8c2cfc8f8d2c335aa3df481d07cea78",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2026-09-09@wsns-school-day": {
+    "hash": "712af6a0f71df9f2ae63323002eb8062f5d140360cda7c64047d504667340958",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2026-09-16@wsns-school-day": {
+    "hash": "55dd267d2b46fd2c1642dfb36a399991673edfad65556409c5aafa390383cc19",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2026-09-23@wsns-school-day": {
+    "hash": "fa5dc091620cc0c5955bb028ab44bf814625d07d4382f836769e0f325ecaf911",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2026-09-30@wsns-school-day": {
+    "hash": "8c412ef915bcb887a40a8c3ee7c744d7242493c9d6c6b127a4b381fdcc2fdf05",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2026-10-07@wsns-school-day": {
+    "hash": "5041da50ffd3555128ed8871ead3c5162445ae0e9a60f92ce992df6da537340e",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2026-10-14@wsns-school-day": {
+    "hash": "12dece62e830ba7919df272ebe4f7b162a65bbe553d9d78043343b842128451b",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2026-10-21@wsns-school-day": {
+    "hash": "0aa3ee02d53fc7124bc4318303fd39360f34b0a2024ff23b9b6232c3797c7b5c",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2026-10-28@wsns-school-day": {
+    "hash": "298f34c91071dd16f5f389a9ea43f06309a6cdfa219903dca1f35bf5a167c5bf",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2026-11-04@wsns-school-day": {
+    "hash": "47475d3a20c5fdca6aeb34dcbd3c79eb1a5f96cab10aff0f62957a9f173cc3eb",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2026-11-18@wsns-school-day": {
+    "hash": "66241b0f22d58506b1aa019b1d167f58288ca6a4883616607de6f787b33a6270",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2026-12-02@wsns-school-day": {
+    "hash": "5891ba6bbc28663f6b11a4ea326822e278c36c5d3168991047ea85ba15fb845b",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2026-12-09@wsns-school-day": {
+    "hash": "812e59049e913c6413998dec08716c7964618bdafc81660a23704072b7263003",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2026-12-16@wsns-school-day": {
+    "hash": "0818e7fb6f97f273c804b1ffb67d2b8975d23f6b3a08e0aefca0c25df1164559",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2027-01-06@wsns-school-day": {
+    "hash": "243b66400e493d7ab02ed7f28e094de1f700cdf6a59fcfade7297dbfd351ec48",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2027-01-13@wsns-school-day": {
+    "hash": "96696e0aed9f24a36c4ab30a1668b1b995d3b5baecab4de9c26926e044fae40b",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2027-01-20@wsns-school-day": {
+    "hash": "0c28c290cdd8cab7540f54f380b3d6e656d9aa6cffae5e073bad47c9b6cc80ad",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2027-01-27@wsns-school-day": {
+    "hash": "d782d3810c32cbce61d715ebdbf48762986bc74707bf4b7878e8d44384ea7a37",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2027-02-03@wsns-school-day": {
+    "hash": "8b1106a00f1354fbdbfba9f5ed77632f10f6b2866cf5f7b486b495a9c36a4b0d",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2027-02-10@wsns-school-day": {
+    "hash": "f191ff96eaea0ac912e79203e8dddc2550f8009c7947cca4ea2b4f033bf01df8",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2027-02-24@wsns-school-day": {
+    "hash": "c669479a86765e3715798e1a8a858ee89d0b98b7ba66a27b745cbb65d7ab4d4f",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2027-03-03@wsns-school-day": {
+    "hash": "a7a1f80ac2862dfe3851d26f5ea1876a0711571238f7dfd445b5da6c1b8a12d1",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2027-03-10@wsns-school-day": {
+    "hash": "7cf77868a416a7522275d3ef2b05912c4e55472ff649199b4489881df8abc3c0",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2027-03-17@wsns-school-day": {
+    "hash": "0b44a5f87681f09b64882ea78fe5a89c9f54eb50568327d3859b621dffdb5920",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2027-03-24@wsns-school-day": {
+    "hash": "5bfd390f6fb2f2d182d1a28527d21c11dd805285a5d73223bc4d8248318e2728",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2027-03-31@wsns-school-day": {
+    "hash": "10451927f73134b38f3c44c4850e8b2299b473d88ca634bef8b27a6d4eeac71c",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2027-04-07@wsns-school-day": {
+    "hash": "78e7bf8b691335bfa9530b60526ee0760a55fdb094a3e827fd320e23a4ee5f4d",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2027-04-14@wsns-school-day": {
+    "hash": "e9e67bfce4c91c6e7d7d17d80c0d55727b482e4a079808b84b3fab054288e211",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2027-04-28@wsns-school-day": {
+    "hash": "41247ac6c92195c48e97cf8fb98baebe139d583aaaf47aeb2032c415bf8b4fee",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2027-05-05@wsns-school-day": {
+    "hash": "77a2fa7735b2bb3dff5c20dd3da09f4bfd9b904bd791256986f836ef813a2f85",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2027-05-12@wsns-school-day": {
+    "hash": "6fb075484768dd8cf1b2eebc31c0227ef8af7eac9852fc604273ed23f72f85a9",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2027-05-19@wsns-school-day": {
+    "hash": "1fd203cb1a61fc8270bd58410628979d999ea57bc318c9c0656952b11c30785b",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2027-05-26@wsns-school-day": {
+    "hash": "5939ac64eb82fe4ae4440c22521ba530b4eb20fc88a2e34850864e4a086b2b7f",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2027-06-02@wsns-school-day": {
+    "hash": "cbf43931767b535b80ff59b0c163337228f5e3fd5ec088ac73864c20bf912c52",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "early-2027-06-09@wsns-school-day": {
+    "hash": "e8b862684ac300c2448fed4cdafe14c4fa3c1ceeb7077d101546b1c1a825fdea",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "schoolday-2026-11-06@wsns-school-day": {
+    "hash": "00fda2c0d271b6f24e88f4646ad1bd0f915d463bfdddf448d67908ace2dca249",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "schoolday-2026-11-09@wsns-school-day": {
+    "hash": "a696aeedbd82e6a77b9d5b8fa2a159a927c7f36468c040db26471ff45febaf7d",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "schoolday-2026-11-10@wsns-school-day": {
+    "hash": "4b1bdc952b2c7d9341c0c247e0fb4823d981b9f92d0170880038206d82c23ba4",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "schoolday-2026-11-12@wsns-school-day": {
+    "hash": "c093c646f6232a2840f61149698a3056644f60d03278236b4978842d219d02f6",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "schoolday-2026-11-13@wsns-school-day": {
+    "hash": "30aca6533da1f5f2ac019ac0045a12439c5960b825e155ea35b868d767a5ce5a",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "schoolday-2026-11-16@wsns-school-day": {
+    "hash": "a1508adc190822fef7d224914c83b514f59a45c0539e3f5ca87a4e208567a243",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "schoolday-2026-11-17@wsns-school-day": {
+    "hash": "b9d4f74933e9569c6a71ac6f8fe0dfb1ba6863a77876daa487d561c6e7e7c384",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "schoolday-2026-11-18@wsns-school-day": {
+    "hash": "3c7e2cd8b9e0f0de6f6b0f0ace28194b8f602df4b06a5bdc1b51181b7d6de6e9",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  },
+  "schoolday-2026-11-19@wsns-school-day": {
+    "hash": "6476ffedb86074db8004a7ad3ef997d3f91d6a19658383c7843f593f3bc269e9",
+    "sequence": 1,
+    "lastModified": "20261106T222619Z"
+  }
+}
