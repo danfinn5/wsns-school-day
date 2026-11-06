@@ -1,8 +1,8 @@
 {
   "school": "West Somerville Neighborhood School",
-  "lastCheckedAt": null,
+  "lastCheckedAt": "2026-11-06T21:17:15.762Z",
   "lastSuccessfulAt": null,
-  "fetchStatus": "pending",
-  "error": "Awaiting first automated menu refresh.",
+  "fetchStatus": "unavailable",
+  "error": "LINQ returned 403",
   "menu": {}
 }
