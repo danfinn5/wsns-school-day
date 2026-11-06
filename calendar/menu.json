@@ -1,8 +1,8 @@
 {
   "school": "West Somerville Neighborhood School",
-  "lastCheckedAt": "2026-11-06T21:52:12.244Z",
+  "lastCheckedAt": "2026-11-06T21:53:32.178Z",
   "lastSuccessfulAt": null,
   "fetchStatus": "unavailable",
-  "error": "Command failed: /opt/hostedtoolcache/node/22.23.4/x64/bin/node /home/runner/work/wsns-school-day/wsns-school-day/scripts/fetch-linq-browser.mjs https://linqconnect.com/public/menu/FE53U3?buildingId=dc643b2d-4be6-eb11-a2c9-d2abdd85801a dc643b2d-4be6-eb11-a2c9-d2abdd85801a 7810c14e-a7e4-eb11-a2c5-8cc0b3a2728d 2026-10-30 2026-12-17\nIn-page menu request: page.evaluate: TypeError: Failed to fetch\n    at eval (eval at evaluate (:370:30), <anonymous>:2:30)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\nfile:///home/runner/work/wsns-school-day/wsns-school-day/scripts/fetch-linq-browser.mjs:37\n      throw new Error(\"Public menu could not be read. HTTP \" + response?.status()\n            ^\n\nError: Public menu could not be read. HTTP 403; menu page: 403 ERROR\nThe request could not be satisfied.\nRequest blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.\nIf you; API page: 403 Forbidden\n    at file:///home/runner/work/wsns-school-day/wsns-school-day/scripts/fetch-linq-browser.mjs:37:13\n\nNode.js v22.23.4\n",
+  "error": "LINQ returned 403",
   "menu": {}
 }
