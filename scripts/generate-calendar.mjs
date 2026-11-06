@@ -12,10 +12,12 @@ try {
   if (error.code !== "ENOENT") throw error;
 }
 
+if (previous.buildingId !== CONFIG.linq.buildingId || previous.districtId !== CONFIG.linq.districtId) previous = {};
+
 const now = new Date();
 const today = localISODate(now);
-const start = addDaysISO(today, -7);
-const end = addDaysISO(today, 41);
+const start = today;
+const end = addDaysISO(today, 13);
 let menu = { ...(previous.menu || {}) };
 let fetchStatus = "ok";
 let lastSuccessfulAt = previous.lastSuccessfulAt || null;
@@ -37,6 +39,10 @@ menu = Object.fromEntries(Object.entries(menu).filter(([date]) =>
 
 const snapshot = {
   school: CONFIG.schoolName,
+  buildingId: CONFIG.linq.buildingId,
+  districtId: CONFIG.linq.districtId,
+  menuURL: CONFIG.links.menu,
+  menuSources: [...new Set(Object.values(menu).map(day => day.lunch?.source || "LINQ Connect"))],
   lastCheckedAt: now.toISOString(),
   lastSuccessfulAt,
   fetchStatus,

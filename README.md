@@ -1,15 +1,7 @@
 # WSNS Lunch & School Days
 
-Subscribe in Google Calendar to see West Somerville's lunch menu, school closures,
-Wednesday early releases, and noon dismissals. A separate website host is not needed.
-
-## Menu availability
-
-As checked on November 6, 2026, LINQ is returning HTTP 403 to GitHub's runner,
-including requests made in Chrome. The lunch integration is configured but has not
-yet retrieved a live menu. School closures and dismissal events are published;
-missing lunches are marked unavailable. Refresh retries run every six hours.
-[Live refresh status](calendar/menu.json) records the latest result.
+A subscribable calendar for West Somerville's lunch menu, school closures, early
+releases, and noon dismissals. No separate website host is required.
 
 ## Subscribe
 
@@ -18,64 +10,79 @@ Paste this address and choose **Add calendar**:
 
 https://raw.githubusercontent.com/danfinn5/wsns-school-day/main/calendar/wsns.ics
 
-Subscribe to the URL rather than importing a downloaded file, so future updates appear.
-Each family member can subscribe to the same address. Google controls when it refreshes;
-last-minute changes may not appear immediately.
+Subscribe to the URL rather than importing a downloaded file so changes appear.
+Existing subscribers keep the same URL. Google controls its own refresh timing.
 
-The feed is named **WSNS Lunch & School Days**. It contains public school information
-and targets **grades K–8**.
+## Menu source
+
+The school is the exact menu selected by the user:
+
+https://linqconnect.com/public/menu/FE53U3?buildingId=14d70caa-49e6-eb11-a2c9-fa7552227e36
+
+LINQ rejects requests from GitHub's runner with HTTP 403. The collector tries LINQ
+directly, then uses [School Menu Connector](https://schoolmenuconnector.com)'s
+public JSON API. That service is specifically intended for automated LINQ menu
+retrieval and uses a Cloudflare transport. Calendar descriptions identify meals
+retrieved through it.
+
+The fallback was verified with live meals on November 6, 2026, including chicken
+or tofu on November 9 and burger choices on November 10. Its normalized response
+is validated before meals are saved; empty or invalid fallback responses are not
+treated as successful menu updates.
+
+[Refresh status and saved menus](calendar/menu.json) record the selected school
+IDs, retrieval time, sources, and any source error. Only public school data is stored.
 
 ## What appears
 
-- Lunch choices and menu details when published by LINQ Connect.
-- No-school dates from the official 2026–27 Somerville calendar.
-- Wednesday dismissal at 1:00 PM, except on closures and noon-dismissal dates.
-- Noon dismissals, including the days before Thanksgiving and winter recess.
-- No weather or generic daily attendance events.
+- Published lunch choices, with sides, deli, and salad options in event details.
+- No-school dates from the official 2026–27 district calendar.
+- Wednesday dismissal at 1:00 PM, except closures and noon dismissals.
+- Noon-dismissal dates, including the days before Thanksgiving and winter recess.
+- No weather events.
 
-Lunch dates already retrieved stay in the saved calendar, including past dates.
-When a refresh fails, the last saved menu stays available and is marked as saved.
-Missing lunches within the next two weeks are explicitly marked unavailable or not
-yet published; meals are never inferred from a repeating rotation.
+The feed targets grades K–8. It keeps saved lunches, including past dates, and
+preserves them if both menu sources fail. Missing menus in the next two weeks are
+marked unavailable or not yet published. Lunches are never inferred from a rotation.
 
-## Automatic refresh
+## Refresh and checks
 
 [Refresh school calendar](https://github.com/danfinn5/wsns-school-day/actions/workflows/calendar.yml)
 runs every six hours, on relevant code pushes, and through **Run workflow**.
-It checks calendar behavior, fetches the next six weeks of menus, and commits:
+It tests the renderer and fallback behavior, fetches the next two weeks of menus,
+then publishes calendar/wsns.ics and calendar/menu.json.
 
-- calendar/wsns.ics — the subscription feed
-- calendar/menu.json — saved public menus and refresh status
+The collector scopes saved meals to the configured building and district IDs.
+Changing schools does not reuse another school's saved menu.
 
-No API keys or paid host are needed. A menu-service failure produces a warning
-while still publishing the schedule and saved meals. Check fetchStatus,
-lastCheckedAt, and lastSuccessfulAt in the menu snapshot for source health.
-
-To refresh or check locally with Node 20 or newer:
+With Node 20 or newer:
 
 ~~~bash
 node --test test/calendar.test.js
 node scripts/generate-calendar.mjs
 ~~~
 
-## Sources and limits
+No API keys or paid website host are needed. The public fallback is an external
+service; if it is unavailable, saved meals and the school schedule still publish.
 
-- [Official school-year calendar](https://www.somerville.k12.ma.us/wp-content/uploads/2026/09/2627-Calendar-English.pdf), revised July 28, 2026.
-- [WSNS school hours](https://www.somerville.k12.ma.us/schools/west-somerville-pk-8/).
-- [LINQ Connect menu](https://linqconnect.com/public/menu/FE53U3?buildingId=14d70caa-49e6-eb11-a2c9-fa7552227e36).
+## School schedule
 
-The school-year dates are structured constants in src/worker.js; review them for
-each new school year and calendar revision. Snow days, emergency closures, school
-relocations, classroom announcements, and school-specific events are not automatically
-collected. Menus are subject to change. LINQ may block automated requests; failures
-are shown in refresh status and calendar descriptions.
+- [Official 2026–27 calendar](https://www.somerville.k12.ma.us/wp-content/uploads/2026/09/2627-Calendar-English.pdf), revised July 28, 2026.
+- [School hours](https://www.somerville.k12.ma.us/schools/west-somerville-pk-8/).
+
+Schedule dates are constants in src/worker.js and need review when the district
+revises its calendar. Emergency closures, snow days, relocations, and classroom
+announcements are not automatically collected. Menus are subject to change.
 
 ## Existing web app
 
-The original installable dashboard still runs with npm start on a Node host or
-with Wrangler on Cloudflare Workers. It combines lunch, school hours, and weather.
-Its /calendar.ics endpoint uses the same lunch-and-schedule calendar renderer,
-while /api/data, /api/config, and /health remain available.
+The original dashboard can run with npm start on a Node host or with Wrangler on
+Cloudflare Workers. Its /calendar.ics endpoint uses the same menu and schedule
+renderer. The standalone subscription does not depend on that dashboard being hosted.
 
-Deployment configuration is in .do/app.yaml (DigitalOcean) and wrangler.jsonc
-(Cloudflare). The standalone subscription above does not depend on either host.
+## Related implementations
+
+[Lunchlink](https://git.sdf.org/trurl/lunchlink) documents direct JSON retrieval for
+West Somerville. [School Menu Connector](https://github.com/asachs01/school_menu_connector)
+documents the datacenter access issue and the Cloudflare transport used by its
+public service.

@@ -175,24 +175,83 @@ async function fetchLinqMenu(startISO, endISO, ctx) {
   url.searchParams.set("startDate", toMDY(startISO));
   url.searchParams.set("endDate", toMDY(endISO));
 
-  const response = await cachedFetch(url.toString(), {
-    signal: AbortSignal.timeout(25000),
-    headers: {
-      "accept": "application/json, text/plain, */*",
-      "accept-language": "en-US,en;q=0.9",
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 Version/18.0 Mobile/15E148 Safari/604.1",
-      "referer": "https://linqconnect.com/",
-      "origin": "https://linqconnect.com"
-    }
-  }, 60 * 60 * 3, ctx);
-
-  if (!response.ok) {
-    throw new Error(`LINQ returned ${response.status}`);
+  let directError;
+  try {
+    const response = await cachedFetch(url.toString(), {
+      signal: AbortSignal.timeout(20000),
+      headers: {
+        "accept": "application/json",
+        "user-agent": "Mozilla/5.0",
+        "referer": "https://linqconnect.com/"
+      }
+    }, 60 * 60 * 3, ctx);
+    if (!response.ok) throw new Error("LINQ returned " + response.status);
+    const data = await response.json();
+    if (!Array.isArray(data?.FamilyMenuSessions)) throw new Error("Unrecognized LINQ menu response");
+    return normalizeLinq(data);
+  } catch (error) {
+    directError = error;
   }
 
-  const data = await response.json();
-  if (!Array.isArray(data?.FamilyMenuSessions)) throw new Error("Unrecognized LINQ menu response");
-  return normalizeLinq(data);
+  // This public service explicitly supports automated school-menu requests.
+  // Its Cloudflare transport can reach LINQ when datacenter requests are blocked.
+  const payload = {
+    buildingId: CONFIG.linq.buildingId,
+    districtId: CONFIG.linq.districtId,
+    startDate: toMDY(startISO),
+    endDate: toMDY(endISO),
+    mealTypes: ["Lunch"]
+  };
+  const connectorURL = new URL("https://schoolmenuconnector.com/get-menu-json");
+  // Include request scope in the cache key, which cachedFetch stores as a GET.
+  connectorURL.search = new URLSearchParams({
+    buildingId: payload.buildingId, districtId: payload.districtId,
+    startDate: payload.startDate, endDate: payload.endDate
+  });
+  try {
+    const response = await cachedFetch(connectorURL.toString(), {
+      method: "POST",
+      headers: { "content-type": "application/json", "accept": "application/json" },
+      body: JSON.stringify(payload),
+      signal: AbortSignal.timeout(60000)
+    }, 60 * 60 * 3, ctx);
+    if (!response.ok) throw new Error("School Menu Connector returned " + response.status);
+    const menu = normalizeConnectorMenu(await response.json(), startISO, endISO);
+    if (!Object.keys(menu).length) throw new Error("School Menu Connector returned no usable lunches");
+    return menu;
+  } catch (error) {
+    throw new Error(directError.message + "; " + error.message);
+  }
+}
+
+function normalizeConnectorMenu(data, startISO, endISO) {
+  if (!Array.isArray(data?.events)) throw new Error("Unrecognized School Menu Connector response");
+  const out = {};
+  for (const event of data.events) {
+    if (event?.mealType !== "Lunch" || typeof event.description !== "string") continue;
+    const date = event.date;
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(date || "") || date < startISO || date > endISO) continue;
+    try { if (addDaysISO(date, 0) !== date) continue; } catch { continue; }
+    let category = "Other";
+    const items = [];
+    for (const line of event.description.split(/\r?\n/)) {
+      const heading = line.match(/^\s{2}(\S.*):\s*$/);
+      if (heading) category = heading[1].trim();
+      const recipe = line.match(/^\s*-\s+(.+)$/);
+      if (recipe) items.push({ name: recipe[1].trim(), category, allergens: [] });
+    }
+    const all = dedupeByName(items);
+    if (!all.length) continue;
+    const mains = all.filter(item => /entrée|entree|main|protein|hot sandwich/i.test(item.category));
+    const entrees = (mains.length ? mains : all).slice(0, 6);
+    out[date] = { lunch: {
+      entrees,
+      sides: all.filter(item => !entrees.some(main => main.name === item.name)).slice(0, 8),
+      all,
+      source: "School Menu Connector"
+    }};
+  }
+  return out;
 }
 
 function normalizeLinq(data) {
@@ -386,7 +445,7 @@ function packSuggestion(weather, status) {
 async function buildCalendarFeed(ctx, options = {}) {
   const now = options.now || new Date();
   const today = options.today || localISODate(now);
-  const end = addDaysISO(today, 41);
+  const end = addDaysISO(today, 13);
   let menu = options.menu;
   let menuUnavailable = Boolean(options.menuUnavailable);
 
@@ -448,6 +507,7 @@ async function buildCalendarFeed(ctx, options = {}) {
       options.lastSuccessfulAt ? "Menu last retrieved: " + options.lastSuccessfulAt : "",
       "",
       "Official menu: " + CONFIG.links.menu,
+      lunch?.source ? "Menu retrieved via " + lunch.source + " (https://schoolmenuconnector.com)." : "",
       "Menus are subject to change."
     ].filter(line => line !== "").join("\n");
     events.push(icalEvent("schoolday-" + day, day, title, description));
@@ -585,4 +645,4 @@ function jsonResponse(data, status = 200) {
   });
 }
 
-export { CONFIG, buildCalendarFeed, fetchLinqMenu, normalizeLinq, schoolStatus, addDaysISO, localISODate, foldICalendarLine };
+export { CONFIG, buildCalendarFeed, fetchLinqMenu, normalizeLinq, normalizeConnectorMenu, schoolStatus, addDaysISO, localISODate, foldICalendarLine };

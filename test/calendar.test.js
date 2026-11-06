@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { buildCalendarFeed, schoolStatus, foldICalendarLine, normalizeLinq } from "../src/worker.js";
+import { buildCalendarFeed, schoolStatus, foldICalendarLine, normalizeLinq, normalizeConnectorMenu, fetchLinqMenu, CONFIG } from "../src/worker.js";
 
 const options = {
   today: "2026-11-06",
@@ -79,4 +79,54 @@ test("LINQ normalization separates lunch and breakfast", () => {
   ] });
   assert.equal(result["2026-11-09"].lunch.entrees[0].name, "Tacos");
   assert.equal(result["2026-11-09"].breakfast.entrees[0].name, "Bagel");
+});
+
+test("connector menus preserve lunch choices and keep sides out of the title", () => {
+  const parsed = normalizeConnectorMenu({ events: [{
+    date: "2026-11-10", mealType: "Lunch",
+    description: "Lunch Menu for 11/10/2026:\n\nHot Entree:\n  Side:\n    - Onion Rings\n  Hot Sandwich:\n    - Cheeseburger on a Bun\n    - Black Bean Burger on a Bun\n  Vegetable:\n    - Crispy Caesar Salad\n"
+  }, {
+    date: "2026-11-10", mealType: "Breakfast", description: "  Entree:\n    - Bagel\n"
+  }, {
+    date: "2026-12-01", mealType: "Lunch", description: "  Entree:\n    - Outside request range\n"
+  }] }, "2026-11-09", "2026-11-13");
+  assert.equal(Object.keys(parsed).length, 1);
+  assert.equal(parsed["2026-11-10"].lunch.entrees[0].name, "Cheeseburger on a Bun");
+  assert.equal(parsed["2026-11-10"].lunch.entrees.length, 2);
+  assert.equal(parsed["2026-11-10"].lunch.all.length, 4);
+  assert.equal(parsed["2026-11-10"].lunch.source, "School Menu Connector");
+  assert.throws(() => normalizeConnectorMenu({ error: "Unavailable" }, "2026-11-09", "2026-11-13"));
+});
+
+test("blocked LINQ requests fall back using the exact selected school and date range", async () => {
+  const savedFetch = globalThis.fetch;
+  const savedCaches = globalThis.caches;
+  const calls = [];
+  globalThis.caches = { default: { async match() { return undefined; } } };
+  globalThis.fetch = async (url, init) => {
+    calls.push({ url: String(url), init });
+    if (calls.length === 1) return new Response("Forbidden", { status: 403 });
+    return new Response(JSON.stringify({ events: [{
+      date: "2026-11-09", mealType: "Lunch",
+      description: "Lunch Menu for 11/9/2026:\n\nHot Entree:\n  Hot Entree:\n    - Sweet and Sour Chicken\n    - Sweet and Sour Tofu\n"
+    }] }), { headers: { "content-type": "application/json" } });
+  };
+  try {
+    const menu = await fetchLinqMenu("2026-11-09", "2026-11-13");
+    assert.equal(calls.length, 2);
+    assert.equal(new URL(calls[1].url).origin, "https://schoolmenuconnector.com");
+    assert.equal(calls[1].init.method, "POST");
+    const payload = JSON.parse(calls[1].init.body);
+    assert.equal(payload.buildingId, "14d70caa-49e6-eb11-a2c9-fa7552227e36");
+    assert.equal(payload.districtId, CONFIG.linq.districtId);
+    assert.equal(payload.startDate, "11-09-2026");
+    assert.equal(payload.endDate, "11-13-2026");
+    assert.equal(menu["2026-11-09"].lunch.entrees.length, 2);
+    const calendar = await buildCalendarFeed(null, { ...options, menu });
+    assert.ok(unfold(calendar).includes("Sweet and Sour Chicken / Sweet and Sour Tofu"));
+    assert.ok(unfold(calendar).includes("Menu retrieved via School Menu Connector"));
+  } finally {
+    globalThis.fetch = savedFetch;
+    globalThis.caches = savedCaches;
+  }
 });
