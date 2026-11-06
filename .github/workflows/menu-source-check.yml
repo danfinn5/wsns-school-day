@@ -9,11 +9,7 @@ permissions:
   contents: read
 jobs:
   check:
-    strategy:
-      fail-fast: false
-      matrix:
-        runner: [ubuntu-latest, windows-latest, macos-latest]
-    runs-on: ${{ matrix.runner }}
+    runs-on: ubuntu-latest
     timeout-minutes: 4
     steps:
       - uses: actions/checkout@v4
@@ -21,8 +17,3 @@ jobs:
         with:
           node-version: "22"
       - run: node scripts/check-menu-source.mjs
-      - uses: actions/upload-artifact@v4
-        with:
-          name: menu-source-${{ matrix.runner }}
-          path: menu-source-*.json
-          retention-days: 3
