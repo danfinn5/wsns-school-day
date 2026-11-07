@@ -29,7 +29,7 @@ jobs:
       - name: Check hosted dashboard
         env:
           PLAYWRIGHT_MODULE: /tmp/wsns-browser/node_modules/playwright-core/index.mjs
-          CHECK_DASHBOARD_URL: https://deploy-preview-71--danfinn5.netlify.app/wsns/
+          CHECK_DASHBOARD_URL: https://danfinn5.netlify.app/wsns/
         run: node scripts/check-dashboard.mjs
       - uses: actions/upload-artifact@v4
         if: always()

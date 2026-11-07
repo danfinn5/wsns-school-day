@@ -5,7 +5,7 @@ releases, and noon dismissals. No separate website host is required.
 
 ## Dashboard
 
-The dashboard is being published at https://danfinn5.netlify.app/wsns/.
+Open the dashboard at https://danfinn5.netlify.app/wsns/.
 It shows current lunches, expandable full menus, school schedule changes, and
 weather. Public snapshots refresh throughout the day; the Refresh button reloads
 the latest snapshot.
@@ -88,6 +88,13 @@ service; if it is unavailable, saved meals and the school schedule still publish
 Schedule dates are constants in src/worker.js and need review when the district
 revises its calendar. Emergency closures, snow days, relocations, and classroom
 announcements are not automatically collected. Menus are subject to change.
+
+## Dashboard hosting
+
+The dashboard's source assets are in public/. The hosted copy is published through
+static/wsns/ in danfinn5/danfinn5.github.io on Netlify. UI changes need the four
+static assets copied there; meal, schedule, and weather snapshots update automatically
+from this repository without rebuilding the portfolio.
 
 ## Existing web app
 
