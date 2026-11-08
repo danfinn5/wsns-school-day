@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T19:28:58.402Z",
+  "generatedAt": "2026-11-08T00:45:02.716Z",
   "school": {
     "name": "West Somerville Neighborhood School",
     "shortName": "WSNS",
@@ -34,7 +34,7 @@
         "high": 63,
         "low": 51,
         "rainChance": 80,
-        "precip": 0.646,
+        "precip": 0.559,
         "wind": 10
       },
       "pack": null
@@ -50,13 +50,13 @@
       "lunch": null,
       "breakfast": null,
       "weather": {
-        "code": 55,
-        "label": "Drizzle",
+        "code": 63,
+        "label": "Rain",
         "icon": "rain",
-        "high": 53,
-        "low": 41,
-        "rainChance": 77,
-        "precip": 0.059,
+        "high": 52,
+        "low": 42,
+        "rainChance": 85,
+        "precip": 0.315,
         "wind": 14
       },
       "pack": null
@@ -200,14 +200,14 @@
       },
       "breakfast": null,
       "weather": {
-        "code": 51,
-        "label": "Drizzle",
-        "icon": "rain",
-        "high": 53,
-        "low": 41,
-        "rainChance": 14,
-        "precip": 0.004,
-        "wind": 13
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 52,
+        "low": 40,
+        "rainChance": 19,
+        "precip": 0,
+        "wind": 11
       },
       "pack": "light jacket"
     },
@@ -365,7 +365,7 @@
         "code": 3,
         "label": "Cloudy",
         "icon": "cloud",
-        "high": 56,
+        "high": 57,
         "low": 44,
         "rainChance": 2,
         "precip": 0,
@@ -387,11 +387,11 @@
         "code": 3,
         "label": "Cloudy",
         "icon": "cloud",
-        "high": 57,
+        "high": 58,
         "low": 46,
-        "rainChance": 1,
+        "rainChance": 0,
         "precip": 0,
-        "wind": 8
+        "wind": 11
       },
       "pack": null
     },
@@ -522,14 +522,14 @@
       },
       "breakfast": null,
       "weather": {
-        "code": 51,
-        "label": "Drizzle",
-        "icon": "rain",
-        "high": 52,
-        "low": 44,
-        "rainChance": 23,
-        "precip": 0.008,
-        "wind": 11
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 50,
+        "low": 40,
+        "rainChance": 30,
+        "precip": 0,
+        "wind": 9
       },
       "pack": "light jacket"
     },
@@ -660,14 +660,14 @@
       },
       "breakfast": null,
       "weather": {
-        "code": 80,
+        "code": 81,
         "label": "Rain",
         "icon": "rain",
-        "high": 51,
-        "low": 39,
-        "rainChance": 49,
-        "precip": 0.929,
-        "wind": 16
+        "high": 47,
+        "low": 40,
+        "rainChance": 46,
+        "precip": 0.862,
+        "wind": 18
       },
       "pack": "rain jacket · light jacket"
     },
@@ -682,14 +682,14 @@
       "lunch": null,
       "breakfast": null,
       "weather": {
-        "code": 51,
-        "label": "Drizzle",
+        "code": 80,
+        "label": "Rain",
         "icon": "rain",
-        "high": 41,
-        "low": 38,
+        "high": 52,
+        "low": 46,
         "rainChance": 32,
-        "precip": 0.091,
-        "wind": 11
+        "precip": 2.232,
+        "wind": 19
       },
       "pack": null
     },
@@ -707,9 +707,9 @@
         "code": 3,
         "label": "Cloudy",
         "icon": "cloud",
-        "high": 48,
-        "low": 38,
-        "rainChance": 18,
+        "high": 46,
+        "low": 39,
+        "rainChance": 13,
         "precip": 0,
         "wind": 14
       },
@@ -842,14 +842,14 @@
       },
       "breakfast": null,
       "weather": {
-        "code": 3,
-        "label": "Cloudy",
-        "icon": "cloud",
+        "code": 51,
+        "label": "Drizzle",
+        "icon": "rain",
         "high": 45,
         "low": 36,
-        "rainChance": 5,
-        "precip": 0,
-        "wind": 14
+        "rainChance": 2,
+        "precip": 0.012,
+        "wind": 15
       },
       "pack": "light jacket"
     },
@@ -997,14 +997,14 @@
       },
       "breakfast": null,
       "weather": {
-        "code": 1,
-        "label": "Partly cloudy",
-        "icon": "partly",
-        "high": 50,
-        "low": 34,
-        "rainChance": 0,
+        "code": 0,
+        "label": "Clear",
+        "icon": "sun",
+        "high": 45,
+        "low": 35,
+        "rainChance": 1,
         "precip": 0,
-        "wind": 9
+        "wind": 14
       },
       "pack": "light jacket"
     },
@@ -1126,11 +1126,11 @@
         "code": 0,
         "label": "Clear",
         "icon": "sun",
-        "high": 47,
+        "high": 49,
         "low": 33,
         "rainChance": 3,
         "precip": 0,
-        "wind": 4
+        "wind": 7
       },
       "pack": "light jacket"
     },
@@ -1279,14 +1279,14 @@
       },
       "breakfast": null,
       "weather": {
-        "code": 51,
-        "label": "Drizzle",
-        "icon": "rain",
-        "high": 50,
-        "low": 34,
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 52,
+        "low": 37,
         "rainChance": 10,
-        "precip": 0.012,
-        "wind": 8
+        "precip": 0,
+        "wind": 9
       },
       "pack": "light jacket"
     },
@@ -1420,8 +1420,8 @@
         "code": 3,
         "label": "Cloudy",
         "icon": "cloud",
-        "high": 55,
-        "low": 45,
+        "high": 58,
+        "low": 42,
         "rainChance": 6,
         "precip": 0,
         "wind": 7
