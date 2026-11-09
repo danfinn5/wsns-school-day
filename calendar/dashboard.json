@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T11:46:17.219Z",
+  "generatedAt": "2026-11-09T23:47:59.224Z",
   "school": {
     "name": "West Somerville Neighborhood School",
     "shortName": "WSNS",
@@ -156,16 +156,16 @@
       },
       "breakfast": null,
       "weather": {
-        "code": 63,
-        "label": "Rain",
-        "icon": "rain",
-        "high": 53,
-        "low": 43,
-        "rainChance": 12,
-        "precip": 0.098,
-        "wind": 10
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 56,
+        "low": 44,
+        "rainChance": 7,
+        "precip": 0,
+        "wind": 11
       },
-      "pack": "rain jacket · light jacket"
+      "pack": "light jacket"
     },
     {
       "date": "2026-11-10",
@@ -321,11 +321,11 @@
         "code": 3,
         "label": "Cloudy",
         "icon": "cloud",
-        "high": 50,
-        "low": 38,
-        "rainChance": 3,
+        "high": 51,
+        "low": 39,
+        "rainChance": 4,
         "precip": 0,
-        "wind": 8
+        "wind": 10
       },
       "pack": "light jacket"
     },
@@ -344,10 +344,10 @@
         "label": "Cloudy",
         "icon": "cloud",
         "high": 56,
-        "low": 46,
-        "rainChance": 1,
+        "low": 37,
+        "rainChance": 0,
         "precip": 0,
-        "wind": 9
+        "wind": 10
       },
       "pack": null
     },
@@ -478,14 +478,14 @@
       },
       "breakfast": null,
       "weather": {
-        "code": 82,
-        "label": "Rain",
+        "code": 53,
+        "label": "Drizzle",
         "icon": "rain",
-        "high": 56,
-        "low": 45,
-        "rainChance": 50,
-        "precip": 0.531,
-        "wind": 20
+        "high": 54,
+        "low": 47,
+        "rainChance": 46,
+        "precip": 0.134,
+        "wind": 15
       },
       "pack": "rain jacket · light jacket"
     },
@@ -616,14 +616,14 @@
       },
       "breakfast": null,
       "weather": {
-        "code": 81,
-        "label": "Rain",
-        "icon": "rain",
-        "high": 57,
-        "low": 43,
-        "rainChance": 64,
-        "precip": 0.315,
-        "wind": 16
+        "code": 73,
+        "label": "Snow",
+        "icon": "snow",
+        "high": 48,
+        "low": 38,
+        "rainChance": 60,
+        "precip": 0.606,
+        "wind": 13
       },
       "pack": "rain jacket · light jacket"
     },
@@ -638,14 +638,14 @@
       "lunch": null,
       "breakfast": null,
       "weather": {
-        "code": 3,
-        "label": "Cloudy",
-        "icon": "cloud",
-        "high": 46,
-        "low": 40,
-        "rainChance": 51,
-        "precip": 0,
-        "wind": 10
+        "code": 51,
+        "label": "Drizzle",
+        "icon": "rain",
+        "high": 40,
+        "low": 37,
+        "rainChance": 36,
+        "precip": 0.012,
+        "wind": 8
       },
       "pack": null
     },
@@ -660,14 +660,14 @@
       "lunch": null,
       "breakfast": null,
       "weather": {
-        "code": 51,
-        "label": "Drizzle",
-        "icon": "rain",
-        "high": 49,
-        "low": 39,
-        "rainChance": 20,
-        "precip": 0.012,
-        "wind": 12
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 48,
+        "low": 37,
+        "rainChance": 7,
+        "precip": 0,
+        "wind": 13
       },
       "pack": null
     },
@@ -801,11 +801,11 @@
         "code": 3,
         "label": "Cloudy",
         "icon": "cloud",
-        "high": 48,
-        "low": 40,
-        "rainChance": 6,
+        "high": 49,
+        "low": 36,
+        "rainChance": 1,
         "precip": 0,
-        "wind": 14
+        "wind": 7
       },
       "pack": "light jacket"
     },
@@ -953,14 +953,14 @@
       },
       "breakfast": null,
       "weather": {
-        "code": 2,
+        "code": 1,
         "label": "Partly cloudy",
         "icon": "partly",
         "high": 51,
-        "low": 38,
-        "rainChance": 1,
+        "low": 35,
+        "rainChance": 2,
         "precip": 0,
-        "wind": 8
+        "wind": 4
       },
       "pack": "light jacket"
     },
@@ -1082,9 +1082,9 @@
         "code": 0,
         "label": "Clear",
         "icon": "sun",
-        "high": 49,
-        "low": 37,
-        "rainChance": 1,
+        "high": 51,
+        "low": 36,
+        "rainChance": 2,
         "precip": 0,
         "wind": 4
       },
@@ -1235,14 +1235,14 @@
       },
       "breakfast": null,
       "weather": {
-        "code": 3,
-        "label": "Cloudy",
-        "icon": "cloud",
-        "high": 52,
-        "low": 38,
+        "code": 1,
+        "label": "Partly cloudy",
+        "icon": "partly",
+        "high": 54,
+        "low": 37,
         "rainChance": 2,
         "precip": 0,
-        "wind": 5
+        "wind": 4
       },
       "pack": "light jacket"
     },
@@ -1376,11 +1376,11 @@
         "code": 3,
         "label": "Cloudy",
         "icon": "cloud",
-        "high": 57,
-        "low": 39,
-        "rainChance": 3,
+        "high": 58,
+        "low": 40,
+        "rainChance": 11,
         "precip": 0,
-        "wind": 9
+        "wind": 7
       },
       "pack": "light jacket"
     },
@@ -1395,14 +1395,14 @@
       "lunch": null,
       "breakfast": null,
       "weather": {
-        "code": 51,
-        "label": "Drizzle",
-        "icon": "rain",
-        "high": 56,
-        "low": 47,
-        "rainChance": 17,
-        "precip": 0.012,
-        "wind": 10
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 57,
+        "low": 45,
+        "rainChance": 18,
+        "precip": 0,
+        "wind": 9
       },
       "pack": null
     },
@@ -1417,14 +1417,14 @@
       "lunch": null,
       "breakfast": null,
       "weather": {
-        "code": 51,
-        "label": "Drizzle",
-        "icon": "rain",
-        "high": 54,
-        "low": 48,
-        "rainChance": 20,
-        "precip": 0.004,
-        "wind": 7
+        "code": 1,
+        "label": "Partly cloudy",
+        "icon": "partly",
+        "high": 48,
+        "low": 38,
+        "rainChance": 26,
+        "precip": 0,
+        "wind": 9
       },
       "pack": null
     }
