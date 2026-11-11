@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T11:09:44.048Z",
+  "generatedAt": "2026-11-11T22:00:38.928Z",
   "school": {
     "name": "West Somerville Neighborhood School",
     "shortName": "WSNS",
@@ -31,11 +31,11 @@
         "code": 3,
         "label": "Cloudy",
         "icon": "cloud",
-        "high": 55,
+        "high": 57,
         "low": 41,
-        "rainChance": 2,
+        "rainChance": 1,
         "precip": 0,
-        "wind": 9
+        "wind": 11
       },
       "pack": null
     },
@@ -169,10 +169,10 @@
         "code": 63,
         "label": "Rain",
         "icon": "rain",
-        "high": 50,
-        "low": 41,
-        "rainChance": 95,
-        "precip": 0.688,
+        "high": 52,
+        "low": 43,
+        "rainChance": 70,
+        "precip": 0.311,
         "wind": 13
       },
       "pack": "rain jacket · light jacket"
@@ -304,16 +304,16 @@
       },
       "breakfast": null,
       "weather": {
-        "code": 80,
-        "label": "Rain",
-        "icon": "rain",
-        "high": 51,
-        "low": 36,
-        "rainChance": 95,
-        "precip": 0.429,
-        "wind": 17
+        "code": 71,
+        "label": "Snow",
+        "icon": "snow",
+        "high": 44,
+        "low": 37,
+        "rainChance": 96,
+        "precip": 0.355,
+        "wind": 13
       },
-      "pack": "rain jacket · light jacket"
+      "pack": "rain jacket · warm coat"
     },
     {
       "date": "2026-11-14",
@@ -326,14 +326,14 @@
       "lunch": null,
       "breakfast": null,
       "weather": {
-        "code": 71,
+        "code": 85,
         "label": "Snow",
         "icon": "snow",
-        "high": 43,
+        "high": 41,
         "low": 36,
-        "rainChance": 29,
-        "precip": 0.24,
-        "wind": 9
+        "rainChance": 14,
+        "precip": 0.051,
+        "wind": 8
       },
       "pack": null
     },
@@ -351,11 +351,11 @@
         "code": 3,
         "label": "Cloudy",
         "icon": "cloud",
-        "high": 49,
-        "low": 36,
-        "rainChance": 1,
+        "high": 48,
+        "low": 35,
+        "rainChance": 4,
         "precip": 0,
-        "wind": 10
+        "wind": 9
       },
       "pack": null
     },
@@ -489,7 +489,7 @@
         "code": 0,
         "label": "Clear",
         "icon": "sun",
-        "high": 51,
+        "high": 49,
         "low": 36,
         "rainChance": 1,
         "precip": 0,
@@ -641,14 +641,14 @@
       },
       "breakfast": null,
       "weather": {
-        "code": 3,
-        "label": "Cloudy",
-        "icon": "cloud",
-        "high": 49,
-        "low": 36,
-        "rainChance": 2,
+        "code": 0,
+        "label": "Clear",
+        "icon": "sun",
+        "high": 50,
+        "low": 35,
+        "rainChance": 0,
         "precip": 0,
-        "wind": 3
+        "wind": 5
       },
       "pack": "light jacket"
     },
@@ -767,14 +767,14 @@
       },
       "breakfast": null,
       "weather": {
-        "code": 3,
-        "label": "Cloudy",
-        "icon": "cloud",
-        "high": 50,
-        "low": 38,
-        "rainChance": 2,
+        "code": 0,
+        "label": "Clear",
+        "icon": "sun",
+        "high": 53,
+        "low": 37,
+        "rainChance": 1,
         "precip": 0,
-        "wind": 11
+        "wind": 5
       },
       "pack": "light jacket"
     },
@@ -923,16 +923,16 @@
       },
       "breakfast": null,
       "weather": {
-        "code": 53,
-        "label": "Drizzle",
-        "icon": "rain",
-        "high": 48,
-        "low": 46,
-        "rainChance": 3,
-        "precip": 0.165,
-        "wind": 12
+        "code": 1,
+        "label": "Partly cloudy",
+        "icon": "partly",
+        "high": 56,
+        "low": 39,
+        "rainChance": 2,
+        "precip": 0,
+        "wind": 4
       },
-      "pack": "rain jacket · light jacket"
+      "pack": "light jacket"
     },
     {
       "date": "2026-11-20",
@@ -1061,16 +1061,16 @@
       },
       "breakfast": null,
       "weather": {
-        "code": 61,
-        "label": "Rain",
-        "icon": "rain",
-        "high": 47,
-        "low": 45,
-        "rainChance": 6,
-        "precip": 0.425,
-        "wind": 8
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 53,
+        "low": 39,
+        "rainChance": 8,
+        "precip": 0,
+        "wind": 4
       },
-      "pack": "rain jacket · light jacket"
+      "pack": "light jacket"
     },
     {
       "date": "2026-11-21",
@@ -1083,14 +1083,14 @@
       "lunch": null,
       "breakfast": null,
       "weather": {
-        "code": 51,
-        "label": "Drizzle",
-        "icon": "rain",
-        "high": 55,
-        "low": 42,
-        "rainChance": 4,
-        "precip": 0.004,
-        "wind": 9
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 51,
+        "low": 46,
+        "rainChance": 8,
+        "precip": 0,
+        "wind": 8
       },
       "pack": null
     },
@@ -1105,13 +1105,13 @@
       "lunch": null,
       "breakfast": null,
       "weather": {
-        "code": 51,
-        "label": "Drizzle",
-        "icon": "rain",
-        "high": 59,
-        "low": 45,
-        "rainChance": 23,
-        "precip": 0.008,
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 60,
+        "low": 43,
+        "rainChance": 7,
+        "precip": 0,
         "wind": 11
       },
       "pack": null
@@ -1213,16 +1213,16 @@
       },
       "breakfast": null,
       "weather": {
-        "code": 3,
-        "label": "Cloudy",
-        "icon": "cloud",
-        "high": 47,
-        "low": 37,
-        "rainChance": 40,
-        "precip": 0,
-        "wind": 11
+        "code": 51,
+        "label": "Drizzle",
+        "icon": "rain",
+        "high": 62,
+        "low": 53,
+        "rainChance": 27,
+        "precip": 0.012,
+        "wind": 12
       },
-      "pack": "light jacket"
+      "pack": "normal school-day gear"
     },
     {
       "date": "2026-11-24",
@@ -1339,16 +1339,16 @@
       },
       "breakfast": null,
       "weather": {
-        "code": 3,
-        "label": "Cloudy",
-        "icon": "cloud",
-        "high": 44,
-        "low": 35,
-        "rainChance": 42,
-        "precip": 0,
-        "wind": 6
+        "code": 63,
+        "label": "Rain",
+        "icon": "rain",
+        "high": 62,
+        "low": 46,
+        "rainChance": 39,
+        "precip": 0.461,
+        "wind": 13
       },
-      "pack": "warm coat"
+      "pack": "rain jacket"
     }
   ],
   "upcoming": [
