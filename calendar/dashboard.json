@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T11:11:24.162Z",
+  "generatedAt": "2026-11-13T21:27:44.873Z",
   "school": {
     "name": "West Somerville Neighborhood School",
     "shortName": "WSNS",
@@ -143,8 +143,17 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": null,
-      "pack": null
+      "weather": {
+        "code": 75,
+        "label": "Snow",
+        "icon": "snow",
+        "high": 45,
+        "low": 33,
+        "rainChance": 97,
+        "precip": 0.232,
+        "wind": 13
+      },
+      "pack": "rain jacket · light jacket"
     },
     {
       "date": "2026-11-14",
@@ -156,7 +165,16 @@
       },
       "lunch": null,
       "breakfast": null,
-      "weather": null,
+      "weather": {
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 43,
+        "low": 32,
+        "rainChance": 10,
+        "precip": 0,
+        "wind": 8
+      },
       "pack": null
     },
     {
@@ -169,7 +187,16 @@
       },
       "lunch": null,
       "breakfast": null,
-      "weather": null,
+      "weather": {
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 48,
+        "low": 33,
+        "rainChance": 2,
+        "precip": 0,
+        "wind": 12
+      },
       "pack": null
     },
     {
@@ -298,8 +325,17 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": null,
-      "pack": null
+      "weather": {
+        "code": 0,
+        "label": "Clear",
+        "icon": "sun",
+        "high": 50,
+        "low": 36,
+        "rainChance": 0,
+        "precip": 0,
+        "wind": 8
+      },
+      "pack": "light jacket"
     },
     {
       "date": "2026-11-17",
@@ -444,8 +480,17 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": null,
-      "pack": null
+      "weather": {
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 54,
+        "low": 36,
+        "rainChance": 0,
+        "precip": 0,
+        "wind": 7
+      },
+      "pack": "light jacket"
     },
     {
       "date": "2026-11-18",
@@ -561,8 +606,17 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": null,
-      "pack": null
+      "weather": {
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 59,
+        "low": 41,
+        "rainChance": 0,
+        "precip": 0,
+        "wind": 7
+      },
+      "pack": "light jacket"
     },
     {
       "date": "2026-11-19",
@@ -708,8 +762,17 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": null,
-      "pack": null
+      "weather": {
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 61,
+        "low": 43,
+        "rainChance": 0,
+        "precip": 0,
+        "wind": 8
+      },
+      "pack": "light jacket"
     },
     {
       "date": "2026-11-20",
@@ -837,8 +900,17 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": null,
-      "pack": null
+      "weather": {
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 61,
+        "low": 46,
+        "rainChance": 0,
+        "precip": 0,
+        "wind": 10
+      },
+      "pack": "light jacket"
     },
     {
       "date": "2026-11-21",
@@ -850,7 +922,16 @@
       },
       "lunch": null,
       "breakfast": null,
-      "weather": null,
+      "weather": {
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 58,
+        "low": 45,
+        "rainChance": 1,
+        "precip": 0,
+        "wind": 7
+      },
       "pack": null
     },
     {
@@ -863,7 +944,16 @@
       },
       "lunch": null,
       "breakfast": null,
-      "weather": null,
+      "weather": {
+        "code": 53,
+        "label": "Drizzle",
+        "icon": "rain",
+        "high": 55,
+        "low": 41,
+        "rainChance": 8,
+        "precip": 0.142,
+        "wind": 16
+      },
       "pack": null
     },
     {
@@ -962,8 +1052,17 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": null,
-      "pack": null
+      "weather": {
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 45,
+        "low": 35,
+        "rainChance": 14,
+        "precip": 0,
+        "wind": 15
+      },
+      "pack": "light jacket"
     },
     {
       "date": "2026-11-24",
@@ -1079,8 +1178,17 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": null,
-      "pack": null
+      "weather": {
+        "code": 1,
+        "label": "Partly cloudy",
+        "icon": "partly",
+        "high": 41,
+        "low": 31,
+        "rainChance": 14,
+        "precip": 0,
+        "wind": 7
+      },
+      "pack": "warm coat"
     },
     {
       "date": "2026-11-25",
@@ -1160,8 +1268,17 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": null,
-      "pack": null
+      "weather": {
+        "code": 2,
+        "label": "Partly cloudy",
+        "icon": "partly",
+        "high": 41,
+        "low": 31,
+        "rainChance": 17,
+        "precip": 0,
+        "wind": 12
+      },
+      "pack": "warm coat"
     },
     {
       "date": "2026-11-26",
@@ -1173,7 +1290,16 @@
       },
       "lunch": null,
       "breakfast": null,
-      "weather": null,
+      "weather": {
+        "code": 0,
+        "label": "Clear",
+        "icon": "sun",
+        "high": 44,
+        "low": 30,
+        "rainChance": 26,
+        "precip": 0,
+        "wind": 10
+      },
       "pack": null
     }
   ],
@@ -1259,7 +1385,5 @@
       "title": "No school — Educator professional development"
     }
   ],
-  "warnings": [
-    "Weather is temporarily unavailable."
-  ]
+  "warnings": []
 }
