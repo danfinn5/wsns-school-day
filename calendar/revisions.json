@@ -398,5 +398,10 @@
     "hash": "7479126e9cf5de258774cf88501c508edbd6f12595d6bd63ac71043a331acca4",
     "sequence": 1,
     "lastModified": "20261112T112726Z"
+  },
+  "schoolday-2026-11-30@wsns-school-day": {
+    "hash": "f979fdb9d27d1cee8cec92e927c8ec01b9f5fe372341b2b0c7c1d49c980dfc6e",
+    "sequence": 1,
+    "lastModified": "20261117T120145Z"
   }
 }
