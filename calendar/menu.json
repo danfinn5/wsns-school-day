@@ -6,8 +6,8 @@
   "menuSources": [
     "School Menu Connector"
   ],
-  "lastCheckedAt": "2026-11-17T12:01:45.453Z",
-  "lastSuccessfulAt": "2026-11-17T12:01:45.453Z",
+  "lastCheckedAt": "2026-11-17T22:58:01.717Z",
+  "lastSuccessfulAt": "2026-11-17T22:58:01.717Z",
   "fetchStatus": "ok",
   "error": null,
   "menu": {
@@ -858,6 +858,12 @@
             "allergens": []
           },
           {
+            "name": "Assorted Fresh Cut Vegetables",
+            "category": "Vegetable",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          },
+          {
             "name": "1% White Milk",
             "category": "Milk",
             "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
@@ -872,12 +878,6 @@
           {
             "name": "Chocolate Milk",
             "category": "Milk",
-            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
-            "allergens": []
-          },
-          {
-            "name": "Assorted Fresh Cut Vegetables",
-            "category": "Vegetable",
             "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           }
