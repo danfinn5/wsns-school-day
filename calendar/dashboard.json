@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T22:58:01.717Z",
+  "generatedAt": "2026-11-18T11:53:30.905Z",
   "school": {
     "name": "West Somerville Neighborhood School",
     "shortName": "WSNS",
@@ -17,161 +17,6 @@
     "school": "https://somerville.k12.ma.us/schools/west-somerville-neighborhood-school-pk%E2%80%938"
   },
   "days": [
-    {
-      "date": "2026-11-17",
-      "status": {
-        "type": "regular",
-        "label": "Regular school day",
-        "detail": "8:10 AM–2:35 PM",
-        "dismissal": "2:35 PM"
-      },
-      "lunch": {
-        "entrees": [
-          {
-            "name": "Chicken Tenders",
-            "category": "Hot Entree",
-            "group": "Hot Entree",
-            "allergens": []
-          },
-          {
-            "name": "Vegan Nuggets",
-            "category": "Hot Entree",
-            "group": "Hot Entree",
-            "allergens": []
-          },
-          {
-            "name": "Whole Wheat Waffle",
-            "category": "Hot Entree",
-            "group": "Hot Entree",
-            "allergens": []
-          }
-        ],
-        "sides": [],
-        "all": [
-          {
-            "name": "Chicken Tenders",
-            "category": "Hot Entree",
-            "group": "Hot Entree",
-            "allergens": []
-          },
-          {
-            "name": "Vegan Nuggets",
-            "category": "Hot Entree",
-            "group": "Hot Entree",
-            "allergens": []
-          },
-          {
-            "name": "Whole Wheat Waffle",
-            "category": "Hot Entree",
-            "group": "Hot Entree",
-            "allergens": []
-          },
-          {
-            "name": "Strawberries",
-            "category": "Fruit",
-            "group": "Hot Entree",
-            "allergens": []
-          },
-          {
-            "name": "Blueberries",
-            "category": "Fruit",
-            "group": "Hot Entree",
-            "allergens": []
-          },
-          {
-            "name": "Pancake Syrup  Cup",
-            "category": "Condiments",
-            "group": "Hot Entree",
-            "allergens": []
-          },
-          {
-            "name": "Turkey Sandwich with Cheese",
-            "category": "Deli",
-            "group": "Deli",
-            "allergens": []
-          },
-          {
-            "name": "Power Pack: Nachos with Cheese, Fruit & Veggie",
-            "category": "Deli",
-            "group": "Deli",
-            "allergens": []
-          },
-          {
-            "name": "Grab and Go Salad",
-            "category": "Grab and Go Salad",
-            "group": "Grab & Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Assorted Bean and Hummus Proteins",
-            "category": "Grab and Go Salad",
-            "group": "Grab & Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Assorted Egg and Cheese Proteins",
-            "category": "Grab and Go Salad",
-            "group": "Grab & Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Grilled Chicken Breast",
-            "category": "Grab and Go Salad",
-            "group": "Grab & Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Pita Bread",
-            "category": "Side",
-            "group": "Grab & Go Salad",
-            "allergens": []
-          },
-          {
-            "name": "Assorted Fruit",
-            "category": "Fruit",
-            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
-            "allergens": []
-          },
-          {
-            "name": "Assorted Fresh Cut Vegetables",
-            "category": "Vegetable",
-            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
-            "allergens": []
-          },
-          {
-            "name": "1% White Milk",
-            "category": "Milk",
-            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
-            "allergens": []
-          },
-          {
-            "name": "Skim Milk",
-            "category": "Milk",
-            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
-            "allergens": []
-          },
-          {
-            "name": "Chocolate Milk",
-            "category": "Milk",
-            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
-            "allergens": []
-          }
-        ],
-        "source": "School Menu Connector"
-      },
-      "breakfast": null,
-      "weather": {
-        "code": 0,
-        "label": "Clear",
-        "icon": "sun",
-        "high": 57,
-        "low": 31,
-        "rainChance": 0,
-        "precip": 0,
-        "wind": 9
-      },
-      "pack": "light jacket"
-    },
     {
       "date": "2026-11-18",
       "status": {
@@ -286,17 +131,8 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": {
-        "code": 3,
-        "label": "Cloudy",
-        "icon": "cloud",
-        "high": 63,
-        "low": 36,
-        "rainChance": 1,
-        "precip": 0,
-        "wind": 11
-      },
-      "pack": "normal school-day gear"
+      "weather": null,
+      "pack": null
     },
     {
       "date": "2026-11-19",
@@ -442,17 +278,8 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": {
-        "code": 3,
-        "label": "Cloudy",
-        "icon": "cloud",
-        "high": 63,
-        "low": 34,
-        "rainChance": 0,
-        "precip": 0,
-        "wind": 7
-      },
-      "pack": "normal school-day gear"
+      "weather": null,
+      "pack": null
     },
     {
       "date": "2026-11-20",
@@ -580,17 +407,8 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": {
-        "code": 3,
-        "label": "Cloudy",
-        "icon": "cloud",
-        "high": 64,
-        "low": 48,
-        "rainChance": 0,
-        "precip": 0,
-        "wind": 11
-      },
-      "pack": "normal school-day gear"
+      "weather": null,
+      "pack": null
     },
     {
       "date": "2026-11-21",
@@ -602,16 +420,7 @@
       },
       "lunch": null,
       "breakfast": null,
-      "weather": {
-        "code": 3,
-        "label": "Cloudy",
-        "icon": "cloud",
-        "high": 62,
-        "low": 46,
-        "rainChance": 0,
-        "precip": 0,
-        "wind": 6
-      },
+      "weather": null,
       "pack": null
     },
     {
@@ -624,16 +433,7 @@
       },
       "lunch": null,
       "breakfast": null,
-      "weather": {
-        "code": 63,
-        "label": "Rain",
-        "icon": "rain",
-        "high": 60,
-        "low": 48,
-        "rainChance": 39,
-        "precip": 0.965,
-        "wind": 9
-      },
+      "weather": null,
       "pack": null
     },
     {
@@ -732,17 +532,8 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": {
-        "code": 63,
-        "label": "Rain",
-        "icon": "rain",
-        "high": 57,
-        "low": 54,
-        "rainChance": 40,
-        "precip": 0.535,
-        "wind": 10
-      },
-      "pack": "rain jacket · light jacket"
+      "weather": null,
+      "pack": null
     },
     {
       "date": "2026-11-24",
@@ -858,17 +649,8 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": {
-        "code": 51,
-        "label": "Drizzle",
-        "icon": "rain",
-        "high": 56,
-        "low": 32,
-        "rainChance": 8,
-        "precip": 0.035,
-        "wind": 16
-      },
-      "pack": "light jacket"
+      "weather": null,
+      "pack": null
     },
     {
       "date": "2026-11-25",
@@ -948,17 +730,8 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": {
-        "code": 3,
-        "label": "Cloudy",
-        "icon": "cloud",
-        "high": 40,
-        "low": 30,
-        "rainChance": 4,
-        "precip": 0,
-        "wind": 9
-      },
-      "pack": "warm coat"
+      "weather": null,
+      "pack": null
     },
     {
       "date": "2026-11-26",
@@ -970,16 +743,7 @@
       },
       "lunch": null,
       "breakfast": null,
-      "weather": {
-        "code": 51,
-        "label": "Drizzle",
-        "icon": "rain",
-        "high": 48,
-        "low": 37,
-        "rainChance": 23,
-        "precip": 0.024,
-        "wind": 10
-      },
+      "weather": null,
       "pack": null
     },
     {
@@ -992,16 +756,7 @@
       },
       "lunch": null,
       "breakfast": null,
-      "weather": {
-        "code": 65,
-        "label": "Rain",
-        "icon": "rain",
-        "high": 53,
-        "low": 48,
-        "rainChance": 24,
-        "precip": 1.843,
-        "wind": 19
-      },
+      "weather": null,
       "pack": null
     },
     {
@@ -1014,16 +769,7 @@
       },
       "lunch": null,
       "breakfast": null,
-      "weather": {
-        "code": 63,
-        "label": "Rain",
-        "icon": "rain",
-        "high": 48,
-        "low": 46,
-        "rainChance": 45,
-        "precip": 0.453,
-        "wind": 14
-      },
+      "weather": null,
       "pack": null
     },
     {
@@ -1036,16 +782,7 @@
       },
       "lunch": null,
       "breakfast": null,
-      "weather": {
-        "code": 63,
-        "label": "Rain",
-        "icon": "rain",
-        "high": 47,
-        "low": 42,
-        "rainChance": 43,
-        "precip": 0.567,
-        "wind": 14
-      },
+      "weather": null,
       "pack": null
     },
     {
@@ -1162,17 +899,137 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": {
-        "code": 51,
-        "label": "Drizzle",
-        "icon": "rain",
-        "high": 46,
-        "low": 39,
-        "rainChance": 10,
-        "precip": 0.008,
-        "wind": 13
+      "weather": null,
+      "pack": null
+    },
+    {
+      "date": "2026-12-01",
+      "status": {
+        "type": "regular",
+        "label": "Regular school day",
+        "detail": "8:10 AM–2:35 PM",
+        "dismissal": "2:35 PM"
       },
-      "pack": "light jacket"
+      "lunch": {
+        "entrees": [
+          {
+            "name": "Chicken and Cheese Quesadilla",
+            "category": "Hot Entree",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Black Bean Quesadilla",
+            "category": "Hot Entree",
+            "group": "Hot Entree",
+            "allergens": []
+          }
+        ],
+        "sides": [
+          {
+            "name": "Rice and Beans",
+            "category": "Side",
+            "group": "Hot Entree",
+            "allergens": []
+          }
+        ],
+        "all": [
+          {
+            "name": "Chicken and Cheese Quesadilla",
+            "category": "Hot Entree",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Black Bean Quesadilla",
+            "category": "Hot Entree",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Rice and Beans",
+            "category": "Side",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Ham Sandwich with Cheese",
+            "category": "Deli",
+            "group": "Deli",
+            "allergens": []
+          },
+          {
+            "name": "Power Pack: Harvest Salsa, Salsa, Tortilla Chips, Fruit, V",
+            "category": "Deli",
+            "group": "Deli",
+            "allergens": []
+          },
+          {
+            "name": "Grab and Go Salad",
+            "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Assorted Bean and Hummus Proteins",
+            "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Assorted Egg and Cheese Proteins",
+            "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Grilled Chicken Breast",
+            "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Pita Bread",
+            "category": "Side",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Assorted Fruit",
+            "category": "Fruit",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          },
+          {
+            "name": "Assorted Fresh Cut Vegetables",
+            "category": "Vegetable",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          },
+          {
+            "name": "1% White Milk",
+            "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          },
+          {
+            "name": "Skim Milk",
+            "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          },
+          {
+            "name": "Chocolate Milk",
+            "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          }
+        ],
+        "source": "School Menu Connector"
+      },
+      "breakfast": null,
+      "weather": null,
+      "pack": null
     }
   ],
   "upcoming": [
@@ -1257,5 +1114,7 @@
       "title": "No school — Educator professional development"
     }
   ],
-  "warnings": []
+  "warnings": [
+    "Weather is temporarily unavailable."
+  ]
 }
