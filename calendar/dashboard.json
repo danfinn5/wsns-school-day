@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T11:53:30.905Z",
+  "generatedAt": "2026-11-18T22:37:35.243Z",
   "school": {
     "name": "West Somerville Neighborhood School",
     "shortName": "WSNS",
@@ -131,8 +131,17 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": null,
-      "pack": null
+      "weather": {
+        "code": 45,
+        "label": "Fog",
+        "icon": "fog",
+        "high": 66,
+        "low": 39,
+        "rainChance": 0,
+        "precip": 0,
+        "wind": 11
+      },
+      "pack": "normal school-day gear"
     },
     {
       "date": "2026-11-19",
@@ -278,8 +287,17 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": null,
-      "pack": null
+      "weather": {
+        "code": 0,
+        "label": "Clear",
+        "icon": "sun",
+        "high": 66,
+        "low": 37,
+        "rainChance": 0,
+        "precip": 0,
+        "wind": 8
+      },
+      "pack": "normal school-day gear"
     },
     {
       "date": "2026-11-20",
@@ -407,8 +425,17 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": null,
-      "pack": null
+      "weather": {
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 63,
+        "low": 38,
+        "rainChance": 0,
+        "precip": 0,
+        "wind": 12
+      },
+      "pack": "normal school-day gear"
     },
     {
       "date": "2026-11-21",
@@ -420,7 +447,16 @@
       },
       "lunch": null,
       "breakfast": null,
-      "weather": null,
+      "weather": {
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 58,
+        "low": 45,
+        "rainChance": 0,
+        "precip": 0,
+        "wind": 5
+      },
       "pack": null
     },
     {
@@ -433,7 +469,16 @@
       },
       "lunch": null,
       "breakfast": null,
-      "weather": null,
+      "weather": {
+        "code": 80,
+        "label": "Rain",
+        "icon": "rain",
+        "high": 61,
+        "low": 48,
+        "rainChance": 36,
+        "precip": 0.398,
+        "wind": 11
+      },
       "pack": null
     },
     {
@@ -532,8 +577,17 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": null,
-      "pack": null
+      "weather": {
+        "code": 81,
+        "label": "Rain",
+        "icon": "rain",
+        "high": 62,
+        "low": 42,
+        "rainChance": 53,
+        "precip": 0.476,
+        "wind": 15
+      },
+      "pack": "rain jacket"
     },
     {
       "date": "2026-11-24",
@@ -649,8 +703,17 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": null,
-      "pack": null
+      "weather": {
+        "code": 0,
+        "label": "Clear",
+        "icon": "sun",
+        "high": 42,
+        "low": 31,
+        "rainChance": 13,
+        "precip": 0,
+        "wind": 14
+      },
+      "pack": "warm coat"
     },
     {
       "date": "2026-11-25",
@@ -730,8 +793,17 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": null,
-      "pack": null
+      "weather": {
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 38,
+        "low": 29,
+        "rainChance": 4,
+        "precip": 0,
+        "wind": 9
+      },
+      "pack": "warm coat"
     },
     {
       "date": "2026-11-26",
@@ -743,7 +815,16 @@
       },
       "lunch": null,
       "breakfast": null,
-      "weather": null,
+      "weather": {
+        "code": 71,
+        "label": "Snow",
+        "icon": "snow",
+        "high": 37,
+        "low": 29,
+        "rainChance": 34,
+        "precip": 0.012,
+        "wind": 10
+      },
       "pack": null
     },
     {
@@ -756,7 +837,16 @@
       },
       "lunch": null,
       "breakfast": null,
-      "weather": null,
+      "weather": {
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 42,
+        "low": 31,
+        "rainChance": 32,
+        "precip": 0,
+        "wind": 6
+      },
       "pack": null
     },
     {
@@ -769,7 +859,16 @@
       },
       "lunch": null,
       "breakfast": null,
-      "weather": null,
+      "weather": {
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 45,
+        "low": 31,
+        "rainChance": 25,
+        "precip": 0,
+        "wind": 8
+      },
       "pack": null
     },
     {
@@ -782,7 +881,16 @@
       },
       "lunch": null,
       "breakfast": null,
-      "weather": null,
+      "weather": {
+        "code": 73,
+        "label": "Snow",
+        "icon": "snow",
+        "high": 41,
+        "low": 33,
+        "rainChance": 46,
+        "precip": 0.327,
+        "wind": 12
+      },
       "pack": null
     },
     {
@@ -899,8 +1007,17 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": null,
-      "pack": null
+      "weather": {
+        "code": 71,
+        "label": "Snow",
+        "icon": "snow",
+        "high": 42,
+        "low": 37,
+        "rainChance": 48,
+        "precip": 1.732,
+        "wind": 19
+      },
+      "pack": "rain jacket · warm coat"
     },
     {
       "date": "2026-12-01",
@@ -1001,12 +1118,6 @@
             "allergens": []
           },
           {
-            "name": "Assorted Fresh Cut Vegetables",
-            "category": "Vegetable",
-            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
-            "allergens": []
-          },
-          {
             "name": "1% White Milk",
             "category": "Milk",
             "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
@@ -1023,13 +1134,28 @@
             "category": "Milk",
             "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
+          },
+          {
+            "name": "Assorted Fresh Cut Vegetables",
+            "category": "Vegetable",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
           }
         ],
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": null,
-      "pack": null
+      "weather": {
+        "code": 55,
+        "label": "Drizzle",
+        "icon": "rain",
+        "high": 40,
+        "low": 33,
+        "rainChance": 16,
+        "precip": 0.114,
+        "wind": 15
+      },
+      "pack": "rain jacket · warm coat"
     }
   ],
   "upcoming": [
@@ -1114,7 +1240,5 @@
       "title": "No school — Educator professional development"
     }
   ],
-  "warnings": [
-    "Weather is temporarily unavailable."
-  ]
+  "warnings": []
 }
