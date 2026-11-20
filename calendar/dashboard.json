@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T11:52:00.207Z",
+  "generatedAt": "2026-11-20T22:15:33.713Z",
   "school": {
     "name": "West Somerville Neighborhood School",
     "shortName": "WSNS",
@@ -116,6 +116,12 @@
             "allergens": []
           },
           {
+            "name": "Assorted Fresh Cut Vegetables",
+            "category": "Vegetable",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          },
+          {
             "name": "1% White Milk",
             "category": "Milk",
             "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
@@ -132,12 +138,6 @@
             "category": "Milk",
             "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
-          },
-          {
-            "name": "Assorted Fresh Cut Vegetables",
-            "category": "Vegetable",
-            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
-            "allergens": []
           }
         ],
         "source": "School Menu Connector"
@@ -147,11 +147,11 @@
         "code": 3,
         "label": "Cloudy",
         "icon": "cloud",
-        "high": 66,
+        "high": 68,
         "low": 37,
         "rainChance": 0,
         "precip": 0,
-        "wind": 12
+        "wind": 13
       },
       "pack": "normal school-day gear"
     },
@@ -169,11 +169,11 @@
         "code": 3,
         "label": "Cloudy",
         "icon": "cloud",
-        "high": 62,
-        "low": 36,
+        "high": 65,
+        "low": 37,
         "rainChance": 0,
         "precip": 0,
-        "wind": 6
+        "wind": 5
       },
       "pack": null
     },
@@ -188,14 +188,14 @@
       "lunch": null,
       "breakfast": null,
       "weather": {
-        "code": 82,
+        "code": 81,
         "label": "Rain",
         "icon": "rain",
         "high": 61,
-        "low": 46,
-        "rainChance": 80,
-        "precip": 0.65,
-        "wind": 13
+        "low": 40,
+        "rainChance": 81,
+        "precip": 0.413,
+        "wind": 7
       },
       "pack": null
     },
@@ -300,10 +300,10 @@
         "label": "Rain",
         "icon": "rain",
         "high": 63,
-        "low": 46,
-        "rainChance": 92,
-        "precip": 0.272,
-        "wind": 15
+        "low": 47,
+        "rainChance": 89,
+        "precip": 1.087,
+        "wind": 16
       },
       "pack": "rain jacket"
     },
@@ -394,6 +394,12 @@
             "allergens": []
           },
           {
+            "name": "Assorted Fresh Cut Vegetables",
+            "category": "Vegetable",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          },
+          {
             "name": "1% White Milk",
             "category": "Milk",
             "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
@@ -410,26 +416,20 @@
             "category": "Milk",
             "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
-          },
-          {
-            "name": "Assorted Fresh Cut Vegetables",
-            "category": "Vegetable",
-            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
-            "allergens": []
           }
         ],
         "source": "School Menu Connector"
       },
       "breakfast": null,
       "weather": {
-        "code": 0,
-        "label": "Clear",
-        "icon": "sun",
-        "high": 48,
-        "low": 38,
-        "rainChance": 2,
+        "code": 2,
+        "label": "Partly cloudy",
+        "icon": "partly",
+        "high": 49,
+        "low": 37,
+        "rainChance": 0,
         "precip": 0,
-        "wind": 10
+        "wind": 11
       },
       "pack": "light jacket"
     },
@@ -515,11 +515,11 @@
         "code": 3,
         "label": "Cloudy",
         "icon": "cloud",
-        "high": 43,
+        "high": 42,
         "low": 34,
-        "rainChance": 10,
+        "rainChance": 13,
         "precip": 0,
-        "wind": 8
+        "wind": 10
       },
       "pack": "warm coat"
     },
@@ -534,14 +534,14 @@
       "lunch": null,
       "breakfast": null,
       "weather": {
-        "code": 3,
-        "label": "Cloudy",
-        "icon": "cloud",
-        "high": 46,
-        "low": 33,
-        "rainChance": 56,
-        "precip": 0,
-        "wind": 8
+        "code": 51,
+        "label": "Drizzle",
+        "icon": "rain",
+        "high": 45,
+        "low": 40,
+        "rainChance": 60,
+        "precip": 0.059,
+        "wind": 12
       },
       "pack": null
     },
@@ -556,14 +556,14 @@
       "lunch": null,
       "breakfast": null,
       "weather": {
-        "code": 73,
-        "label": "Snow",
-        "icon": "snow",
-        "high": 47,
-        "low": 38,
-        "rainChance": 56,
-        "precip": 0.291,
-        "wind": 14
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 46,
+        "low": 34,
+        "rainChance": 49,
+        "precip": 0,
+        "wind": 11
       },
       "pack": null
     },
@@ -578,14 +578,14 @@
       "lunch": null,
       "breakfast": null,
       "weather": {
-        "code": 75,
-        "label": "Snow",
-        "icon": "snow",
-        "high": 39,
-        "low": 31,
-        "rainChance": 19,
-        "precip": 0.831,
-        "wind": 14
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 48,
+        "low": 36,
+        "rainChance": 18,
+        "precip": 0,
+        "wind": 6
       },
       "pack": null
     },
@@ -603,11 +603,11 @@
         "code": 3,
         "label": "Cloudy",
         "icon": "cloud",
-        "high": 41,
-        "low": 31,
-        "rainChance": 24,
+        "high": 53,
+        "low": 37,
+        "rainChance": 26,
         "precip": 0,
-        "wind": 4
+        "wind": 14
       },
       "pack": null
     },
@@ -726,16 +726,16 @@
       },
       "breakfast": null,
       "weather": {
-        "code": 80,
-        "label": "Rain",
-        "icon": "rain",
-        "high": 43,
-        "low": 36,
-        "rainChance": 16,
-        "precip": 0.803,
+        "code": 3,
+        "label": "Cloudy",
+        "icon": "cloud",
+        "high": 38,
+        "low": 32,
+        "rainChance": 11,
+        "precip": 0,
         "wind": 11
       },
-      "pack": "rain jacket · warm coat"
+      "pack": "warm coat"
     },
     {
       "date": "2026-12-01",
@@ -836,12 +836,6 @@
             "allergens": []
           },
           {
-            "name": "Assorted Fresh Cut Vegetables",
-            "category": "Vegetable",
-            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
-            "allergens": []
-          },
-          {
             "name": "1% White Milk",
             "category": "Milk",
             "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
@@ -858,22 +852,28 @@
             "category": "Milk",
             "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
+          },
+          {
+            "name": "Assorted Fresh Cut Vegetables",
+            "category": "Vegetable",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
           }
         ],
         "source": "School Menu Connector"
       },
       "breakfast": null,
       "weather": {
-        "code": 3,
-        "label": "Cloudy",
-        "icon": "cloud",
-        "high": 41,
-        "low": 38,
-        "rainChance": 26,
+        "code": 0,
+        "label": "Clear",
+        "icon": "sun",
+        "high": 51,
+        "low": 33,
+        "rainChance": 17,
         "precip": 0,
-        "wind": 6
+        "wind": 9
       },
-      "pack": "warm coat"
+      "pack": "light jacket"
     },
     {
       "date": "2026-12-02",
@@ -962,12 +962,6 @@
             "allergens": []
           },
           {
-            "name": "Assorted Fresh Cut Vegetables",
-            "category": "Vegetable",
-            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
-            "allergens": []
-          },
-          {
             "name": "1% White Milk",
             "category": "Milk",
             "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
@@ -984,22 +978,28 @@
             "category": "Milk",
             "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
+          },
+          {
+            "name": "Assorted Fresh Cut Vegetables",
+            "category": "Vegetable",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
           }
         ],
         "source": "School Menu Connector"
       },
       "breakfast": null,
       "weather": {
-        "code": 3,
-        "label": "Cloudy",
-        "icon": "cloud",
-        "high": 44,
-        "low": 34,
-        "rainChance": 17,
-        "precip": 0,
-        "wind": 7
+        "code": 51,
+        "label": "Drizzle",
+        "icon": "rain",
+        "high": 49,
+        "low": 38,
+        "rainChance": 23,
+        "precip": 0.016,
+        "wind": 4
       },
-      "pack": "warm coat"
+      "pack": "light jacket"
     },
     {
       "date": "2026-12-03",
@@ -1088,12 +1088,6 @@
             "allergens": []
           },
           {
-            "name": "Assorted Fresh Cut Vegetables",
-            "category": "Vegetable",
-            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
-            "allergens": []
-          },
-          {
             "name": "1% White Milk",
             "category": "Milk",
             "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
@@ -1110,20 +1104,26 @@
             "category": "Milk",
             "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
+          },
+          {
+            "name": "Assorted Fresh Cut Vegetables",
+            "category": "Vegetable",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
           }
         ],
         "source": "School Menu Connector"
       },
       "breakfast": null,
       "weather": {
-        "code": 3,
-        "label": "Cloudy",
-        "icon": "cloud",
+        "code": 51,
+        "label": "Drizzle",
+        "icon": "rain",
         "high": 52,
-        "low": 35,
-        "rainChance": 16,
-        "precip": 0,
-        "wind": 10
+        "low": 46,
+        "rainChance": 23,
+        "precip": 0.008,
+        "wind": 4
       },
       "pack": "light jacket"
     }
