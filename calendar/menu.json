@@ -6,8 +6,8 @@
   "menuSources": [
     "School Menu Connector"
   ],
-  "lastCheckedAt": "2026-11-24T02:18:18.932Z",
-  "lastSuccessfulAt": "2026-11-24T02:18:18.932Z",
+  "lastCheckedAt": "2026-11-24T13:54:23.071Z",
+  "lastSuccessfulAt": "2026-11-24T13:54:23.071Z",
   "fetchStatus": "ok",
   "error": null,
   "menu": {
@@ -2030,6 +2030,149 @@
           },
           {
             "name": "Grilled Chicken Breast",
+            "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Pita Bread",
+            "category": "Side",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Assorted Fruit",
+            "category": "Fruit",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          },
+          {
+            "name": "1% White Milk",
+            "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          },
+          {
+            "name": "Skim Milk",
+            "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          },
+          {
+            "name": "Chocolate Milk",
+            "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          },
+          {
+            "name": "Assorted Fresh Cut Vegetables",
+            "category": "Vegetable",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          }
+        ],
+        "source": "School Menu Connector"
+      }
+    },
+    "2026-12-07": {
+      "lunch": {
+        "entrees": [
+          {
+            "name": "Chicken Nuggets",
+            "category": "Hot Entree",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Vegan Nuggets",
+            "category": "Hot Entree",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Breaded Mozzarella Stick",
+            "category": "Hot Entree",
+            "group": "Hot Entree",
+            "allergens": []
+          }
+        ],
+        "sides": [
+          {
+            "name": "Tortilla Chips",
+            "category": "Side",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Three Bean Salad",
+            "category": "Vegetable",
+            "group": "Hot Entree",
+            "allergens": []
+          }
+        ],
+        "all": [
+          {
+            "name": "Chicken Nuggets",
+            "category": "Hot Entree",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Vegan Nuggets",
+            "category": "Hot Entree",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Breaded Mozzarella Stick",
+            "category": "Hot Entree",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Tortilla Chips",
+            "category": "Side",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Three Bean Salad",
+            "category": "Vegetable",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Soft Pretzel with Cheese Sauce",
+            "category": "Deli",
+            "group": "Deli",
+            "allergens": []
+          },
+          {
+            "name": "Power Pack: Sunbutter, Teddy Grahams, Veggie, Fruit",
+            "category": "Deli",
+            "group": "Deli",
+            "allergens": []
+          },
+          {
+            "name": "Grab and Go Salad",
+            "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Assorted Bean and Hummus Proteins",
+            "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Assorted Egg and Cheese Proteins",
+            "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Teriyaki Chicken for Salad",
             "category": "Grab and Go Salad",
             "group": "Grab & Go Salad",
             "allergens": []
