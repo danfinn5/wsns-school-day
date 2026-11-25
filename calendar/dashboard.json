@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T13:08:29.744Z",
+  "generatedAt": "2026-11-25T23:40:29.648Z",
   "school": {
     "name": "West Somerville Neighborhood School",
     "shortName": "WSNS",
@@ -95,17 +95,8 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": {
-        "code": 3,
-        "label": "Cloudy",
-        "icon": "cloud",
-        "high": 41,
-        "low": 28,
-        "rainChance": 0,
-        "precip": 0,
-        "wind": 6
-      },
-      "pack": "warm coat"
+      "weather": null,
+      "pack": null
     },
     {
       "date": "2026-11-26",
@@ -117,16 +108,7 @@
       },
       "lunch": null,
       "breakfast": null,
-      "weather": {
-        "code": 65,
-        "label": "Rain",
-        "icon": "rain",
-        "high": 50,
-        "low": 33,
-        "rainChance": 99,
-        "precip": 0.742,
-        "wind": 19
-      },
+      "weather": null,
       "pack": null
     },
     {
@@ -139,16 +121,7 @@
       },
       "lunch": null,
       "breakfast": null,
-      "weather": {
-        "code": 63,
-        "label": "Rain",
-        "icon": "rain",
-        "high": 58,
-        "low": 45,
-        "rainChance": 99,
-        "precip": 0.381,
-        "wind": 17
-      },
+      "weather": null,
       "pack": null
     },
     {
@@ -161,16 +134,7 @@
       },
       "lunch": null,
       "breakfast": null,
-      "weather": {
-        "code": 3,
-        "label": "Cloudy",
-        "icon": "cloud",
-        "high": 48,
-        "low": 45,
-        "rainChance": 14,
-        "precip": 0,
-        "wind": 11
-      },
+      "weather": null,
       "pack": null
     },
     {
@@ -183,16 +147,7 @@
       },
       "lunch": null,
       "breakfast": null,
-      "weather": {
-        "code": 3,
-        "label": "Cloudy",
-        "icon": "cloud",
-        "high": 54,
-        "low": 41,
-        "rainChance": 3,
-        "precip": 0,
-        "wind": 8
-      },
+      "weather": null,
       "pack": null
     },
     {
@@ -309,17 +264,8 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": {
-        "code": 80,
-        "label": "Rain",
-        "icon": "rain",
-        "high": 54,
-        "low": 43,
-        "rainChance": 50,
-        "precip": 0.236,
-        "wind": 15
-      },
-      "pack": "rain jacket · light jacket"
+      "weather": null,
+      "pack": null
     },
     {
       "date": "2026-12-01",
@@ -447,17 +393,8 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": {
-        "code": 3,
-        "label": "Cloudy",
-        "icon": "cloud",
-        "high": 45,
-        "low": 38,
-        "rainChance": 10,
-        "precip": 0,
-        "wind": 13
-      },
-      "pack": "light jacket"
+      "weather": null,
+      "pack": null
     },
     {
       "date": "2026-12-02",
@@ -573,17 +510,8 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": {
-        "code": 3,
-        "label": "Cloudy",
-        "icon": "cloud",
-        "high": 46,
-        "low": 37,
-        "rainChance": 14,
-        "precip": 0,
-        "wind": 3
-      },
-      "pack": "light jacket"
+      "weather": null,
+      "pack": null
     },
     {
       "date": "2026-12-03",
@@ -699,17 +627,8 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": {
-        "code": 51,
-        "label": "Drizzle",
-        "icon": "rain",
-        "high": 45,
-        "low": 42,
-        "rainChance": 14,
-        "precip": 0.024,
-        "wind": 6
-      },
-      "pack": "light jacket"
+      "weather": null,
+      "pack": null
     },
     {
       "date": "2026-12-04",
@@ -837,17 +756,8 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": {
-        "code": 80,
-        "label": "Rain",
-        "icon": "rain",
-        "high": 53,
-        "low": 39,
-        "rainChance": 30,
-        "precip": 0.059,
-        "wind": 10
-      },
-      "pack": "light jacket"
+      "weather": null,
+      "pack": null
     },
     {
       "date": "2026-12-05",
@@ -859,16 +769,7 @@
       },
       "lunch": null,
       "breakfast": null,
-      "weather": {
-        "code": 80,
-        "label": "Rain",
-        "icon": "rain",
-        "high": 48,
-        "low": 35,
-        "rainChance": 29,
-        "precip": 0.154,
-        "wind": 13
-      },
+      "weather": null,
       "pack": null
     },
     {
@@ -881,16 +782,7 @@
       },
       "lunch": null,
       "breakfast": null,
-      "weather": {
-        "code": 3,
-        "label": "Cloudy",
-        "icon": "cloud",
-        "high": 43,
-        "low": 33,
-        "rainChance": 33,
-        "precip": 0,
-        "wind": 4
-      },
+      "weather": null,
       "pack": null
     },
     {
@@ -1043,17 +935,8 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": {
-        "code": 61,
-        "label": "Rain",
-        "icon": "rain",
-        "high": 55,
-        "low": 38,
-        "rainChance": 35,
-        "precip": 0.366,
-        "wind": 12
-      },
-      "pack": "rain jacket · light jacket"
+      "weather": null,
+      "pack": null
     },
     {
       "date": "2026-12-08",
@@ -1187,17 +1070,8 @@
         "source": "School Menu Connector"
       },
       "breakfast": null,
-      "weather": {
-        "code": 80,
-        "label": "Rain",
-        "icon": "rain",
-        "high": 50,
-        "low": 38,
-        "rainChance": 41,
-        "precip": 0.177,
-        "wind": 13
-      },
-      "pack": "rain jacket · light jacket"
+      "weather": null,
+      "pack": null
     }
   ],
   "upcoming": [
@@ -1282,5 +1156,7 @@
       "title": "Early release Wednesday — 1:00 PM dismissal"
     }
   ],
-  "warnings": []
+  "warnings": [
+    "Weather is temporarily unavailable."
+  ]
 }
