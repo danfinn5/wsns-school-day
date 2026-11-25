@@ -6,8 +6,8 @@
   "menuSources": [
     "School Menu Connector"
   ],
-  "lastCheckedAt": "2026-11-24T23:57:07.251Z",
-  "lastSuccessfulAt": "2026-11-24T23:57:07.251Z",
+  "lastCheckedAt": "2026-11-25T13:08:29.744Z",
+  "lastSuccessfulAt": "2026-11-25T13:08:29.744Z",
   "fetchStatus": "ok",
   "error": null,
   "menu": {
@@ -2138,6 +2138,131 @@
           {
             "name": "Three Bean Salad",
             "category": "Vegetable",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Soft Pretzel with Cheese Sauce",
+            "category": "Deli",
+            "group": "Deli",
+            "allergens": []
+          },
+          {
+            "name": "Power Pack: Sunbutter, Teddy Grahams, Veggie, Fruit",
+            "category": "Deli",
+            "group": "Deli",
+            "allergens": []
+          },
+          {
+            "name": "Grab and Go Salad",
+            "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Assorted Bean and Hummus Proteins",
+            "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Assorted Egg and Cheese Proteins",
+            "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Teriyaki Chicken for Salad",
+            "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Pita Bread",
+            "category": "Side",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Assorted Fruit",
+            "category": "Fruit",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          },
+          {
+            "name": "1% White Milk",
+            "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          },
+          {
+            "name": "Skim Milk",
+            "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          },
+          {
+            "name": "Chocolate Milk",
+            "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          },
+          {
+            "name": "Assorted Fresh Cut Vegetables",
+            "category": "Vegetable",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          }
+        ],
+        "source": "School Menu Connector"
+      }
+    },
+    "2026-12-08": {
+      "lunch": {
+        "entrees": [
+          {
+            "name": "Whole Grain   Pancakes",
+            "category": "Hot Entree",
+            "group": "Hot Entree",
+            "allergens": []
+          }
+        ],
+        "sides": [
+          {
+            "name": "Chicken Sausage Patty",
+            "category": "Side",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Sweet Potato Fries",
+            "category": "Vegetable",
+            "group": "Hot Entree",
+            "allergens": []
+          }
+        ],
+        "all": [
+          {
+            "name": "Whole Grain   Pancakes",
+            "category": "Hot Entree",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Chicken Sausage Patty",
+            "category": "Side",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Sweet Potato Fries",
+            "category": "Vegetable",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Pancake Syrup  Cup",
+            "category": "Condiments",
             "group": "Hot Entree",
             "allergens": []
           },
