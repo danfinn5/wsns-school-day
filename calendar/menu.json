@@ -6,8 +6,8 @@
   "menuSources": [
     "School Menu Connector"
   ],
-  "lastCheckedAt": "2026-11-27T23:31:25.273Z",
-  "lastSuccessfulAt": "2026-11-27T23:31:25.273Z",
+  "lastCheckedAt": "2026-11-28T11:57:21.460Z",
+  "lastSuccessfulAt": "2026-11-28T11:57:21.460Z",
   "fetchStatus": "ok",
   "error": null,
   "menu": {
@@ -2561,6 +2561,137 @@
           {
             "name": "Chocolate Milk",
             "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          }
+        ],
+        "source": "School Menu Connector"
+      }
+    },
+    "2026-12-11": {
+      "lunch": {
+        "entrees": [
+          {
+            "name": "Pasta with Meat Sauce",
+            "category": "Hot Entree",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Penne Pasta with Tomato Sauce",
+            "category": "Hot Entree",
+            "group": "Hot Entree",
+            "allergens": []
+          }
+        ],
+        "sides": [
+          {
+            "name": "Fresh Baked  Cheesy Garlic Bread",
+            "category": "Side",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Mixed Vegetables",
+            "category": "Vegetable",
+            "group": "Hot Entree",
+            "allergens": []
+          }
+        ],
+        "all": [
+          {
+            "name": "Pasta with Meat Sauce",
+            "category": "Hot Entree",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Penne Pasta with Tomato Sauce",
+            "category": "Hot Entree",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Fresh Baked  Cheesy Garlic Bread",
+            "category": "Side",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Mixed Vegetables",
+            "category": "Vegetable",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Soft Pretzel with Cheese Sauce",
+            "category": "Deli",
+            "group": "Deli",
+            "allergens": []
+          },
+          {
+            "name": "Power Pack: Sunbutter, Teddy Grahams, Veggie, Fruit",
+            "category": "Deli",
+            "group": "Deli",
+            "allergens": []
+          },
+          {
+            "name": "Grab and Go Salad",
+            "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Assorted Bean and Hummus Proteins",
+            "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Assorted Egg and Cheese Proteins",
+            "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Teriyaki Chicken for Salad",
+            "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Pita Bread",
+            "category": "Side",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Assorted Fruit",
+            "category": "Fruit",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          },
+          {
+            "name": "1% White Milk",
+            "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          },
+          {
+            "name": "Skim Milk",
+            "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          },
+          {
+            "name": "Chocolate Milk",
+            "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          },
+          {
+            "name": "Assorted Fresh Cut Vegetables",
+            "category": "Vegetable",
             "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
             "allergens": []
           }

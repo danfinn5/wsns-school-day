@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T23:31:25.273Z",
+  "generatedAt": "2026-11-28T11:57:21.460Z",
   "school": {
     "name": "West Somerville Neighborhood School",
     "shortName": "WSNS",
@@ -18,28 +18,6 @@
   },
   "days": [
     {
-      "date": "2026-11-27",
-      "status": {
-        "type": "closed",
-        "label": "No school",
-        "detail": "No school — Thanksgiving recess",
-        "dismissal": null
-      },
-      "lunch": null,
-      "breakfast": null,
-      "weather": {
-        "code": 63,
-        "label": "Rain",
-        "icon": "rain",
-        "high": 55,
-        "low": 43,
-        "rainChance": 100,
-        "precip": 0.244,
-        "wind": 18
-      },
-      "pack": null
-    },
-    {
       "date": "2026-11-28",
       "status": {
         "type": "weekend",
@@ -54,10 +32,10 @@
         "label": "Cloudy",
         "icon": "cloud",
         "high": 47,
-        "low": 38,
-        "rainChance": 14,
+        "low": 40,
+        "rainChance": 7,
         "precip": 0,
-        "wind": 13
+        "wind": 12
       },
       "pack": null
     },
@@ -75,11 +53,11 @@
         "code": 3,
         "label": "Cloudy",
         "icon": "cloud",
-        "high": 54,
+        "high": 52,
         "low": 38,
-        "rainChance": 4,
+        "rainChance": 3,
         "precip": 0,
-        "wind": 8
+        "wind": 9
       },
       "pack": null
     },
@@ -198,13 +176,13 @@
       },
       "breakfast": null,
       "weather": {
-        "code": 82,
+        "code": 81,
         "label": "Rain",
         "icon": "rain",
         "high": 56,
         "low": 40,
-        "rainChance": 95,
-        "precip": 0.819,
+        "rainChance": 99,
+        "precip": 0.598,
         "wind": 19
       },
       "pack": "rain jacket · light jacket"
@@ -339,13 +317,13 @@
         "code": 3,
         "label": "Cloudy",
         "icon": "cloud",
-        "high": 44,
-        "low": 35,
+        "high": 46,
+        "low": 36,
         "rainChance": 0,
         "precip": 0,
-        "wind": 14
+        "wind": 15
       },
-      "pack": "warm coat"
+      "pack": "light jacket"
     },
     {
       "date": "2026-12-02",
@@ -465,11 +443,11 @@
         "code": 3,
         "label": "Cloudy",
         "icon": "cloud",
-        "high": 46,
-        "low": 36,
+        "high": 47,
+        "low": 37,
         "rainChance": 0,
         "precip": 0,
-        "wind": 7
+        "wind": 6
       },
       "pack": "light jacket"
     },
@@ -591,11 +569,11 @@
         "code": 3,
         "label": "Cloudy",
         "icon": "cloud",
-        "high": 56,
-        "low": 40,
-        "rainChance": 2,
+        "high": 55,
+        "low": 38,
+        "rainChance": 3,
         "precip": 0,
-        "wind": 10
+        "wind": 12
       },
       "pack": "light jacket"
     },
@@ -729,9 +707,9 @@
         "code": 3,
         "label": "Cloudy",
         "icon": "cloud",
-        "high": 53,
-        "low": 42,
-        "rainChance": 46,
+        "high": 55,
+        "low": 44,
+        "rainChance": 45,
         "precip": 0,
         "wind": 13
       },
@@ -753,9 +731,9 @@
         "icon": "rain",
         "high": 47,
         "low": 40,
-        "rainChance": 46,
-        "precip": 0.504,
-        "wind": 9
+        "rainChance": 55,
+        "precip": 1.24,
+        "wind": 14
       },
       "pack": null
     },
@@ -773,11 +751,11 @@
         "code": 73,
         "label": "Snow",
         "icon": "snow",
-        "high": 50,
-        "low": 34,
-        "rainChance": 19,
-        "precip": 0.728,
-        "wind": 13
+        "high": 45,
+        "low": 33,
+        "rainChance": 23,
+        "precip": 0.366,
+        "wind": 15
       },
       "pack": null
     },
@@ -932,14 +910,14 @@
       },
       "breakfast": null,
       "weather": {
-        "code": 51,
-        "label": "Drizzle",
-        "icon": "rain",
-        "high": 37,
-        "low": 30,
-        "rainChance": 19,
-        "precip": 0.008,
-        "wind": 16
+        "code": 0,
+        "label": "Clear",
+        "icon": "sun",
+        "high": 44,
+        "low": 32,
+        "rainChance": 14,
+        "precip": 0,
+        "wind": 13
       },
       "pack": "warm coat"
     },
@@ -1079,11 +1057,11 @@
         "code": 51,
         "label": "Drizzle",
         "icon": "rain",
-        "high": 45,
-        "low": 32,
-        "rainChance": 32,
-        "precip": 0.004,
-        "wind": 6
+        "high": 50,
+        "low": 35,
+        "rainChance": 22,
+        "precip": 0.008,
+        "wind": 7
       },
       "pack": "light jacket"
     },
@@ -1202,16 +1180,16 @@
       },
       "breakfast": null,
       "weather": {
-        "code": 53,
+        "code": 51,
         "label": "Drizzle",
         "icon": "rain",
-        "high": 54,
-        "low": 41,
-        "rainChance": 42,
-        "precip": 0.268,
-        "wind": 14
+        "high": 44,
+        "low": 40,
+        "rainChance": 35,
+        "precip": 0.098,
+        "wind": 12
       },
-      "pack": "rain jacket · light jacket"
+      "pack": "rain jacket · warm coat"
     },
     {
       "date": "2026-12-10",
@@ -1343,21 +1321,166 @@
         "code": 3,
         "label": "Cloudy",
         "icon": "cloud",
-        "high": 49,
-        "low": 39,
-        "rainChance": 32,
+        "high": 47,
+        "low": 38,
+        "rainChance": 25,
         "precip": 0,
-        "wind": 6
+        "wind": 12
       },
       "pack": "light jacket"
+    },
+    {
+      "date": "2026-12-11",
+      "status": {
+        "type": "regular",
+        "label": "Regular school day",
+        "detail": "8:10 AM–2:35 PM",
+        "dismissal": "2:35 PM"
+      },
+      "lunch": {
+        "entrees": [
+          {
+            "name": "Pasta with Meat Sauce",
+            "category": "Hot Entree",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Penne Pasta with Tomato Sauce",
+            "category": "Hot Entree",
+            "group": "Hot Entree",
+            "allergens": []
+          }
+        ],
+        "sides": [
+          {
+            "name": "Fresh Baked  Cheesy Garlic Bread",
+            "category": "Side",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Mixed Vegetables",
+            "category": "Vegetable",
+            "group": "Hot Entree",
+            "allergens": []
+          }
+        ],
+        "all": [
+          {
+            "name": "Pasta with Meat Sauce",
+            "category": "Hot Entree",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Penne Pasta with Tomato Sauce",
+            "category": "Hot Entree",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Fresh Baked  Cheesy Garlic Bread",
+            "category": "Side",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Mixed Vegetables",
+            "category": "Vegetable",
+            "group": "Hot Entree",
+            "allergens": []
+          },
+          {
+            "name": "Soft Pretzel with Cheese Sauce",
+            "category": "Deli",
+            "group": "Deli",
+            "allergens": []
+          },
+          {
+            "name": "Power Pack: Sunbutter, Teddy Grahams, Veggie, Fruit",
+            "category": "Deli",
+            "group": "Deli",
+            "allergens": []
+          },
+          {
+            "name": "Grab and Go Salad",
+            "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Assorted Bean and Hummus Proteins",
+            "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Assorted Egg and Cheese Proteins",
+            "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Teriyaki Chicken for Salad",
+            "category": "Grab and Go Salad",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Pita Bread",
+            "category": "Side",
+            "group": "Grab & Go Salad",
+            "allergens": []
+          },
+          {
+            "name": "Assorted Fruit",
+            "category": "Fruit",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          },
+          {
+            "name": "1% White Milk",
+            "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          },
+          {
+            "name": "Skim Milk",
+            "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          },
+          {
+            "name": "Chocolate Milk",
+            "category": "Milk",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          },
+          {
+            "name": "Assorted Fresh Cut Vegetables",
+            "category": "Vegetable",
+            "group": "Shared Items (Milk, Fruit, Veg, Dessert)",
+            "allergens": []
+          }
+        ],
+        "source": "School Menu Connector"
+      },
+      "breakfast": null,
+      "weather": {
+        "code": 51,
+        "label": "Drizzle",
+        "icon": "rain",
+        "high": 42,
+        "low": 38,
+        "rainChance": 23,
+        "precip": 0.051,
+        "wind": 7
+      },
+      "pack": "warm coat"
     }
   ],
   "upcoming": [
-    {
-      "date": "2026-11-27",
-      "type": "closed",
-      "title": "No school — Thanksgiving recess"
-    },
     {
       "date": "2026-12-02",
       "type": "early",
@@ -1432,6 +1555,11 @@
       "date": "2027-01-18",
       "type": "closed",
       "title": "No school — Dr. Martin Luther King Jr. Day"
+    },
+    {
+      "date": "2027-01-20",
+      "type": "early",
+      "title": "Early release Wednesday — 1:00 PM dismissal"
     }
   ],
   "warnings": []
